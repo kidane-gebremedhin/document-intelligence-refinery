@@ -27,6 +27,13 @@ from .extracted_document import (
     TextBlock,
 )
 from .extraction_ledger import ExtractionLedgerEntry
+from .ldu import (
+    LDU,
+    LDUContentType,
+    canonicalize_text,
+    canonicalize_raw_payload,
+    compute_content_hash,
+)
 
 __all__ = [
     "BoundingBox",
@@ -37,6 +44,8 @@ __all__ = [
     "ExtractedDocument",
     "ExtractionLedgerEntry",
     "Figure",
+    "LDU",
+    "LDUContentType",
     "LanguageCode",
     "LayoutComplexity",
     "OriginType",
@@ -49,4 +58,7 @@ __all__ = [
     "TableHeader",
     "TableRow",
     "TextBlock",
+    "canonicalize_text",
+    "canonicalize_raw_payload",
+    "compute_content_hash",
 ]
