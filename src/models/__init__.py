@@ -15,6 +15,18 @@ from .document_profile import (
     LayoutComplexity,
     OriginType,
 )
+from .extracted_document import (
+    ExtractedDocument,
+    Figure,
+    ReadingOrderEntry,
+    RefType,
+    Table,
+    TableCell,
+    TableHeader,
+    TableRow,
+    TextBlock,
+)
+from .extraction_ledger import ExtractionLedgerEntry
 
 __all__ = [
     "BoundingBox",
@@ -22,9 +34,19 @@ __all__ = [
     "DocumentProfile",
     "DomainHint",
     "EstimatedExtractionCost",
+    "ExtractedDocument",
+    "ExtractionLedgerEntry",
+    "Figure",
     "LanguageCode",
     "LayoutComplexity",
     "OriginType",
     "PageRef",
     "PageSpan",
+    "ReadingOrderEntry",
+    "RefType",
+    "Table",
+    "TableCell",
+    "TableHeader",
+    "TableRow",
+    "TextBlock",
 ]

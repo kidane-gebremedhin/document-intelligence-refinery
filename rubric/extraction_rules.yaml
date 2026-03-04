@@ -11,6 +11,20 @@ origin_type:
   fraction_pages_digital_min: 0.1
   fraction_pages_digital_max: 0.9
 
+# Router: confidence thresholds for escalation. Spec 03 §7.
+router:
+  fast_text_confidence_threshold: 0.5
+  layout_confidence_threshold: 0.5
+
+# Fast-text extraction (Strategy A). Spec 03 §4.2; spec 07 §10.
+fast_text:
+  confidence_threshold: 0.5
+  # Reuse origin_type thresholds for confidence signals.
+  min_chars_per_page: 50
+  max_image_area_ratio: 0.5
+  # Min chars per page area (points²) to consider density "good".
+  min_char_density_per_10k_points2: 1.0
+
 layout_complexity:
   # Placeholders for P1-T004.
   table_area_ratio_heavy: 0.25
