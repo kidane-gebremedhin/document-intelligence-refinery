@@ -164,5 +164,7 @@ The FactTable is stored in **SQLite**. Minimal schema per spec 06 and spec 07 §
 
 ---
 
+**Deliverables (Refinery Guide §8):** Final repo requires `src/agents/query_agent.py` (LangGraph agent with pageindex_navigate, semantic_search, structured_query), FactTable + SQLite, vector store ingestion (ChromaDB/FAISS), Audit Mode (claim verification). See [spec 01 §9](../specs/01-document-intelligence-refinery-system.md#9-deliverables-refinery-guide-8).
+
 **Version:** 1.0  
 **Plan status:** Plan only; no code. Implementation follows this plan and spec 06; models follow spec 07.

@@ -34,6 +34,7 @@ from .ldu import (
     canonicalize_raw_payload,
     compute_content_hash,
 )
+from .pageindex import PageIndex, PageIndexSection
 from .provenance import (
     ProvenanceChain,
     ProvenanceItem,
@@ -55,6 +56,8 @@ __all__ = [
     "LanguageCode",
     "LayoutComplexity",
     "OriginType",
+    "PageIndex",
+    "PageIndexSection",
     "PageRef",
     "PageSpan",
     "ProvenanceChain",

@@ -165,7 +165,7 @@ Strategy B **must** produce:
 - Tables: header row identified when present; cell boundaries preserved; no merging of distinct cells.
 - Figures: bbox covers the figure region; caption associated via `caption` field or adjacency in reading order.
 
-Strategy B may use layout models (e.g. MinerU, Docling) or heuristics; implementation choice. Output must conform to the ExtractedDocument schema.
+Strategy B **must** use one of **MinerU** or **Docling** as the layout backend (configurable via `layout.backend`). No other layout engines (e.g. pdfplumber) are used for Strategy B. Output must conform to the ExtractedDocument schema.
 
 ---
 
@@ -195,9 +195,25 @@ Strategy C is the fallback when text layer is absent or layout/text extraction f
 - Tables must be structured (headers + rows), not raw text dumps.
 - Budget guard (see §8) applies; no single document may exceed the cost cap.
 
-### 6.4 Model selection
+### 6.4 Model selection and API configuration
 
-- Model choice (e.g. GPT-4o-mini, Gemini Flash via OpenRouter) is configurable. Budget-aware selection is recommended (constitution: cost-aware).
+- **Model choice** (e.g. GPT-4o-mini, Gemini Flash) is configurable. Budget-aware selection is recommended (constitution: cost-aware).
+- **Provider and API key** must be configurable **without code changes**. The implementation MUST support configuration via a **`.env`** file (or environment variables) so that deployers can switch provider and set API keys by editing `.env` only.
+
+**Environment variables (override YAML when set):**
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `REFINERY_VISION_PROVIDER` | Vision provider: `openai` or `google`. Overrides `vision.provider` in config. | `REFINERY_VISION_PROVIDER=google` |
+| `REFINERY_VISION_API_KEY` | API key value directly. When set, this is used and no other env var is read for the key. | `REFINERY_VISION_API_KEY=your-key` |
+| `REFINERY_VISION_API_KEY_ENV` | Name of the environment variable that holds the API key. Overrides `vision.api_key_env` in config. | `REFINERY_VISION_API_KEY_ENV=GEMINI_API_KEY` |
+
+**Resolution order:**
+
+1. **Provider:** `REFINERY_VISION_PROVIDER` (from `.env` or process env) → else `vision.provider` in `extraction_rules.yaml` → else `openai`.
+2. **API key:** `REFINERY_VISION_API_KEY` (direct key) → else the value of the variable named by `REFINERY_VISION_API_KEY_ENV` or `vision.api_key_env` (e.g. `OPENAI_API_KEY`, `GOOGLE_API_KEY`).
+
+A `.env` file in the project root or current working directory is loaded automatically (if present) before reading these variables. Deployers can set only the variables they need; no code or YAML change is required to switch provider or key.
 
 ---
 

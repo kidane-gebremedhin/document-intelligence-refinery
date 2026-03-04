@@ -1,0 +1,16 @@
+{
+  "document_id": "08eb5fd361196aeed1ec887d63d70158",
+  "origin_type": "native_digital",
+  "layout_complexity": "multi_column",
+  "language": "en",
+  "language_confidence": 0.85,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_layout_model",
+  "triage_confidence_score": 0.82,
+  "created_at": "2026-03-04T23:33:58.786982Z",
+  "page_count": 45,
+  "metadata": {
+    "source": "annual_report_2024_acme.pdf",
+    "doc_class": "A"
+  }
+}

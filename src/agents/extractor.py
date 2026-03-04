@@ -18,8 +18,30 @@ from src.models import (
 )
 from src.refinery.ledger import append_ledger_entry
 from src.strategies.base import BaseExtractor, ExtractionResult
+from src.strategies.fast_text_extractor import FastTextExtractor
+from src.strategies.layout_extractor import LayoutExtractor
+from src.strategies.vision_extractor import VisionExtractor
 
 logger = logging.getLogger(__name__)
+
+
+def create_default_extraction_router(
+    *,
+    ledger_path: Path | str | None = None,
+    config_path: Path | None = None,
+    check_budget: Callable[[str, int], bool] | None = None,
+    record_usage: Callable[[str, int, int, float], None] | None = None,
+) -> ExtractionRouter:
+    """Build an ExtractionRouter with FastText, Layout, and Vision extractors."""
+    return ExtractionRouter(
+        fast_text_extractor=FastTextExtractor(config_path=config_path),
+        layout_extractor=LayoutExtractor(config_path=config_path),
+        vision_extractor=VisionExtractor(config_path=config_path),
+        ledger_path=ledger_path,
+        config_path=config_path,
+        check_budget=check_budget,
+        record_usage=record_usage,
+    )
 
 _DEFAULT_RULES_PATH = Path(__file__).resolve().parent.parent.parent / "rubric" / "extraction_rules.yaml"
 

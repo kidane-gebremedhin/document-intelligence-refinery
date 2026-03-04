@@ -145,5 +145,7 @@ If any check fails, the validator must **reject** the offending LDU(s) and eithe
 
 ---
 
+**Deliverables (Refinery Guide §8):** Final repo requires `src/agents/chunker.py` (Semantic Chunking Engine, all 5 rules enforced via ChunkValidator), `src/agents/indexer.py` (PageIndex tree builder with LLM section summaries). See [spec 01 §9](../specs/01-document-intelligence-refinery-system.md#9-deliverables-refinery-guide-8).
+
 **Version:** 1.0  
 **Plan status:** Plan only; no code. Implementation follows this plan and specs 04, 05; models follow spec 07.

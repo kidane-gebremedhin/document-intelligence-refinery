@@ -1,0 +1,16 @@
+{
+  "document_id": "04387b699f8febf0e6c171feb1a3b91c",
+  "origin_type": "native_digital",
+  "layout_complexity": "mixed",
+  "language": "en",
+  "language_confidence": 0.85,
+  "domain_hint": "technical",
+  "estimated_extraction_cost": "needs_layout_model",
+  "triage_confidence_score": 0.81,
+  "created_at": "2026-03-04T23:33:58.813191Z",
+  "page_count": 15,
+  "metadata": {
+    "source": "methodology_report.pdf",
+    "doc_class": "C"
+  }
+}

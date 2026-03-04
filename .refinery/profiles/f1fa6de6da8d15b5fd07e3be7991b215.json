@@ -1,0 +1,16 @@
+{
+  "document_id": "f1fa6de6da8d15b5fd07e3be7991b215",
+  "origin_type": "native_digital",
+  "layout_complexity": "multi_column",
+  "language": "en",
+  "language_confidence": 0.85,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_layout_model",
+  "triage_confidence_score": 0.79,
+  "created_at": "2026-03-04T23:33:58.797543Z",
+  "page_count": 52,
+  "metadata": {
+    "source": "annual_report_2023_global.pdf",
+    "doc_class": "A"
+  }
+}

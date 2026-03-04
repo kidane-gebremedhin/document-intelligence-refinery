@@ -1,0 +1,372 @@
+{
+  "file": "scanned_image.pdf",
+  "path": "/home/kg/Projects/document-intelligence-refinery/dataset/scanned_image.pdf",
+  "num_pages": 15,
+  "doc_char_count": 0,
+  "doc_char_density_per_10k_pts2": 0.0,
+  "doc_whitespace_ratio": 0.0,
+  "doc_text_area_ratio": 0.0,
+  "doc_image_area_ratio": 1.0,
+  "per_page": [
+    {
+      "page": 1,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 2,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 3,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 4,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 5,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 6,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 7,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 8,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 9,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 10,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 11,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 12,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 13,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 14,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 15,
+      "width": 595.2,
+      "height": 844.8,
+      "page_area": 502824.96,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    }
+  ]
+}

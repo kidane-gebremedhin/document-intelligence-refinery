@@ -17,13 +17,30 @@ router:
   layout_confidence_threshold: 0.5
 
 # Fast-text extraction (Strategy A). Spec 03 §4.2; spec 07 §10.
+# backend: pdfplumber (default) or pymupdf for simple text extraction.
 fast_text:
+  backend: "pdfplumber"
   confidence_threshold: 0.5
-  # Reuse origin_type thresholds for confidence signals.
   min_chars_per_page: 50
   max_image_area_ratio: 0.5
-  # Min chars per page area (points²) to consider density "good".
   min_char_density_per_10k_points2: 1.0
+
+# Layout extraction (Strategy B). Spec 03 §5.
+# backend: mineru or docling only (pip install docling | mineru).
+layout:
+  backend: "docling"
+  confidence_default: 0.75
+  first_row_as_header: true
+
+# Vision extraction (Strategy C). Spec 03 §6.
+# provider: openai (gpt-4o-mini etc.) or google (Gemini vision).
+vision:
+  provider: "openai"
+  model: "gpt-4o-mini"
+  api_key_env: "OPENAI_API_KEY"
+  # For provider=google, use api_key_env: "GOOGLE_API_KEY" or "GEMINI_API_KEY" and model: "gemini-1.5-flash" etc.
+  max_pages_per_document: 50
+  confidence_default: 0.8
 
 layout_complexity:
   # Placeholders for P1-T004.

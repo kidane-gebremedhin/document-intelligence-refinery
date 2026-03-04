@@ -1,4 +1,5 @@
 # FastTextExtractor — Strategy A: text-stream extraction with confidence. Spec 03 §4; plan §3.1.
+# backend: pdfplumber or pymupdf.
 
 from __future__ import annotations
 
@@ -7,6 +8,11 @@ from pathlib import Path
 from typing import Any
 
 import pdfplumber
+
+try:
+    import fitz  # pymupdf
+except ImportError:
+    fitz = None  # type: ignore[assignment]
 
 from src.models import (
     BoundingBox,
@@ -29,6 +35,16 @@ def _plumber_bbox_to_model(x0: float, top: float, x1: float, bottom: float, page
         y0=page_height - bottom,
         x1=x1,
         y1=page_height - top,
+    )
+
+
+def _pymupdf_bbox_to_model(x0: float, y0: float, x1: float, y1: float, page_height: float) -> BoundingBox:
+    """Convert pymupdf (top-left origin) to BoundingBox (bottom-left origin, PDF points)."""
+    return BoundingBox(
+        x0=x0,
+        y0=page_height - y1,
+        x1=x1,
+        y1=page_height - y0,
     )
 
 
@@ -111,6 +127,66 @@ def _compute_confidence_signals(
     return score, signals
 
 
+def _extract_with_pymupdf(
+    doc_path: Path,
+) -> tuple[list[dict[str, Any]], list[tuple[int, float, float, float, float, str]]]:
+    """
+    Extract text blocks and page stats using pymupdf. Returns (pages_data, all_blocks).
+    all_blocks: (page_num_1based, x0, top, x1, bottom, text) with top-left origin.
+    """
+    if fitz is None:
+        raise RuntimeError("pymupdf is not installed")
+    doc = fitz.open(doc_path)
+    pages_data: list[dict[str, Any]] = []
+    all_blocks: list[tuple[int, float, float, float, float, str]] = []
+    try:
+        for page_num in range(len(doc)):
+            page = doc[page_num]
+            pnum = page_num + 1
+            rect = page.rect
+            width = rect.width
+            height = rect.height
+            page_area = width * height
+            text_dict = page.get_text("dict")
+            blocks = text_dict.get("blocks") or []
+            char_count = 0
+            text_area = 0.0
+            for block in blocks:
+                bbox = block.get("bbox") or (0, 0, 0, 0)
+                x0, y0, x1, y1 = bbox
+                line_texts: list[str] = []
+                for line in block.get("lines") or []:
+                    for span in line.get("spans") or []:
+                        t = span.get("text", "")
+                        line_texts.append(t)
+                        char_count += len(t)
+                text = " ".join(line_texts).strip()
+                if text:
+                    text_area += (x1 - x0) * (y1 - y0)
+                    all_blocks.append((pnum, x0, y0, x1, y1, text))
+            # Approximate image area: pymupdf get_image_info returns list of images
+            image_area = 0.0
+            for img in page.get_images():
+                try:
+                    xref = img[0]
+                    bbox_rect = page.get_image_bbox(xref)
+                    if bbox_rect:
+                        image_area += bbox_rect.width * bbox_rect.height
+                except Exception:
+                    pass
+            pages_data.append({
+                "char_count": char_count,
+                "width": width,
+                "height": height,
+                "text_area": text_area,
+                "image_area": image_area,
+                "has_font_metadata": True,  # pymupdf typically has text layer
+            })
+    finally:
+        doc.close()
+    return pages_data, all_blocks
+
+
 class FastTextExtractor:
     """Strategy A: extract text blocks with bbox and reading order; confidence from char density, image ratio, signals."""
 
@@ -131,7 +207,93 @@ class FastTextExtractor:
         doc_path = Path(doc_path)
         config = self._get_config()
         threshold = config.get("confidence_threshold", 0.5)
+        backend = (config.get("backend") or "pdfplumber").strip().lower()
 
+        if backend == "pymupdf":
+            return self._extract_pymupdf(doc_path, profile, config, threshold)
+        return self._extract_pdfplumber(doc_path, profile, config, threshold)
+
+    def _extract_pymupdf(
+        self,
+        doc_path: Path,
+        profile: DocumentProfile,
+        config: dict[str, Any],
+        threshold: float,
+    ) -> ExtractionResult:
+        if fitz is None:
+            return ExtractionResult(
+                extracted_document=None,
+                confidence_score=0.0,
+                cost_estimate_usd=0.0,
+                strategy_name="fast_text",
+                notes="backend pymupdf requires pymupdf",
+            )
+        try:
+            pages_data, all_blocks = _extract_with_pymupdf(doc_path)
+            confidence_score, signals = _compute_confidence_signals(pages_data, config)
+            if confidence_score < threshold:
+                return ExtractionResult(
+                    extracted_document=None,
+                    confidence_score=confidence_score,
+                    cost_estimate_usd=0.0,
+                    strategy_name="fast_text",
+                    notes="confidence_below_threshold",
+                )
+            document_id = profile.document_id
+            num_pages = len(pages_data)
+            text_blocks = []
+            reading_order_entries = []
+            for idx, (pnum, x0, y0_top, x1, y1_bottom, text) in enumerate(all_blocks):
+                page_height = pages_data[pnum - 1]["height"]
+                bbox = _pymupdf_bbox_to_model(x0, y0_top, x1, y1_bottom, page_height)
+                block_id = f"block_{pnum}_{idx}"
+                text_blocks.append(
+                    TextBlock(
+                        id=block_id,
+                        document_id=document_id,
+                        page_number=pnum,
+                        bbox=bbox,
+                        text=text,
+                        reading_order_index=idx,
+                    )
+                )
+                reading_order_entries.append(ReadingOrderEntry(ref_type=RefType.TEXT_BLOCK, ref_id=block_id, order=idx))
+            doc = ExtractedDocument(
+                document_id=document_id,
+                source_path=str(doc_path.resolve()),
+                pages=num_pages,
+                text_blocks=text_blocks,
+                tables=[],
+                figures=[],
+                reading_order=reading_order_entries,
+                metadata={"fast_text_confidence_signals": signals, "backend": "pymupdf"},
+                strategy_used="fast_text",
+                strategy_confidence=confidence_score,
+            )
+            return ExtractionResult(
+                extracted_document=doc,
+                confidence_score=confidence_score,
+                cost_estimate_usd=0.0,
+                strategy_name="fast_text",
+                notes=None,
+            )
+        except Exception as e:
+            logger.exception("FastTextExtractor (pymupdf) failed for %s", doc_path)
+            return ExtractionResult(
+                extracted_document=None,
+                confidence_score=0.0,
+                cost_estimate_usd=0.0,
+                strategy_name="fast_text",
+                notes=f"error: {e!s}",
+            )
+
+    def _extract_pdfplumber(
+        self,
+        doc_path: Path,
+        profile: DocumentProfile,
+        config: dict[str, Any],
+        threshold: float,
+    ) -> ExtractionResult:
         try:
             with pdfplumber.open(doc_path) as pdf:
                 pages_data: list[dict[str, Any]] = []

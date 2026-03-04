@@ -139,5 +139,40 @@ The refinery is a **five-stage pipeline**. Each stage has typed inputs and outpu
 
 ---
 
+## 9. Deliverables (Refinery Guide §8)
+
+The Document Intelligence Refinery Guide §8 defines **Interim** and **Final** submission deliverables. This section maps them to this spec and the codebase (excluding report PDFs, generated artifacts, and video submission).
+
+### 9.1 Interim — Core Models & Agents (Phases 1–2)
+
+| Guide deliverable | Location / spec | Status |
+|-------------------|-----------------|--------|
+| **Core Models** — DocumentProfile, ExtractedDocument, LDU, PageIndex, ProvenanceChain | `src/models/` — spec [07](../specs/07-models-schemas-spec.md) §3–5, §6, §7 | Implemented: DocumentProfile, ExtractedDocument, LDU, PageIndex/PageIndexSection, ProvenanceChain/ProvenanceItem. |
+| **Triage Agent** — origin_type, layout_complexity, domain_hint | `src/agents/triage.py` — spec [02](../specs/02-triage-agent-and-document-profile.md) | Implemented. |
+| **Strategies** — FastTextExtractor, LayoutExtractor, VisionExtractor, shared interface | `src/strategies/` — spec [03](../specs/03-multi-strategy-extraction-engine.md) | FastTextExtractor + base interface; Layout/Vision stubs or adapters per tasks. |
+| **ExtractionRouter** — confidence-gated escalation | `src/agents/extractor.py` — plan [phase-2](../plans/phase-2-extraction.plan.md) §4 | Implemented. |
+| **Configuration** — extraction_rules.yaml, .refinery/profiles/, extraction_ledger.jsonl | `rubric/extraction_rules.yaml`, `.refinery/` | Implemented. |
+| **Project setup** — pyproject.toml, README with setup and run instructions | Root | Implemented. |
+| **Tests** — Triage and extraction confidence scoring | `tests/` | Implemented. |
+
+### 9.2 Final — Agents (Phases 3–4) & Data Layer
+
+| Guide deliverable | Location / spec | Status |
+|-------------------|-----------------|--------|
+| **Semantic Chunking Engine** — all 5 chunking rules, ChunkValidator | `src/agents/chunker.py` (entry) + `src/chunking/` — spec [04](../specs/04-semantic-chunking-and-ldu-spec.md) §6 | ChunkValidator + emit_ldus in `src/chunking/`; chunker.py re-exports. ChunkingEngine (ExtractedDocument → LDUs) per tasks. |
+| **PageIndex tree builder** — LLM section summaries | `src/agents/indexer.py` — spec [05](../specs/05-pageindex-builder-spec.md) | Per phase-3 tasks (P3-T005+). |
+| **Query agent** — LangGraph, pageindex_navigate, semantic_search, structured_query | `src/agents/query_agent.py` — spec [06](../specs/06-query-agent-and-provenance-spec.md) | Per phase-4 tasks. |
+| **FactTable** — SQLite backend, numerical documents | Data layer — spec 06 §5, spec 07 §8 | Per phase-4 tasks. |
+| **Vector store** — ChromaDB or FAISS, ingest LDUs | Data layer | Per phase-3/4 tasks. |
+| **Audit Mode** — claim verification, citation or "unverifiable" | `src/agents/audit.py` — spec 06 §7–8 | Implemented. |
+
+### 9.3 Invariants (from Guide)
+
+- **Escalation guard:** Strategy A must not pass low-confidence output; router escalates and ledger records chain.
+- **Provenance:** Every answer carries ProvenanceChain (document, page, bbox, content_hash); audit mode returns verified or explicit unverifiable.
+- **Config-over-code:** Thresholds and rules in `extraction_rules.yaml` (and equivalent); no hardcoded magic numbers.
+
+---
+
 **Version:** 1.0  
 **Spec status:** System-level; implementation plans will reference this spec and the constitution.

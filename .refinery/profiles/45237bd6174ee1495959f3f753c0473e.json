@@ -1,0 +1,16 @@
+{
+  "document_id": "45237bd6174ee1495959f3f753c0473e",
+  "origin_type": "native_digital",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.85,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_layout_model",
+  "triage_confidence_score": 0.85,
+  "created_at": "2026-03-04T23:33:58.793151Z",
+  "page_count": 38,
+  "metadata": {
+    "source": "annual_report_2024_techcorp.pdf",
+    "doc_class": "A"
+  }
+}

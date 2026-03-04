@@ -1,0 +1,2268 @@
+{
+  "file": "mixed.pdf",
+  "path": "/home/kg/Projects/document-intelligence-refinery/dataset/mixed.pdf",
+  "num_pages": 94,
+  "doc_char_count": 150954,
+  "doc_char_density_per_10k_pts2": 32.0437,
+  "doc_whitespace_ratio": 0.0,
+  "doc_text_area_ratio": 0.1983,
+  "doc_image_area_ratio": 0.8395,
+  "per_page": [
+    {
+      "page": 1,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0002,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 2,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 569,
+      "char_density_per_10k_pts2": 11.3537,
+      "text_area_ratio": 0.1648,
+      "image_area_ratio": 14.2981,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 109.18,
+        "max": 518.44,
+        "mean": 244.28,
+        "count": 16
+      },
+      "bbox_height_pts": {
+        "min": 11.96,
+        "max": 52.31,
+        "mean": 17.95,
+        "count": 16
+      }
+    },
+    {
+      "page": 3,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 61,
+      "char_density_per_10k_pts2": 1.2172,
+      "text_area_ratio": 0.1263,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.8737,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 141.89,
+        "max": 369.43,
+        "mean": 250.12,
+        "count": 5
+      },
+      "bbox_height_pts": {
+        "min": 14.0,
+        "max": 84.0,
+        "mean": 44.6,
+        "count": 5
+      }
+    },
+    {
+      "page": 4,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 637,
+      "char_density_per_10k_pts2": 12.7106,
+      "text_area_ratio": 0.1979,
+      "image_area_ratio": 0.2154,
+      "whitespace_ratio": 0.5867,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 308.77,
+        "max": 416.21,
+        "mean": 376.89,
+        "count": 21
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 54.0,
+        "mean": 12.86,
+        "count": 21
+      }
+    },
+    {
+      "page": 5,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1547,
+      "char_density_per_10k_pts2": 30.8686,
+      "text_area_ratio": 0.2798,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.7202,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.9,
+        "max": 515.28,
+        "mean": 319.72,
+        "count": 35
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 17.27,
+        "mean": 12.53,
+        "count": 35
+      }
+    },
+    {
+      "page": 6,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 601,
+      "char_density_per_10k_pts2": 11.9923,
+      "text_area_ratio": 0.1465,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.8535,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 20.65,
+        "max": 371.76,
+        "mean": 184.81,
+        "count": 31
+      },
+      "bbox_height_pts": {
+        "min": 7.8,
+        "max": 42.79,
+        "mean": 11.5,
+        "count": 31
+      }
+    },
+    {
+      "page": 7,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 385,
+      "char_density_per_10k_pts2": 7.6822,
+      "text_area_ratio": 0.1033,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.8967,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 20.66,
+        "max": 371.76,
+        "mean": 214.4,
+        "count": 17
+      },
+      "bbox_height_pts": {
+        "min": 7.8,
+        "max": 42.79,
+        "mean": 12.83,
+        "count": 17
+      }
+    },
+    {
+      "page": 8,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 311,
+      "char_density_per_10k_pts2": 6.2056,
+      "text_area_ratio": 0.0623,
+      "image_area_ratio": 0.3173,
+      "whitespace_ratio": 0.6204,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 77.14,
+        "max": 444.95,
+        "mean": 327.39,
+        "count": 10
+      },
+      "bbox_height_pts": {
+        "min": 6.76,
+        "max": 24.0,
+        "mean": 10.1,
+        "count": 10
+      }
+    },
+    {
+      "page": 9,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1368,
+      "char_density_per_10k_pts2": 27.2968,
+      "text_area_ratio": 0.1955,
+      "image_area_ratio": 0.2279,
+      "whitespace_ratio": 0.5766,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 101.84,
+        "max": 476.24,
+        "mean": 223.99,
+        "count": 33
+      },
+      "bbox_height_pts": {
+        "min": 11.0,
+        "max": 42.68,
+        "mean": 12.38,
+        "count": 33
+      }
+    },
+    {
+      "page": 10,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3575,
+      "char_density_per_10k_pts2": 71.3349,
+      "text_area_ratio": 0.4783,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.5217,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 94.16,
+        "max": 476.25,
+        "mean": 418.98,
+        "count": 46
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 15.5,
+        "mean": 12.27,
+        "count": 46
+      }
+    },
+    {
+      "page": 11,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 225,
+      "char_density_per_10k_pts2": 4.4896,
+      "text_area_ratio": 0.057,
+      "image_area_ratio": 1.263,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 89.78,
+        "max": 387.38,
+        "mean": 291.44,
+        "count": 7
+      },
+      "bbox_height_pts": {
+        "min": 8.09,
+        "max": 28.11,
+        "mean": 13.5,
+        "count": 7
+      }
+    },
+    {
+      "page": 12,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1824,
+      "char_density_per_10k_pts2": 36.3958,
+      "text_area_ratio": 0.249,
+      "image_area_ratio": 0.1806,
+      "whitespace_ratio": 0.5704,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 169.6,
+        "max": 485.72,
+        "mean": 330.73,
+        "count": 29
+      },
+      "bbox_height_pts": {
+        "min": 10.5,
+        "max": 44.13,
+        "mean": 12.42,
+        "count": 29
+      }
+    },
+    {
+      "page": 13,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3042,
+      "char_density_per_10k_pts2": 60.6996,
+      "text_area_ratio": 0.3355,
+      "image_area_ratio": 0.0076,
+      "whitespace_ratio": 0.6569,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 37.46,
+        "max": 476.06,
+        "mean": 356.94,
+        "count": 44
+      },
+      "bbox_height_pts": {
+        "min": 10.5,
+        "max": 15.05,
+        "mean": 10.71,
+        "count": 44
+      }
+    },
+    {
+      "page": 14,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 314,
+      "char_density_per_10k_pts2": 6.2655,
+      "text_area_ratio": 0.075,
+      "image_area_ratio": 1.2663,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 50.95,
+        "max": 379.71,
+        "mean": 285.8,
+        "count": 9
+      },
+      "bbox_height_pts": {
+        "min": 7.58,
+        "max": 28.14,
+        "mean": 13.14,
+        "count": 9
+      }
+    },
+    {
+      "page": 15,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 330,
+      "char_density_per_10k_pts2": 6.5848,
+      "text_area_ratio": 0.0644,
+      "image_area_ratio": 1.3106,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 58.72,
+        "max": 439.92,
+        "mean": 240.36,
+        "count": 10
+      },
+      "bbox_height_pts": {
+        "min": 7.57,
+        "max": 28.14,
+        "mean": 11.79,
+        "count": 10
+      }
+    },
+    {
+      "page": 16,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1151,
+      "char_density_per_10k_pts2": 22.9669,
+      "text_area_ratio": 0.2406,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.7594,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 42.61,
+        "max": 481.9,
+        "mean": 200.85,
+        "count": 37
+      },
+      "bbox_height_pts": {
+        "min": 8.7,
+        "max": 39.94,
+        "mean": 15.04,
+        "count": 37
+      }
+    },
+    {
+      "page": 17,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 24,
+      "char_density_per_10k_pts2": 0.4789,
+      "text_area_ratio": 0.0827,
+      "image_area_ratio": 0.5596,
+      "whitespace_ratio": 0.3577,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 211.22,
+        "max": 372.83,
+        "mean": 272.48,
+        "count": 3
+      },
+      "bbox_height_pts": {
+        "min": 42.0,
+        "max": 57.18,
+        "mean": 49.34,
+        "count": 3
+      }
+    },
+    {
+      "page": 18,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3057,
+      "char_density_per_10k_pts2": 60.9989,
+      "text_area_ratio": 0.3415,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.6585,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 10.52,
+        "max": 476.25,
+        "mean": 267.86,
+        "count": 56
+      },
+      "bbox_height_pts": {
+        "min": 8.03,
+        "max": 22.0,
+        "mean": 11.02,
+        "count": 56
+      }
+    },
+    {
+      "page": 19,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 635,
+      "char_density_per_10k_pts2": 12.6707,
+      "text_area_ratio": 0.053,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.947,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 10.29,
+        "max": 352.65,
+        "mean": 119.77,
+        "count": 26
+      },
+      "bbox_height_pts": {
+        "min": 6.85,
+        "max": 10.61,
+        "mean": 8.04,
+        "count": 26
+      }
+    },
+    {
+      "page": 20,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1079,
+      "char_density_per_10k_pts2": 21.5302,
+      "text_area_ratio": 0.1062,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.8938,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.31,
+        "max": 476.24,
+        "mean": 198.65,
+        "count": 27
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 11.31,
+        "mean": 9.1,
+        "count": 27
+      }
+    },
+    {
+      "page": 21,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 427,
+      "char_density_per_10k_pts2": 8.5203,
+      "text_area_ratio": 0.0402,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.9598,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 9.82,
+        "max": 366.2,
+        "mean": 118.04,
+        "count": 19
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 10.75,
+        "mean": 8.53,
+        "count": 19
+      }
+    },
+    {
+      "page": 22,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 645,
+      "char_density_per_10k_pts2": 12.8702,
+      "text_area_ratio": 0.0589,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.9411,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.8,
+        "max": 449.02,
+        "mean": 125.13,
+        "count": 26
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 11.25,
+        "mean": 8.44,
+        "count": 26
+      }
+    },
+    {
+      "page": 23,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2134,
+      "char_density_per_10k_pts2": 42.5815,
+      "text_area_ratio": 0.2487,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.7513,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.82,
+        "max": 476.25,
+        "mean": 306.3,
+        "count": 36
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 17.0,
+        "mean": 10.57,
+        "count": 36
+      }
+    },
+    {
+      "page": 24,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2659,
+      "char_density_per_10k_pts2": 53.0572,
+      "text_area_ratio": 0.2852,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.7148,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.69,
+        "max": 476.25,
+        "mean": 305.89,
+        "count": 44
+      },
+      "bbox_height_pts": {
+        "min": 8.03,
+        "max": 16.0,
+        "mean": 10.61,
+        "count": 44
+      }
+    },
+    {
+      "page": 25,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 892,
+      "char_density_per_10k_pts2": 17.7988,
+      "text_area_ratio": 0.0913,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.9087,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.31,
+        "max": 476.25,
+        "mean": 189.17,
+        "count": 24
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 13.0,
+        "mean": 8.92,
+        "count": 24
+      }
+    },
+    {
+      "page": 26,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 678,
+      "char_density_per_10k_pts2": 13.5287,
+      "text_area_ratio": 0.068,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.932,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.31,
+        "max": 476.25,
+        "mean": 163.62,
+        "count": 21
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 13.0,
+        "mean": 8.85,
+        "count": 21
+      }
+    },
+    {
+      "page": 27,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1984,
+      "char_density_per_10k_pts2": 39.5884,
+      "text_area_ratio": 0.2212,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.7788,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.08,
+        "max": 476.24,
+        "mean": 251.82,
+        "count": 42
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 16.0,
+        "mean": 10.2,
+        "count": 42
+      }
+    },
+    {
+      "page": 28,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3062,
+      "char_density_per_10k_pts2": 61.0986,
+      "text_area_ratio": 0.3476,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.6524,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.5,
+        "max": 476.25,
+        "mean": 317.09,
+        "count": 51
+      },
+      "bbox_height_pts": {
+        "min": 8.03,
+        "max": 16.0,
+        "mean": 10.77,
+        "count": 51
+      }
+    },
+    {
+      "page": 29,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2872,
+      "char_density_per_10k_pts2": 57.3074,
+      "text_area_ratio": 0.3045,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.6955,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.27,
+        "max": 476.25,
+        "mean": 290.37,
+        "count": 49
+      },
+      "bbox_height_pts": {
+        "min": 8.03,
+        "max": 17.0,
+        "mean": 10.8,
+        "count": 49
+      }
+    },
+    {
+      "page": 30,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1227,
+      "char_density_per_10k_pts2": 24.4833,
+      "text_area_ratio": 0.1411,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.8589,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.71,
+        "max": 476.26,
+        "mean": 204.6,
+        "count": 33
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 16.0,
+        "mean": 9.7,
+        "count": 33
+      }
+    },
+    {
+      "page": 31,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1149,
+      "char_density_per_10k_pts2": 22.927,
+      "text_area_ratio": 0.1605,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.8395,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 9.84,
+        "max": 476.22,
+        "mean": 193.57,
+        "count": 39
+      },
+      "bbox_height_pts": {
+        "min": 8.03,
+        "max": 18.16,
+        "mean": 11.37,
+        "count": 39
+      }
+    },
+    {
+      "page": 32,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1138,
+      "char_density_per_10k_pts2": 22.7075,
+      "text_area_ratio": 0.1411,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.8589,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.77,
+        "max": 476.25,
+        "mean": 219.25,
+        "count": 29
+      },
+      "bbox_height_pts": {
+        "min": 7.64,
+        "max": 17.0,
+        "mean": 10.23,
+        "count": 29
+      }
+    },
+    {
+      "page": 33,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2432,
+      "char_density_per_10k_pts2": 48.5277,
+      "text_area_ratio": 0.2659,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.7341,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.79,
+        "max": 476.25,
+        "mean": 255.19,
+        "count": 50
+      },
+      "bbox_height_pts": {
+        "min": 6.44,
+        "max": 16.0,
+        "mean": 9.43,
+        "count": 50
+      }
+    },
+    {
+      "page": 34,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3365,
+      "char_density_per_10k_pts2": 67.1446,
+      "text_area_ratio": 0.3611,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.6389,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.81,
+        "max": 476.24,
+        "mean": 274.3,
+        "count": 62
+      },
+      "bbox_height_pts": {
+        "min": 8.03,
+        "max": 16.0,
+        "mean": 10.62,
+        "count": 62
+      }
+    },
+    {
+      "page": 35,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3462,
+      "char_density_per_10k_pts2": 69.0802,
+      "text_area_ratio": 0.3725,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.6275,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.77,
+        "max": 476.25,
+        "mean": 401.54,
+        "count": 44
+      },
+      "bbox_height_pts": {
+        "min": 8.03,
+        "max": 13.0,
+        "mean": 10.6,
+        "count": 44
+      }
+    },
+    {
+      "page": 36,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 876,
+      "char_density_per_10k_pts2": 17.4796,
+      "text_area_ratio": 0.0932,
+      "image_area_ratio": 0.0,
+      "whitespace_ratio": 0.9068,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.29,
+        "max": 476.25,
+        "mean": 344.02,
+        "count": 13
+      },
+      "bbox_height_pts": {
+        "min": 8.03,
+        "max": 10.5,
+        "mean": 10.27,
+        "count": 13
+      }
+    },
+    {
+      "page": 37,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 148,
+      "char_density_per_10k_pts2": 2.9532,
+      "text_area_ratio": 0.0767,
+      "image_area_ratio": 2.3429,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.03,
+        "max": 483.62,
+        "mean": 191.33,
+        "count": 7
+      },
+      "bbox_height_pts": {
+        "min": 6.14,
+        "max": 77.09,
+        "mean": 20.75,
+        "count": 7
+      }
+    },
+    {
+      "page": 38,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 3.0047,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 39,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 46,
+      "char_density_per_10k_pts2": 0.9179,
+      "text_area_ratio": 0.0129,
+      "image_area_ratio": 2.5609,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 185.09,
+        "max": 212.82,
+        "mean": 198.95,
+        "count": 2
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.43,
+        "mean": 16.22,
+        "count": 2
+      }
+    },
+    {
+      "page": 40,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 24,
+      "char_density_per_10k_pts2": 0.4789,
+      "text_area_ratio": 0.0068,
+      "image_area_ratio": 2.5515,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 212.03,
+        "max": 212.03,
+        "mean": 212.03,
+        "count": 1
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.0,
+        "mean": 16.0,
+        "count": 1
+      }
+    },
+    {
+      "page": 41,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 86,
+      "char_density_per_10k_pts2": 1.716,
+      "text_area_ratio": 0.0244,
+      "image_area_ratio": 2.2781,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 333.56,
+        "max": 419.06,
+        "mean": 376.31,
+        "count": 2
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.43,
+        "mean": 16.22,
+        "count": 2
+      }
+    },
+    {
+      "page": 42,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 59,
+      "char_density_per_10k_pts2": 1.1773,
+      "text_area_ratio": 0.0165,
+      "image_area_ratio": 2.5201,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 247.81,
+        "max": 270.17,
+        "mean": 258.99,
+        "count": 2
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.0,
+        "mean": 16.0,
+        "count": 2
+      }
+    },
+    {
+      "page": 43,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 74,
+      "char_density_per_10k_pts2": 1.4766,
+      "text_area_ratio": 0.0214,
+      "image_area_ratio": 2.5077,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 330.57,
+        "max": 339.07,
+        "mean": 334.82,
+        "count": 2
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.0,
+        "mean": 16.0,
+        "count": 2
+      }
+    },
+    {
+      "page": 44,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 49,
+      "char_density_per_10k_pts2": 0.9777,
+      "text_area_ratio": 0.0145,
+      "image_area_ratio": 2.5316,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 213.37,
+        "max": 239.28,
+        "mean": 226.33,
+        "count": 2
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.0,
+        "mean": 16.0,
+        "count": 2
+      }
+    },
+    {
+      "page": 45,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 94,
+      "char_density_per_10k_pts2": 1.8757,
+      "text_area_ratio": 0.0257,
+      "image_area_ratio": 2.5287,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 367.39,
+        "max": 437.21,
+        "mean": 402.3,
+        "count": 2
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.0,
+        "mean": 16.0,
+        "count": 2
+      }
+    },
+    {
+      "page": 46,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 57,
+      "char_density_per_10k_pts2": 1.1374,
+      "text_area_ratio": 0.0165,
+      "image_area_ratio": 2.5119,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 254.99,
+        "max": 263.16,
+        "mean": 259.08,
+        "count": 2
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.0,
+        "mean": 16.0,
+        "count": 2
+      }
+    },
+    {
+      "page": 47,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 28,
+      "char_density_per_10k_pts2": 0.5587,
+      "text_area_ratio": 0.0078,
+      "image_area_ratio": 2.2712,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 244.81,
+        "max": 244.81,
+        "mean": 244.81,
+        "count": 1
+      },
+      "bbox_height_pts": {
+        "min": 16.0,
+        "max": 16.0,
+        "mean": 16.0,
+        "count": 1
+      }
+    },
+    {
+      "page": 48,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 0,
+      "char_density_per_10k_pts2": 0.0,
+      "text_area_ratio": 0.0,
+      "image_area_ratio": 1.0002,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": false,
+      "bbox_width_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      },
+      "bbox_height_pts": {
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "count": 0
+      }
+    },
+    {
+      "page": 49,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 101,
+      "char_density_per_10k_pts2": 2.0153,
+      "text_area_ratio": 0.095,
+      "image_area_ratio": 0.5596,
+      "whitespace_ratio": 0.3454,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 211.22,
+        "max": 397.15,
+        "mean": 304.14,
+        "count": 5
+      },
+      "bbox_height_pts": {
+        "min": 17.0,
+        "max": 57.18,
+        "mean": 32.2,
+        "count": 5
+      }
+    },
+    {
+      "page": 50,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 462,
+      "char_density_per_10k_pts2": 9.2187,
+      "text_area_ratio": 0.1291,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.8163,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.74,
+        "max": 412.03,
+        "mean": 313.9,
+        "count": 14
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 15.44,
+        "mean": 13.79,
+        "count": 14
+      }
+    },
+    {
+      "page": 51,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2256,
+      "char_density_per_10k_pts2": 45.0158,
+      "text_area_ratio": 0.3587,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.5867,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 5.37,
+        "max": 472.42,
+        "mean": 320.86,
+        "count": 49
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 11.64,
+        "mean": 11.17,
+        "count": 49
+      }
+    },
+    {
+      "page": 52,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2083,
+      "char_density_per_10k_pts2": 41.5638,
+      "text_area_ratio": 0.2266,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.7188,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 5.37,
+        "max": 445.92,
+        "mean": 284.82,
+        "count": 37
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 14.5,
+        "mean": 10.7,
+        "count": 37
+      }
+    },
+    {
+      "page": 53,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2305,
+      "char_density_per_10k_pts2": 45.9936,
+      "text_area_ratio": 0.209,
+      "image_area_ratio": 0.0615,
+      "whitespace_ratio": 0.7295,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 5.37,
+        "max": 415.87,
+        "mean": 298.99,
+        "count": 33
+      },
+      "bbox_height_pts": {
+        "min": 9.55,
+        "max": 11.5,
+        "mean": 10.66,
+        "count": 33
+      }
+    },
+    {
+      "page": 54,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2,
+      "char_density_per_10k_pts2": 0.0399,
+      "text_area_ratio": 0.0003,
+      "image_area_ratio": 0.8564,
+      "whitespace_ratio": 0.1433,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.84,
+        "max": 12.84,
+        "mean": 12.84,
+        "count": 1
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 10.0,
+        "mean": 10.0,
+        "count": 1
+      }
+    },
+    {
+      "page": 55,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2,
+      "char_density_per_10k_pts2": 0.0399,
+      "text_area_ratio": 0.0002,
+      "image_area_ratio": 1.039,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 11.85,
+        "max": 11.85,
+        "mean": 11.85,
+        "count": 1
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 10.0,
+        "mean": 10.0,
+        "count": 1
+      }
+    },
+    {
+      "page": 56,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1153,
+      "char_density_per_10k_pts2": 23.0068,
+      "text_area_ratio": 0.1806,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.7648,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 4.37,
+        "max": 452.99,
+        "mean": 301.44,
+        "count": 28
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.04,
+        "mean": 10.39,
+        "count": 28
+      }
+    },
+    {
+      "page": 57,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2037,
+      "char_density_per_10k_pts2": 40.646,
+      "text_area_ratio": 0.3237,
+      "image_area_ratio": 0.0615,
+      "whitespace_ratio": 0.6148,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 4.37,
+        "max": 443.91,
+        "mean": 315.44,
+        "count": 52
+      },
+      "bbox_height_pts": {
+        "min": 7.71,
+        "max": 12.21,
+        "mean": 9.76,
+        "count": 52
+      }
+    },
+    {
+      "page": 58,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1090,
+      "char_density_per_10k_pts2": 21.7497,
+      "text_area_ratio": 0.1751,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.7703,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 2.99,
+        "max": 474.04,
+        "mean": 314.45,
+        "count": 29
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 9.68,
+        "count": 29
+      }
+    },
+    {
+      "page": 59,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1295,
+      "char_density_per_10k_pts2": 25.8402,
+      "text_area_ratio": 0.1988,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.7466,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 454.37,
+        "mean": 321.27,
+        "count": 29
+      },
+      "bbox_height_pts": {
+        "min": 7.71,
+        "max": 12.86,
+        "mean": 10.47,
+        "count": 29
+      }
+    },
+    {
+      "page": 60,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2992,
+      "char_density_per_10k_pts2": 59.7019,
+      "text_area_ratio": 0.2658,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6796,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.08,
+        "mean": 267.89,
+        "count": 47
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 10.53,
+        "count": 47
+      }
+    },
+    {
+      "page": 61,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2919,
+      "char_density_per_10k_pts2": 58.2452,
+      "text_area_ratio": 0.258,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6874,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.06,
+        "mean": 306.17,
+        "count": 40
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 10.47,
+        "count": 40
+      }
+    },
+    {
+      "page": 62,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2785,
+      "char_density_per_10k_pts2": 55.5714,
+      "text_area_ratio": 0.245,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.7004,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.04,
+        "mean": 323.12,
+        "count": 36
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.65,
+        "mean": 10.46,
+        "count": 36
+      }
+    },
+    {
+      "page": 63,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2867,
+      "char_density_per_10k_pts2": 57.2076,
+      "text_area_ratio": 0.2821,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6634,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.05,
+        "mean": 290.68,
+        "count": 46
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 11.13,
+        "mean": 10.53,
+        "count": 46
+      }
+    },
+    {
+      "page": 64,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3592,
+      "char_density_per_10k_pts2": 71.6742,
+      "text_area_ratio": 0.3168,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6286,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.05,
+        "mean": 333.45,
+        "count": 45
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.88,
+        "mean": 10.53,
+        "count": 45
+      }
+    },
+    {
+      "page": 65,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3696,
+      "char_density_per_10k_pts2": 73.7494,
+      "text_area_ratio": 0.3265,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.619,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.06,
+        "mean": 343.36,
+        "count": 45
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.88,
+        "mean": 10.54,
+        "count": 45
+      }
+    },
+    {
+      "page": 66,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3465,
+      "char_density_per_10k_pts2": 69.14,
+      "text_area_ratio": 0.3039,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6415,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.06,
+        "mean": 312.62,
+        "count": 46
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.88,
+        "mean": 10.54,
+        "count": 46
+      }
+    },
+    {
+      "page": 67,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3278,
+      "char_density_per_10k_pts2": 65.4087,
+      "text_area_ratio": 0.279,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6664,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 462.23,
+        "mean": 328.78,
+        "count": 40
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 14.12,
+        "mean": 10.41,
+        "count": 40
+      }
+    },
+    {
+      "page": 68,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3363,
+      "char_density_per_10k_pts2": 67.1047,
+      "text_area_ratio": 0.287,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6585,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 446.5,
+        "mean": 311.92,
+        "count": 44
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 10.35,
+        "count": 44
+      }
+    },
+    {
+      "page": 69,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3677,
+      "char_density_per_10k_pts2": 73.3702,
+      "text_area_ratio": 0.3107,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6348,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.05,
+        "mean": 335.43,
+        "count": 44
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.65,
+        "mean": 10.44,
+        "count": 44
+      }
+    },
+    {
+      "page": 70,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3720,
+      "char_density_per_10k_pts2": 74.2282,
+      "text_area_ratio": 0.3254,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.62,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.05,
+        "mean": 327.95,
+        "count": 47
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 10.53,
+        "count": 47
+      }
+    },
+    {
+      "page": 71,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3324,
+      "char_density_per_10k_pts2": 66.3265,
+      "text_area_ratio": 0.297,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6484,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 450.42,
+        "mean": 316.89,
+        "count": 44
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 13.08,
+        "mean": 10.62,
+        "count": 44
+      }
+    },
+    {
+      "page": 72,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2480,
+      "char_density_per_10k_pts2": 49.4855,
+      "text_area_ratio": 0.3453,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6001,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 9.0,
+        "max": 449.56,
+        "mean": 337.04,
+        "count": 47
+      },
+      "bbox_height_pts": {
+        "min": 8.87,
+        "max": 13.82,
+        "mean": 10.82,
+        "count": 47
+      }
+    },
+    {
+      "page": 73,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 4055,
+      "char_density_per_10k_pts2": 80.9128,
+      "text_area_ratio": 0.3591,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.5864,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.05,
+        "mean": 347.05,
+        "count": 49
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 10.53,
+        "count": 49
+      }
+    },
+    {
+      "page": 74,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2961,
+      "char_density_per_10k_pts2": 59.0833,
+      "text_area_ratio": 0.2821,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6633,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.02,
+        "mean": 289.96,
+        "count": 46
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 11.16,
+        "mean": 10.55,
+        "count": 46
+      }
+    },
+    {
+      "page": 75,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2716,
+      "char_density_per_10k_pts2": 54.1946,
+      "text_area_ratio": 0.3239,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6215,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 2.7,
+        "max": 437.11,
+        "mean": 313.38,
+        "count": 49
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 10.47,
+        "count": 49
+      }
+    },
+    {
+      "page": 76,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1529,
+      "char_density_per_10k_pts2": 30.5094,
+      "text_area_ratio": 0.2546,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6908,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 9.58,
+        "max": 478.49,
+        "mean": 300.18,
+        "count": 37
+      },
+      "bbox_height_pts": {
+        "min": 9.44,
+        "max": 11.59,
+        "mean": 11.27,
+        "count": 37
+      }
+    },
+    {
+      "page": 77,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1590,
+      "char_density_per_10k_pts2": 31.7266,
+      "text_area_ratio": 0.3083,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6372,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 437.01,
+        "mean": 306.03,
+        "count": 48
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 10.36,
+        "count": 48
+      }
+    },
+    {
+      "page": 78,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1849,
+      "char_density_per_10k_pts2": 36.8946,
+      "text_area_ratio": 0.3092,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6362,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 448.2,
+        "mean": 306.82,
+        "count": 48
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.87,
+        "mean": 10.36,
+        "count": 48
+      }
+    },
+    {
+      "page": 79,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2583,
+      "char_density_per_10k_pts2": 51.5407,
+      "text_area_ratio": 0.3483,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.5972,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 450.39,
+        "mean": 341.61,
+        "count": 49
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.87,
+        "mean": 10.37,
+        "count": 49
+      }
+    },
+    {
+      "page": 80,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2572,
+      "char_density_per_10k_pts2": 51.3213,
+      "text_area_ratio": 0.3688,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.5767,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 450.39,
+        "mean": 340.96,
+        "count": 52
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.65,
+        "mean": 10.34,
+        "count": 52
+      }
+    },
+    {
+      "page": 81,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1927,
+      "char_density_per_10k_pts2": 38.451,
+      "text_area_ratio": 0.4636,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.4819,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 7.96,
+        "max": 382.03,
+        "mean": 154.2,
+        "count": 43
+      },
+      "bbox_height_pts": {
+        "min": 2.49,
+        "max": 60.55,
+        "mean": 28.96,
+        "count": 43
+      }
+    },
+    {
+      "page": 82,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 1827,
+      "char_density_per_10k_pts2": 36.4556,
+      "text_area_ratio": 0.3165,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6289,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 460.16,
+        "mean": 307.57,
+        "count": 48
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.65,
+        "mean": 10.56,
+        "count": 48
+      }
+    },
+    {
+      "page": 83,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2290,
+      "char_density_per_10k_pts2": 45.6943,
+      "text_area_ratio": 0.3259,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6196,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 460.16,
+        "mean": 347.53,
+        "count": 44
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.65,
+        "mean": 10.53,
+        "count": 44
+      }
+    },
+    {
+      "page": 84,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2366,
+      "char_density_per_10k_pts2": 47.2108,
+      "text_area_ratio": 0.3086,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6368,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 460.16,
+        "mean": 336.56,
+        "count": 45
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.77,
+        "mean": 10.15,
+        "count": 45
+      }
+    },
+    {
+      "page": 85,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2226,
+      "char_density_per_10k_pts2": 44.4172,
+      "text_area_ratio": 0.2566,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6888,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.92,
+        "max": 469.05,
+        "mean": 303.32,
+        "count": 41
+      },
+      "bbox_height_pts": {
+        "min": 8.79,
+        "max": 12.9,
+        "mean": 10.25,
+        "count": 41
+      }
+    },
+    {
+      "page": 86,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2092,
+      "char_density_per_10k_pts2": 41.7434,
+      "text_area_ratio": 0.3121,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6333,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 460.16,
+        "mean": 327.36,
+        "count": 45
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.65,
+        "mean": 10.46,
+        "count": 45
+      }
+    },
+    {
+      "page": 87,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2165,
+      "char_density_per_10k_pts2": 43.2,
+      "text_area_ratio": 0.2881,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6574,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 460.16,
+        "mean": 321.1,
+        "count": 43
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.65,
+        "mean": 10.31,
+        "count": 43
+      }
+    },
+    {
+      "page": 88,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2563,
+      "char_density_per_10k_pts2": 51.1417,
+      "text_area_ratio": 0.289,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6565,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 460.16,
+        "mean": 333.75,
+        "count": 42
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.65,
+        "mean": 10.25,
+        "count": 42
+      }
+    },
+    {
+      "page": 89,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2194,
+      "char_density_per_10k_pts2": 43.7787,
+      "text_area_ratio": 0.3129,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6326,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 460.16,
+        "mean": 330.7,
+        "count": 44
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 12.77,
+        "mean": 10.63,
+        "count": 44
+      }
+    },
+    {
+      "page": 90,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 3173,
+      "char_density_per_10k_pts2": 63.3135,
+      "text_area_ratio": 0.3117,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.6337,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 446.85,
+        "mean": 344.12,
+        "count": 43
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.58,
+        "mean": 10.45,
+        "count": 43
+      }
+    },
+    {
+      "page": 91,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2688,
+      "char_density_per_10k_pts2": 53.6359,
+      "text_area_ratio": 0.2393,
+      "image_area_ratio": 0.0546,
+      "whitespace_ratio": 0.7061,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 8.75,
+        "max": 446.86,
+        "mean": 306.13,
+        "count": 37
+      },
+      "bbox_height_pts": {
+        "min": 8.63,
+        "max": 10.65,
+        "mean": 10.52,
+        "count": 37
+      }
+    },
+    {
+      "page": 92,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 238,
+      "char_density_per_10k_pts2": 4.749,
+      "text_area_ratio": 0.14,
+      "image_area_ratio": 23.0037,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 134.24,
+        "max": 560.48,
+        "mean": 419.26,
+        "count": 7
+      },
+      "bbox_height_pts": {
+        "min": 15.43,
+        "max": 45.73,
+        "mean": 26.38,
+        "count": 7
+      }
+    },
+    {
+      "page": 93,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2,
+      "char_density_per_10k_pts2": 0.0399,
+      "text_area_ratio": 0.0002,
+      "image_area_ratio": 1.0003,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 12.19,
+        "max": 12.19,
+        "mean": 12.19,
+        "count": 1
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 10.0,
+        "mean": 10.0,
+        "count": 1
+      }
+    },
+    {
+      "page": 94,
+      "width": 595.276,
+      "height": 841.89,
+      "page_area": 501156.91163999995,
+      "char_count": 2,
+      "char_density_per_10k_pts2": 0.0399,
+      "text_area_ratio": 0.0003,
+      "image_area_ratio": 1.0013,
+      "whitespace_ratio": 0.0,
+      "has_font_metadata": true,
+      "bbox_width_pts": {
+        "min": 13.26,
+        "max": 13.26,
+        "mean": 13.26,
+        "count": 1
+      },
+      "bbox_height_pts": {
+        "min": 10.0,
+        "max": 10.0,
+        "mean": 10.0,
+        "count": 1
+      }
+    }
+  ]
+}
