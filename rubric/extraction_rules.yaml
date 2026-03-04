@@ -1,0 +1,60 @@
+# Triage and extraction thresholds. Config-over-code; no hardcoded values in agents.
+# Spec: specs/02-triage-agent-and-document-profile.md §5.1; plans/phase-1-triage.plan.md §3.1.
+
+origin_type:
+  # Minimum character count on a page to count as "digital" (has text layer).
+  min_chars_per_page_digital: 50
+  # Max fraction of page area occupied by images for "digital" (above → scan/figure-heavy signal).
+  max_image_area_ratio_digital: 0.5
+  # Mixed: fraction of pages that must be "digital" to avoid scanned_image; range for mixed.
+  # If fraction of pages with chars >= min is in (fraction_pages_digital_min, fraction_pages_digital_max) → mixed.
+  fraction_pages_digital_min: 0.1
+  fraction_pages_digital_max: 0.9
+
+layout_complexity:
+  # Placeholders for P1-T004.
+  table_area_ratio_heavy: 0.25
+  table_regions_per_page_heavy: 2
+  figure_area_ratio_heavy: 0.4
+
+domain_hint:
+  # Score = (hits / total_keywords_seen) or presence-based; assign domain if score >= confidence_cutoff else general.
+  confidence_cutoff: 0.3
+  # Per-domain keyword sets (lowercase). Spec §4.4: financial, legal, technical, medical.
+  keywords:
+    financial:
+      - revenue
+      - balance sheet
+      - fiscal
+      - audit
+      - expenditure
+      - profit
+      - assets
+      - liabilities
+    legal:
+      - whereas
+      - hereby
+      - clause
+      - agreement
+      - court
+      - plaintiff
+      - defendant
+      - pursuant
+    technical:
+      - implementation
+      - assessment
+      - methodology
+      - findings
+      - specification
+      - architecture
+      - deployment
+    medical:
+      - patient
+      - diagnosis
+      - treatment
+      - clinical
+      - medication
+      - therapy
+      - symptoms
+  # Max pages to sample for text (cheap parsing).
+  sample_max_pages: 5

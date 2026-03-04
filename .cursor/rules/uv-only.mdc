@@ -1,0 +1,12 @@
+---
+description: Use uv for Python package management; never use pip
+alwaysApply: true
+---
+
+# Python package management: uv only
+
+- **Always use uv**, never pip.
+- Install/sync: `uv sync` (not `pip install -e .` or `pip install`).
+- Add dependencies: `uv add <pkg>` / `uv add --dev <pkg>` (not `pip install <pkg>`).
+- Run commands: `uv run pytest`, `uv run python -m src.main`, etc. (not `python -m pytest` with a system/python -m pip env).
+- In docs, examples, and suggested commands, recommend uv only.
