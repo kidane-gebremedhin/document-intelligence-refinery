@@ -34,6 +34,12 @@ from .ldu import (
     canonicalize_raw_payload,
     compute_content_hash,
 )
+from .provenance import (
+    ProvenanceChain,
+    ProvenanceItem,
+    attach_provenance_to_answer,
+    build_provenance_chain,
+)
 
 __all__ = [
     "BoundingBox",
@@ -51,6 +57,8 @@ __all__ = [
     "OriginType",
     "PageRef",
     "PageSpan",
+    "ProvenanceChain",
+    "ProvenanceItem",
     "ReadingOrderEntry",
     "RefType",
     "Table",
@@ -61,4 +69,6 @@ __all__ = [
     "canonicalize_text",
     "canonicalize_raw_payload",
     "compute_content_hash",
+    "attach_provenance_to_answer",
+    "build_provenance_chain",
 ]
