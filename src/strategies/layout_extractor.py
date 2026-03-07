@@ -1,5 +1,6 @@
 # LayoutExtractor — Strategy B: layout-aware extraction (tables, figures, reading order). Spec 03 §5.
 # backend: mineru or docling only (no pdfplumber).
+# Tables: use Docling native table.export_to_dataframe() so LDUs get structured header/rows JSON.
 
 from __future__ import annotations
 
@@ -11,6 +12,11 @@ try:
     from docling.document_converter import DocumentConverter
 except ImportError:
     DocumentConverter = None  # type: ignore[misc, assignment]
+
+try:
+    import pandas as pd
+except ImportError:
+    pd = None  # type: ignore[assignment]
 
 # MinerU: optional; use backend "mineru" when installed (pip install mineru).
 _mineru_available = False
@@ -39,6 +45,117 @@ from src.strategies.config import load_layout_config
 logger = logging.getLogger(__name__)
 
 
+# Minimum width/height (points) so BoundingBox always satisfies x1 > x0, y1 > y0
+_BBOX_MIN_EXTENT = 1.0
+
+
+def _bbox_from_topleft(
+    x0: float, y0_top: float, x1: float, y1_bottom: float, page_height: float = 842.0
+) -> BoundingBox:
+    """
+    Convert top-left origin coords (y down) to our bottom-left BoundingBox (y up).
+    Normalize so x0 < x1 and y0 < y1; enforce minimum extent to satisfy strict validators.
+    """
+    our_y0 = page_height - float(y1_bottom)
+    our_y1 = page_height - float(y0_top)
+    if our_y0 > our_y1:
+        our_y0, our_y1 = our_y1, our_y0
+    if x0 > x1:
+        x0, x1 = x1, x0
+    # Strict validators require x1 > x0 and y1 > y0; ensure minimum extent
+    if x1 <= x0:
+        x1 = x0 + _BBOX_MIN_EXTENT
+    if our_y1 <= our_y0:
+        our_y1 = our_y0 + _BBOX_MIN_EXTENT
+    return BoundingBox(x0=float(x0), y0=our_y0, x1=float(x1), y1=our_y1)
+
+
+def _get_docling_bbox(prov_item: Any, page_height: float = 842.0) -> BoundingBox:
+    """Extract (x0, y0_top, x1, y1_bottom) from Docling prov item and return our BoundingBox."""
+    bbox_dict: dict[str, float] = {}
+    rect = getattr(prov_item, "bbox", None) or getattr(prov_item, "rect", None)
+    if rect is not None:
+        bbox_dict = {
+            "l": getattr(rect, "l", 0),
+            "t": getattr(rect, "t", 0),
+            "r": getattr(rect, "r", 100),
+            "b": getattr(rect, "b", 50),
+        }
+        # Docling BoundingRectangle uses r_x0, r_y0, r_x1, r_y1
+        if hasattr(rect, "r_x0"):
+            bbox_dict = {
+                "l": getattr(rect, "r_x0", 0),
+                "t": getattr(rect, "r_y0", 0),
+                "r": getattr(rect, "r_x1", 100),
+                "b": getattr(rect, "r_y1", 50),
+            }
+    elif isinstance(prov_item, dict):
+        bbox_dict = prov_item.get("bbox", prov_item.get("rect", {})) or {}
+    x0 = float(bbox_dict.get("l", bbox_dict.get("x0", 0)))
+    y0 = float(bbox_dict.get("t", bbox_dict.get("y0", 0)))
+    x1 = float(bbox_dict.get("r", bbox_dict.get("x1", 100)))
+    y1 = float(bbox_dict.get("b", bbox_dict.get("y1", 50)))
+    return _bbox_from_topleft(x0, y0, x1, y1, page_height)
+
+
+def _docling_table_to_our_table(
+    docling_table: Any,
+    doc: Any,
+    document_id: str,
+    index: int,
+    page_height: float = 842.0,
+) -> Table:
+    """
+    Convert a Docling table object to our Table model with structured header and body_rows.
+    Uses table.export_to_dataframe(doc=...) when available so LDUs get real headers and values.
+    """
+    page_no = 1
+    bbox = _bbox_from_topleft(0, 0, 100, 50, page_height)
+    prov = getattr(docling_table, "prov", []) or []
+    if prov:
+        p0 = prov[0]
+        page_no = int(getattr(p0, "page_no", getattr(p0, "page", 1)))
+        bbox = _get_docling_bbox(p0, page_height)
+    tid = f"table_{page_no}_{index}"
+
+    header_cells: list[TableCell] = []
+    body_rows: list[TableRow] = []
+    if pd is not None and hasattr(docling_table, "export_to_dataframe"):
+        try:
+            df = docling_table.export_to_dataframe(doc=doc)
+            if df is not None and not df.empty:
+                cols = list(df.columns)
+                header_cells = [
+                    TableCell(row_index=0, col_index=j, text=str(cols[j]) if j < len(cols) else "")
+                    for j in range(len(cols))
+                ]
+                for i in range(len(df)):
+                    row_vals = df.iloc[i].tolist()
+                    cells = [
+                        TableCell(
+                            row_index=i + 1,
+                            col_index=j,
+                            text=str(row_vals[j]) if j < len(row_vals) else "",
+                        )
+                        for j in range(len(cols))
+                    ]
+                    body_rows.append(TableRow(index=i + 1, cells=cells))
+        except Exception as e:
+            logger.debug("Docling export_to_dataframe failed for table %s: %s", tid, e)
+
+    if not header_cells:
+        header_cells = [TableCell(row_index=0, col_index=0, text="")]
+    header = TableHeader(rows=[TableRow(index=0, cells=header_cells)])
+    return Table(
+        id=tid,
+        document_id=document_id,
+        page_number=page_no,
+        bbox=bbox,
+        header=header,
+        body_rows=body_rows,
+    )
+
+
 def _extract_layout_docling(
     doc_path: Path,
     document_id: str,
@@ -53,10 +170,10 @@ def _extract_layout_docling(
         doc = result.document
         if doc is None:
             return None
-        # DoclingDocument has .texts, .tables, .pictures; use export_to_dict or iterate
+        # Prefer native doc.tables so we can call export_to_dataframe for structured header/rows
         data = doc.export_to_dict() if hasattr(doc, "export_to_dict") else {}
         texts = data.get("texts", []) or getattr(doc, "texts", [])
-        tables_data = data.get("tables", []) or getattr(doc, "tables", [])
+        docling_tables = getattr(doc, "tables", []) or data.get("tables", [])
         pictures = data.get("pictures", []) or getattr(doc, "pictures", [])
         text_blocks = []
         tables = []
@@ -94,33 +211,32 @@ def _extract_layout_docling(
                 else:
                     x0, y0, x1, y1 = 0, 0, 100, 20
             bid = f"block_{page_no}_{i}"
-            # Docling may use top-left coords; our BoundingBox is bottom-left. Assume page height 842 for now.
-            page_height = 842.0
-            bbox = BoundingBox(x0=x0, y0=page_height - y1, x1=x1, y1=page_height - y0)
+            bbox = _bbox_from_topleft(x0, y0, x1, y1)
             text_blocks.append(
                 TextBlock(id=bid, document_id=document_id, page_number=page_no, bbox=bbox, text=text, reading_order_index=order)
             )
             reading_order_entries.append((order, 0, 0, RefType.TEXT_BLOCK, bid))
             order += 1
-        for i, tbl in enumerate(tables_data):
-            if isinstance(tbl, dict):
-                page_no = int(tbl.get("page_no", tbl.get("page", 1)))
-                bbox_dict = tbl.get("bbox", tbl.get("rect", {})) or {}
+        for i, tbl in enumerate(docling_tables):
+            if hasattr(tbl, "export_to_dataframe"):
+                our_table = _docling_table_to_our_table(tbl, doc, document_id, i)
             else:
-                page_no = getattr(tbl, "page_no", 1)
-                bbox_dict = {}
-            x0 = float(bbox_dict.get("l", 0))
-            y0 = float(bbox_dict.get("t", 0))
-            x1 = float(bbox_dict.get("r", 100))
-            y1 = float(bbox_dict.get("b", 50))
-            page_height = 842.0
-            bbox = BoundingBox(x0=x0, y0=page_height - y1, x1=x1, y1=page_height - y0)
-            tid = f"table_{page_no}_{i}"
-            header = TableHeader(rows=[TableRow(index=0, cells=[TableCell(row_index=0, col_index=0, text="")])])
-            tables.append(
-                Table(id=tid, document_id=document_id, page_number=page_no, bbox=bbox, header=header, body_rows=[])
-            )
-            reading_order_entries.append((order, 0, 0, RefType.TABLE, tid))
+                if isinstance(tbl, dict):
+                    page_no = int(tbl.get("page_no", tbl.get("page", 1)))
+                    bbox_dict = tbl.get("bbox", tbl.get("rect", {})) or {}
+                else:
+                    page_no = getattr(tbl, "page_no", 1)
+                    bbox_dict = {}
+                x0 = float(bbox_dict.get("l", 0))
+                y0 = float(bbox_dict.get("t", 0))
+                x1 = float(bbox_dict.get("r", 100))
+                y1 = float(bbox_dict.get("b", 50))
+                bbox = _bbox_from_topleft(x0, y0, x1, y1)
+                tid = f"table_{page_no}_{i}"
+                header = TableHeader(rows=[TableRow(index=0, cells=[TableCell(row_index=0, col_index=0, text="")])])
+                our_table = Table(id=tid, document_id=document_id, page_number=page_no, bbox=bbox, header=header, body_rows=[])
+            tables.append(our_table)
+            reading_order_entries.append((order, 0, 0, RefType.TABLE, our_table.id))
             order += 1
         for i, pic in enumerate(pictures):
             if isinstance(pic, dict):
@@ -133,8 +249,7 @@ def _extract_layout_docling(
             y0 = float(bbox_dict.get("t", 0))
             x1 = float(bbox_dict.get("r", 100))
             y1 = float(bbox_dict.get("b", 80))
-            page_height = 842.0
-            bbox = BoundingBox(x0=x0, y0=page_height - y1, x1=x1, y1=page_height - y0)
+            bbox = _bbox_from_topleft(x0, y0, x1, y1)
             fid = f"figure_{page_no}_{i}"
             figures.append(Figure(id=fid, document_id=document_id, page_number=page_no, bbox=bbox, caption=None))
             reading_order_entries.append((order, 0, 0, RefType.FIGURE, fid))

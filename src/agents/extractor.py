@@ -69,7 +69,7 @@ def _load_router_config(config_path: Path | None = None) -> dict[str, Any]:
 def _initial_strategy_chain(profile: DocumentProfile) -> list[str]:
     """
     Decision tree: which strategies to try, in order (spec 03 §7.1; plan §4.2).
-    - scanned_image or needs_vision_model -> [C] only.
+    - scanned_image or needs_vision_model -> [C] then [B] as fallback (layout works when vision lacks pymupdf/API).
     - native_digital + single_column -> [A, B, C].
     - else (multi_column, table_heavy, etc.) -> [B, C].
     """
@@ -78,7 +78,7 @@ def _initial_strategy_chain(profile: DocumentProfile) -> list[str]:
     cost = profile.estimated_extraction_cost
 
     if origin == OriginType.SCANNED_IMAGE or cost == EstimatedExtractionCost.NEEDS_VISION_MODEL:
-        return ["vision"]
+        return ["vision", "layout"]
     if origin == OriginType.NATIVE_DIGITAL and layout == LayoutComplexity.SINGLE_COLUMN:
         return ["fast_text", "layout", "vision"]
     return ["layout", "vision"]

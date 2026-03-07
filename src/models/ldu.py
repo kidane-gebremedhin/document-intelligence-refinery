@@ -20,11 +20,14 @@ from .common import BoundingBox, PageRef
 
 class LDUContentType(str, Enum):
     PARAGRAPH = "paragraph"
+    HEADING = "heading"
     SECTION_INTRO = "section_intro"
+    SECTION_HEADER = "section_header"
     TABLE = "table"
     TABLE_SECTION = "table_section"
     FIGURE = "figure"
     LIST = "list"
+    CAPTION = "caption"  # Standalone caption is invalid; must be merged into figure/table (spec 04 §5 R2)
     FOOTNOTE = "footnote"
     OTHER = "other"
 

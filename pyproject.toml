@@ -14,6 +14,11 @@ dependencies = [
     "pypdf>=3.0.0",
     "pyyaml>=6.0",
     "docling>=2.76.0",
+    "onnxruntime>=1.24.2",
+    "chromadb>=1.5.2",
+    "langgraph>=1.0.10",
+    "pymupdf>=1.27.1",
+    "openai>=2.26.0",
 ]
 
 [project.optional-dependencies]
@@ -22,6 +27,16 @@ dev = [
 ]
 docling = [
     "docling",
+]
+# RAG-like semantic search: use sentence-transformers for LDU embeddings (ingest + query).
+# Install with: uv sync --extra semantic
+semantic = [
+    "sentence-transformers>=3.0.0",
+]
+# PageIndex LLM summarization: OpenAI for section summaries (2-3 sentences each).
+# Install with: uv sync --extra llm
+llm = [
+    "openai>=1.0.0",
 ]
 
 [tool.hatch.build.targets.wheel]

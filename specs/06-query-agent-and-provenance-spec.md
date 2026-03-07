@@ -14,7 +14,7 @@ Stage 5 is the **user-facing surface** of the Document Intelligence Refinery. It
 - **Navigation** — Locating information by structure (PageIndex traversal) rather than by brute-force search.
 - **Verification** — Audit mode: given a claim, the system confirms it with a citation or flags it as unverifiable.
 
-The Refinery Guide states that the Query Interface Agent is "the front-end of the refinery"—a LangGraph agent with three tools. Every answer must include provenance (document name, page number, bounding box). This stage makes the upstream pipeline (triage, extraction, chunking, indexing) **useful** and **auditable**. Without it, the refinery produces data but no way to query or trust it.
+The Refinery Guide states that the Query Interface Agent is "the front-end of the refinery"—a **LangGraph agent with exactly three tools**. Every answer must include a **ProvenanceChain** with citations carrying document name, page number, bounding box, and content_hash. This stage makes the upstream pipeline (triage, extraction, chunking, indexing) **useful** and **auditable**. Without it, the refinery produces data but no way to query or trust it. **Audit mode** ensures claim verification yields either citations or an explicit "unverifiable" flag—never fake verification.
 
 ---
 
@@ -47,9 +47,17 @@ The Query Interface Agent **does not ingest raw documents**. It operates exclusi
 
 ---
 
-## 3. Tools & Capabilities
+## 3. LangGraph Agent Definition & Tools
 
-The Query Interface Agent is implemented as a **LangGraph agent** with three tools. The agent decides which tool(s) to call based on the user query. Tool semantics are defined here; implementation details (LangGraph node/edge structure) are out of scope.
+The Query Interface Agent is implemented as a **LangGraph agent** with **exactly three tools**. No other tools are part of the Refinery query interface; the agent chooses which of these three to call (and in what order) based on the user query. Tool semantics are defined below; graph structure (nodes, edges, conditional routing) is implementation-defined, but the **tool set is fixed**.
+
+| # | Tool | Purpose |
+|---|------|---------|
+| 1 | **pageindex_navigate** | Traverse PageIndex by topic; return top-N sections before vector search. |
+| 2 | **semantic_search** | Retrieve LDUs by semantic similarity (RAG retrieval). |
+| 3 | **structured_query** | Execute query over FactTable (SQLite) for numerical/factual lookups. |
+
+The agent may call one or more tools per query (e.g. pageindex_navigate then semantic_search). It must **not** expose or use any tool other than these three for answering user questions or audit claims.
 
 ### 3.1 pageindex_navigate
 
@@ -105,9 +113,9 @@ The Query Interface Agent is implemented as a **LangGraph agent** with three too
 - Queries that ask for specific numbers: "What was revenue in Q3 2024?", "What is the total tax expenditure for 2020?", "List all capital expenditure figures."
 - Domain_hint=financial or table-heavy documents. If FactTable is empty, the tool returns no results and the agent falls back to `semantic_search`.
 
-### 3.4 Tool orchestration
+### 3.4 Tool orchestration (within the three tools)
 
-The agent orchestrates tools based on query intent:
+The agent orchestrates the **same three tools** based on query intent:
 - **Navigational** ("Where is X?") → `pageindex_navigate` possibly followed by `semantic_search` if the user needs the actual content.
 - **Numerical / factual** ("What was Y in Z?") → `structured_query` first; if empty, `semantic_search`.
 - **Synthesis / narrative** ("Summarize X", "What does the report say about Y?") → `pageindex_navigate` + `semantic_search`, or `semantic_search` alone for broad queries.
@@ -117,33 +125,37 @@ The agent orchestrates tools based on query intent:
 
 ## 4. ProvenanceChain Schema
 
-Every answer from the Query Interface Agent must include a **ProvenanceChain**: a list of source citations that allow the user to verify the answer against the original document. The Refinery Guide requires: "Every answer must include provenance: the document name, page number, and bounding box of the source." The constitution states: spatial provenance is non-negotiable.
+**Every answer** from the Query Interface Agent must include a **ProvenanceChain**: a list of source citations so the user can verify the answer against the original document. The Refinery Guide requires: "Every answer must include provenance: the document name, page number, and bounding box of the source." The constitution states: spatial provenance is non-negotiable. Each citation must carry at least **document_name**, **page_number**, **bounding_box**, and **content_hash** (for LDU-backed sources).
 
 ### 4.1 ProvenanceChain (top-level)
 
 | Field | Type | Description |
 |-------|------|-------------|
-| **citations** | list of Citation | One citation per distinct source (LDU or fact row). Ordered by relevance or appearance in the answer. |
-| **verification_status** | enum (optional) | `verified` \| `partial` \| `unverifiable` — See §8. |
+| **citations** | list of Citation | One citation per distinct source (LDU or fact row). Ordered by relevance or appearance in the answer. For audit mode: empty when claim is unverifiable. |
+| **verification_status** | enum (optional) | `verified` \| `partial` \| `unverifiable`. Used in audit mode: verified only when citations exist; unverifiable when no supporting source found. See §7, §8. |
 
-### 4.2 Citation (single source)
+### 4.2 Citation (single source) — required fields for every answer
+
+Every citation in a ProvenanceChain must include the following so that answers are auditable:
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | **document_name** | string | Yes | Human-readable document identifier (e.g., filename, report title). Resolved from document_id. |
 | **document_id** | string | Yes | Stable document identifier for programmatic reference. |
 | **page_number** | integer | Yes | 1-based page number where the cited content appears. |
-| **bounding_box** | object | Yes | Spatial coordinates: `{x0, top, x1, bottom}` or equivalent. Enables "click to locate" in a PDF viewer. |
-| **content_hash** | string | Yes | Stable hash of the source content (from LDU). Enables verification that the source has not changed. |
-| **snippet** | string (optional) | No | Short excerpt of the cited content (e.g., first 100–200 chars). Helps the user quickly identify the source without opening the document. |
+| **bounding_box** | object | Yes* | Spatial coordinates: `{x0, top, x1, bottom}` or equivalent. Enables "click to locate" in a PDF viewer. *For LDU-backed citations, required; for FactTable-only citations, may be null if not stored in source_reference. |
+| **content_hash** | string | Yes* | Stable hash of the source content (from LDU). Required for LDU-backed citations; for FactTable, optional if source_reference does not resolve to an LDU. |
+| **snippet** | string (optional) | No | Short excerpt of the cited content (e.g., first 100–200 chars). |
 | **ldu_id** | string (optional) | No | LDU identifier for traceability. |
-| **chunk_type** | enum (optional) | No | `paragraph` \| `table` \| `figure` \| etc. — Useful for "this came from a table" context. |
+| **chunk_type** | enum (optional) | No | `paragraph` \| `table` \| `figure` \| etc. |
+
+**Minimum required per citation (LDU-backed):** `document_name`, `document_id`, `page_number`, `bounding_box`, `content_hash`. For FactTable-only: at least `document_name`, `document_id`, `page_number`; `bounding_box` and `content_hash` when resolvable from source_reference.
 
 ### 4.3 Invariants
 
-- Every citation must have `document_name`, `document_id`, `page_number`, `bounding_box`, `content_hash`. No citation with missing required fields may be emitted.
-- For facts from FactTable, `source_reference` must be resolvable to at least page_number and preferably bbox and content_hash. If FactTable lacks provenance, the citation should still include document_name and page_number; bounding_box may be null if not stored.
-- The ProvenanceChain must be **actionable**: a user with the original PDF can open the cited page and locate the content using the bounding box.
+- **Every answer** must include a ProvenanceChain. When the agent has no sources (e.g. no retrieval results), the chain may have empty citations and a clear "no sources" or unverifiable signal—but the chain is still present.
+- Every citation must have the required fields above. No citation with missing required fields (for its source type) may be emitted.
+- The ProvenanceChain must be **actionable**: a user with the original PDF can open the cited page and locate the content using the bounding box (when bbox is present).
 
 ---
 
@@ -228,7 +240,12 @@ The FactTable is a SQLite-backed store of structured key-value facts extracted f
 
 ## 7. Audit Mode Behavior
 
-**Audit mode** answers: "Does the document support this claim?" Given a user-supplied claim (e.g., "The report states revenue was $4.2B in Q3"), the system either **confirms with citation** or **flags as unverifiable**.
+**Audit mode** answers: "Does the document support this claim?" Given a user-supplied claim, the system performs **claim verification**. The outcome is **exactly one** of:
+
+1. **Verified** — At least one supporting source was found. Response includes a ProvenanceChain with one or more citations (document_name, page_number, bbox, content_hash). `verification_status` = `verified` (or equivalent).
+2. **Unverifiable** — No supporting source was found. Response includes an explicit **"unverifiable"** flag and **no citations** (or an empty ProvenanceChain). No page number, bbox, or document_name may be invented. `verification_status` = `unverifiable`.
+
+**Audit mode must never fake verification.** The system must never return a citation when no actual source supports the claim, and must never mark a claim as verified without at least one real citation. When in doubt or when no evidence is found, the only correct outcome is **unverifiable** with a clear message.
 
 ### 7.1 Input
 
@@ -241,15 +258,15 @@ The FactTable is a SQLite-backed store of structured key-value facts extracted f
 2. **Query FactTable** — If the claim is numerical, run `structured_query` for matching facts. Compare returned values to the claim.
 3. **Query semantic search** — Run `semantic_search` with the claim (or a reformulation) to find LDUs that might support or contradict it.
 4. **Evaluate** — Determine if any retrieved content supports the claim. Criteria: value matches (or is consistent), metric matches, period matches. Use LLM or rules for semantic match (e.g., "approximately $4.2 billion" supports "revenue was $4.2B").
-5. **Output:**
-   - **Verified:** Return confirmation + ProvenanceChain with the supporting citation(s). Example: "Yes. The report states revenue of $4.2B in Q3 2024. See [Citation: Document X, p. 42, bbox (...)]."
-   - **Unverifiable:** Return explicit signal. Example: "The claim could not be verified. No supporting source was found in the corpus." Do not invent a citation. Do not say "the document states X" when it does not.
+5. **Output (strict):**
+   - **Verified:** Return confirmation + ProvenanceChain with **at least one** supporting citation (document_name, page_number, bounding_box, content_hash). Set verification_status to `verified`. Citations must come only from the retrieved LDUs or FactTable rows that were evaluated as supporting.
+   - **Unverifiable:** Return explicit "unverifiable" signal. ProvenanceChain has **no citations** (empty list). Response text: e.g. "The claim could not be verified. No supporting source was found in the corpus." Do **not** invent a citation, page number, or bbox. Set verification_status to `unverifiable`.
 
-### 7.3 Invariants
+### 7.3 Invariants (Audit Mode)
 
-- Audit mode must **never** return a citation for a claim it cannot support. If no source supports the claim, the response must be "unverifiable."
-- Audit mode must **never** hallucinate a page number or bbox. Citations are only from actual retrieved LDUs or FactTable rows.
-- The response must clearly distinguish: verified (with citation) vs. unverifiable (no citation).
+- **Either citations or unverifiable** — Every claim verification result is either (a) verified with one or more citations, or (b) unverifiable with no citations and an explicit unverifiable flag. There is no third outcome (e.g. "verified" with no citation is forbidden).
+- **Never fake verification** — The system must never return a citation for a claim it cannot support. It must never hallucinate page number, bbox, document_name, or content_hash. Citations are only from actual retrieved LDUs or FactTable rows that were evaluated as supporting the claim.
+- **Clear distinction** — The response must clearly distinguish verified (with citation(s)) vs. unverifiable (no citation, explicit flag).
 
 ---
 

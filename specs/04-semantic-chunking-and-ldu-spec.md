@@ -58,7 +58,7 @@ A **Logical Document Unit (LDU)** is a minimal, semantically coherent unit of do
 
 1. **Respects structural boundaries** — Never splits a table header from its cells, a figure from its caption, a numbered list mid-list, or a legal clause from its antecedent.
 2. **Is self-contained for retrieval** — An LDU can be returned by vector search and consumed by an LLM with sufficient context to answer a query about that unit without needing adjacent LDUs.
-3. **Carries full provenance** — Every LDU has `page_refs` and `bounding_box` (or equivalent spatial reference) so the source location in the document can be cited.
+3. **Carries full provenance** — Every LDU has `page_refs` and `bounding_boxes` (or equivalent spatial reference) so the source location in the document can be cited.
 4. **May reference other LDUs** — Cross-references (e.g., "see Table 3") are resolved and stored as `relationships`, linking LDUs semantically.
 5. **Is bounded by token limits** — If a structural unit (e.g., a very long paragraph or list) exceeds `max_tokens`, it may be split only at allowed boundaries (e.g., list item boundaries), never mid-sentence or mid-cell.
 
@@ -70,7 +70,9 @@ The output of the Chunking Engine is a **list of LDUs** in reading order. This l
 
 Each LDU is a typed record with the following fields. Implementations use Pydantic or equivalent; this spec defines the logical schema.
 
-### 4.1 Core fields
+### 4.1 Core fields (required for Phase 3)
+
+Every LDU **must** include the following. These are the canonical set for downstream stages (PageIndex, vector store, provenance).
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
@@ -78,11 +80,13 @@ Each LDU is a typed record with the following fields. Implementations use Pydant
 | **content** | string | Yes | The text (or structured text representation) of the chunk. For tables: serialized table (e.g. markdown, JSON, or tab-separated) including header row and cells. For figures: alt text or caption; the figure itself is referenced, not embedded. |
 | **chunk_type** | enum | Yes | `paragraph` \| `heading` \| `table` \| `figure` \| `list` \| `section_header` \| `caption` \| `other` — Semantic type of the content. |
 | **page_refs** | list of integer | Yes | 1-based page numbers where this LDU's content originates. Non-empty. For content spanning pages, list all pages (e.g. `[5, 6]`). |
-| **bounding_box** | object | Yes | Spatial provenance. Format: `{x0, top, x1, bottom}` or equivalent (points or normalized [0,1]). For multi-page LDUs, may be a list of bboxes per page or the union. Must enable "Where in the document is this?" |
+| **bounding_boxes** | list of object | Yes | Spatial provenance per page. Each element: `{x0, y0, x1, y1}` or equivalent (PDF points or normalized [0,1]). Single-page LDUs have one bbox; multi-page LDUs have one bbox per page in `page_refs` order. Enables "Where in the document is this?" |
 | **parent_section** | string (optional) | No | Section header (or section ID) that contains this LDU. Enables section-scoped retrieval and PageIndex alignment. |
 | **token_count** | integer | Yes | Approximate token count of `content` (e.g. tiktoken, or chars/4 heuristic). Used for retrieval filtering and overflow handling. |
-| **content_hash** | string | Yes | Stable hash of the content (see §7). Enables provenance verification when layout shifts. |
+| **content_hash** | string | Yes | Stable hash of canonicalized content (see §7). Enables provenance verification when layout shifts. |
 | **relationships** | list of Relationship | No | References to other LDUs (e.g., "see Table 3" → link to table LDU). See §4.2. |
+
+**Note:** Implementations may expose a single `bounding_box` when the LDU spans one page; the logical schema is `bounding_boxes` (list) for consistency with multi-page content.
 
 ### 4.2 Relationship (cross-references)
 
@@ -111,7 +115,7 @@ Cross-references are resolved when the Chunking Engine detects patterns like "se
 
 ## 5. Chunking Rules ("Chunking Constitution")
 
-The Chunking Engine enforces **five mandatory rules**. These are the "Constitution" for data quality. No LDU may violate any rule; the ChunkValidator (see §6) must reject output that breaks them.
+The Chunking Engine enforces **five mandatory rules**. These are the "Constitution" for data quality. No LDU may violate any rule; the **ChunkValidator** (see §6) implements these rules as **hard constraints** and must reject any output that breaks them. Each rule is defined as a **testable invariant** with specified validation error behavior.
 
 ### Rule 1: Table header + cells are atomic
 
@@ -161,31 +165,50 @@ The Chunking Engine enforces **five mandatory rules**. These are the "Constituti
 
 **Rationale:** "What does Table 3 say?"—if the question originates from a paragraph that references Table 3, the relationship allows the retrieval layer to fetch both the referring context and the table. Semantic connections are preserved for multi-hop reasoning.
 
----
+### 5.6 Testable invariants (summary)
 
-## 6. ChunkValidator Requirements
+The five rules map to the following **testable invariants**. ChunkValidator must evaluate these exactly; tests can assert failure when given LDUs that violate them.
 
-Before emitting LDUs, the Chunking Engine must run a **ChunkValidator** that verifies the following conditions. If any check fails, the validator must **reject** the offending LDU(s) and either: (a) correct the chunking (retry with adjusted logic), or (b) emit an error and not pass invalid output downstream. The pipeline must not produce LDUs that violate the constitution.
+| Rule | Testable invariant | Validation error behavior |
+|------|--------------------|---------------------------|
+| **R1** Table atomic | For every table in the source document: no LDU contains only the table's data rows without its header row; if multiple LDUs represent the same table (row-split), each has a copy of the header row. | **Reject** the entire candidate list (or the subset of LDUs that form the broken table). Return validation error with code `TABLE_HEADER_CELLS_SPLIT`; do not pass output downstream. Option: retry chunking with corrected logic. |
+| **R2** Figure + caption | No LDU of type `figure` is missing caption when the ExtractedDocument figure had a caption; no standalone LDU of type `caption` whose parent figure (by bbox/page) has its own figure LDU. | **Reject** offending LDUs. Return `FIGURE_CAPTION_NOT_UNIFIED`; merge figure and caption into one LDU and retry, or fail and do not pass downstream. |
+| **R3** List boundaries | No LDU of type `list` contains a partial list item (e.g., mid-sentence split, or "item 3.5" without full item 3). Consecutive list LDUs from the same list must split at item boundaries. | **Reject** offending list LDUs. Return `LIST_MID_ITEM_SPLIT`; re-chunk at list item boundaries and retry, or fail and do not pass downstream. |
+| **R4** Section metadata | Every LDU (except optional standalone section-header LDUs) has `parent_section` set when a section header exists in reading order before it. | **Warn** or **reject** depending on config. If hard constraint: return `PARENT_SECTION_MISSING` for LDUs that should have parent_section; do not pass until fixed. |
+| **R5** Cross-references | Best-effort only; no hard invariant. Unresolved references may be omitted or stored with null target. | No rejection; optional log for unresolved references. |
 
-### 6.1 Mandatory checks
+### 6. ChunkValidator Requirements (hard constraints)
 
-| Check | Condition | Failure action |
-|-------|-----------|----------------|
-| **No table split across LDUs** | No table's header row appears in one LDU and its data cells in another without the header. If a table is split into multiple LDUs (e.g., by row), each LDU must contain the header row. | Reject; fix chunking logic. |
-| **Every LDU has page_refs** | `page_refs` is non-empty for every LDU. | Reject LDU; log. |
-| **Every LDU has bounding_box** | `bounding_box` is non-null and valid (covers the content's spatial extent). | Reject LDU; log. |
-| **Figure + caption unity** | No figure LDU exists without its caption when caption was present in ExtractedDocument; no standalone caption LDU for a figure that has a caption. | Reject; merge figure and caption. |
-| **List integrity** | No list LDU is split mid-item (e.g., item 3.5 or a partial sentence). | Reject; re-chunk at list boundaries. |
-| **content_hash present** | Every LDU has a non-empty `content_hash`. | Reject LDU; log. |
-| **token_count within limits** | No LDU exceeds `max_tokens` unless it is a single structural unit (e.g., one long paragraph) that cannot be split further without violating rules. Oversized single units are allowed but should be logged. | Log; optionally flag for review. |
+The **ChunkValidator** implements the five chunking rules as **hard constraints**. It runs before any list of LDUs is emitted from the Chunking Engine. If any check fails, the validator must **reject** the offending LDU(s) and either: (a) correct the chunking (retry with adjusted logic), or (b) return a validation result with errors and **not** pass invalid output downstream. The pipeline must not produce LDUs that violate the constitution.
 
-### 6.2 Invariants (post-conditions)
+### 6.1 Mandatory checks (mapping to the 5 rules)
 
-After validation, the following must hold for the emitted `List[LDU]`:
+| Check | Condition (testable) | Failure action |
+|-------|------------------------|----------------|
+| **R1: No table split across LDUs** | No table's header row appears in one LDU and its data cells in another without the header. If a table is split into multiple LDUs (e.g., by row), each LDU must contain the header row. | Reject; return error code `TABLE_HEADER_CELLS_SPLIT`; fix chunking or do not pass downstream. |
+| **R2: Figure + caption unity** | No figure LDU exists without its caption when caption was present in ExtractedDocument; no standalone caption LDU for a figure that has a caption. | Reject; return `FIGURE_CAPTION_NOT_UNIFIED`; merge and retry or fail. |
+| **R3: List integrity** | No list LDU is split mid-item (e.g., item 3.5 or a partial sentence). | Reject; return `LIST_MID_ITEM_SPLIT`; re-chunk at list boundaries or fail. |
+| **R4: Section headers as parent metadata** | When section headers exist, every LDU has `parent_section` set until the next header (configurable: warn vs. reject). | Reject if configured as hard constraint; return `PARENT_SECTION_MISSING`. |
+| **R5** | Best-effort; no validator rejection. | Log only. |
+| **Every LDU has page_refs** | `page_refs` is non-empty for every LDU. | Reject LDU; return `PAGE_REFS_EMPTY`; log. |
+| **Every LDU has bounding_boxes** | `bounding_boxes` is non-null, non-empty, and valid (one bbox per page in page_refs, or single bbox for single-page). | Reject LDU; return `BOUNDING_BOXES_INVALID`; log. |
+| **content_hash present** | Every LDU has a non-empty `content_hash`. | Reject LDU; return `CONTENT_HASH_MISSING`; log. |
+| **token_count within limits** | No LDU exceeds `max_tokens` unless it is a single structural unit that cannot be split further without violating rules. | Log; optionally flag; do not reject (oversized structural units allowed). |
+
+### 6.2 Validation result and error behavior
+
+- **Success:** Validator returns a result indicating **valid**; the list of LDUs may be passed downstream.
+- **Failure:** Validator returns a result containing one or more **validation errors**, each with: an **error code** (e.g. `TABLE_HEADER_CELLS_SPLIT`, `LIST_MID_ITEM_SPLIT`, `PAGE_REFS_EMPTY`), optional **ldu_ids** or indices of offending LDUs, and optional **message**. The pipeline must **not** pass the rejected list to Stage 4; it may retry chunking or surface the error to the caller.
+- **Idempotent checks:** Given the same list of LDUs, the validator must produce the same result (deterministic).
+
+### 6.3 Invariants (post-conditions after successful validation)
+
+After validation **succeeds**, the following must hold for the emitted `List[LDU]`:
 
 - All LDUs have unique `id` within the document.
 - LDUs are in reading order (consistent with ExtractedDocument's `reading_order`).
-- No rule from §5 is violated.
+- No rule from §5 is violated (all five rules hold).
+- Every LDU has: content, chunk_type, page_refs, bounding_boxes, parent_section (where applicable), token_count, content_hash, relationships.
 - Every LDU can be traced back to at least one element in ExtractedDocument (text_block, table, or figure).
 
 ---
@@ -194,24 +217,32 @@ After validation, the following must hold for the emitted `List[LDU]`:
 
 The `content_hash` is a stable fingerprint of the LDU's content, used for provenance verification and deduplication. It mirrors Week 1's spatial hashing pattern: "addressing that remains valid even when content moves."
 
-### 7.1 Required properties
+### 7.1 Required properties (stability expectations)
 
 | Property | Requirement |
 |----------|-------------|
-| **Deterministic** | Same content must always produce the same hash. No randomness. |
-| **Stable across minor layout changes** | Small formatting changes (e.g., whitespace normalization, font changes, minor bbox shifts) must **not** change the hash. The hash should be computed over **normalized content** (e.g., trimmed, whitespace-collapsed text) rather than raw bytes. |
+| **Deterministic** | Same canonicalized content must **always** produce the same hash. No randomness, no timestamp, no environment-dependent input. |
+| **Stable across minor layout changes** | The hash must **not** change when only layout or formatting changes, not content. Specifically: whitespace normalization, font changes, minor bbox shifts, re-pagination, and reflow must **not** change the hash. The hash is computed over **canonicalized content** (see §7.2), not raw bytes. |
 | **Collision risk acceptable** | Perfect collision resistance is not required. The hash is used for: (1) quick equality checks between LDUs, (2) provenance verification ("does this citation still point to the same content?"), (3) deduplication within a corpus. A 64-bit or 128-bit hash (e.g., xxHash, SHA-256 truncated) is sufficient. MD5 is acceptable for non-security use. |
-| **Content-scoped** | The hash is computed over the LDU's `content` (and optionally `chunk_type` if needed to distinguish same-text different-type). It does **not** include `page_refs` or `bounding_box`—those can change when the document is reflowed or re-paginated; the hash should remain valid. |
+| **Content-scoped** | The hash is computed over the LDU's **content** (and optionally `chunk_type` if needed to distinguish same-text different-type). It does **not** include `page_refs` or `bounding_boxes`—those can change when the document is reflowed or re-paginated; the hash must remain valid. |
 | **Provenance linkage** | When a query answer cites an LDU, the citation includes `content_hash`. A verification step can re-fetch the LDU and confirm the hash matches. If the document is updated and the content changes, the hash will differ—signaling that the citation may be stale. |
 
-### 7.2 Normalization (recommended)
+### 7.2 Canonicalization rules (mandatory before hashing)
 
-Before hashing, normalize the content to reduce false negatives from trivial differences:
+Before computing the hash, content **must** be canonicalized so that stability expectations hold. Implementations must apply the following rules in a fixed order:
 
-- Trim leading/trailing whitespace.
-- Collapse multiple spaces/newlines to one space (or a standard form).
-- Optionally: lowercase for case-insensitive comparison, or preserve case for exact match—configurable.
-- For tables: use a canonical serialization (e.g., tab-separated or JSON with sorted keys) so cell order and formatting do not affect the hash.
+1. **Trim** — Remove leading and trailing whitespace (space, tab, newline, CR, LF) from the content string.
+2. **Whitespace collapse** — Replace every run of one or more horizontal whitespace characters (space, tab) with a single space (U+0020). Replace every run of one or more newline-like characters (LF, CR, CRLF) with a single newline (U+000A). Optionally configurable: collapse all whitespace to a single space (no newlines) for maximum stability.
+3. **Encoding** — Compute the hash over a fixed encoding of the normalized string (e.g., UTF-8). The same Unicode string must always be encoded the same way.
+4. **Tables** — When `chunk_type` is `table`, content must be in a **canonical serialization** before normalization: e.g., tab-separated rows with cells in row-major order, or JSON with sorted keys and fixed key order. Cell order (row-by-row, column-by-column) and key order must be deterministic so that logically identical tables produce the same hash.
+5. **chunk_type (optional)** — If the implementation needs to distinguish two LDUs with identical text but different types (e.g., same string as `heading` vs. `paragraph`), append a fixed string such as `|chunk_type=<value>` to the normalized content before hashing; otherwise hash only the normalized content.
+
+**Stability expectations (testable):**
+
+- Re-running canonicalization and hashing on the same LDU content must yield the same `content_hash`.
+- Applying only trim and whitespace collapse to content (no change to words or structure) must **not** change the hash (i.e., "  foo   bar  \n\n  baz  " and "foo bar baz" after canonicalization must hash the same if the collapse rule reduces them to the same form).
+- Changing only `page_refs` or `bounding_boxes` must **not** change the hash.
+- Changing a single character or word in the content **must** change the hash (with high probability).
 
 ---
 

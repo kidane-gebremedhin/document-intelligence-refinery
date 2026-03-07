@@ -256,131 +256,208 @@ Top-level container for extracted structure.
 
 ## 5. `LDU` – Logical Document Unit
 
-LDUs are the **RAG-ready semantic units** produced by the Chunking Engine.
+LDUs are the **RAG-ready semantic units** produced by the Chunking Engine. Per [04 – Semantic Chunking & LDUs](04-semantic-chunking-and-ldu-spec.md), every LDU **must** include: **content**, **chunk_type**, **page_refs**, **bounding_boxes**, **parent_section**, **token_count**, **content_hash**, and **relationships**. These fields are required for Phase 3 and for downstream stages (PageIndex, vector store, provenance).
 
-### 5.1 `LDUContentType`
+### 5.1 `LDUContentType` / `chunk_type`
 
 - **Type**
-  - `str` (enum)
+  - `str` (enum); spec 04 uses `chunk_type`; implementations may use either name so long as the set is consistent.
 
-- **Allowed Values**
+- **Allowed Values** (aligned with spec 04 §4.3)
   - `"paragraph"`
-  - `"section_intro"`
+  - `"heading"`
   - `"table"`
-  - `"table_section"` (e.g., a subset of a large table grouped logically)
   - `"figure"`
   - `"list"`
-  - `"footnote"`
+  - `"section_header"`
+  - `"caption"`
   - `"other"`
+  - Optional extensions: `"section_intro"`, `"table_section"`, `"footnote"` (map to spec 04 types as needed).
 
 ---
 
 ### 5.2 `LDU`
 
-- **Fields**
-  - `id: str`
-    - Unique within a document.
-  - `document_id: str`
-  - `content_type: LDUContentType`
-  - `text: str`
-    - Main textual payload. For tables/figures, this may be a textual representation or summary.
-  - `raw_payload: dict[str, Any]`
-    - Structured payload when `content_type` is not purely text (e.g., table matrix, figure metadata).
-  - `page_refs: list[PageRef]`
-    - One or more pages this LDU spans or references.
-  - `bounding_boxes: list[BoundingBox]`
-    - One or more bboxes that this LDU aggregates (e.g., multiple rows of a table).
-  - `parent_section_id: str | None`
-    - Link to a PageIndex section node, if known.
-  - `token_count: int`
-    - Approximate token length for LLM budgeting.
-  - `content_hash: str`
-    - Stable hash of canonicalized content for provenance.
-  - `relationships: dict[str, list[str]]`
-    - e.g., `{ "references_tables": ["table_3"], "references_figures": ["figure_2"] }`.
+- **Fields (required set for Phase 3)**
+
+  | Field | Type | Required | Description |
+  |-------|------|----------|-------------|
+  | `id` | `str` | Yes | Unique within a document; stable for provenance. |
+  | `document_id` | `str` | Yes | Same as ExtractedDocument. |
+  | `content` | `str` | Yes | Main textual payload. For tables: serialized table (header + rows). For figures: caption/alt text. Align with spec 04 `content`. |
+  | `chunk_type` | enum (see §5.1) | Yes | Semantic type: paragraph, heading, table, figure, list, section_header, caption, other. |
+  | `page_refs` | `list[int]` | Yes | 1-based page numbers; non-empty. For multi-page LDUs, list all pages. |
+  | `bounding_boxes` | `list[BoundingBox]` | Yes | One bbox per page (same order as `page_refs`); non-empty. Single-page = one element. |
+  | `parent_section` | `str \| None` | No | Section header or section ID containing this LDU. |
+  | `token_count` | `int` | Yes | Approximate token count of `content`. |
+  | `content_hash` | `str` | Yes | Stable hash of canonicalized content (spec 04 §7). Non-empty. |
+  | `relationships` | `list[Relationship]` | No | References to other LDUs (e.g. "see Table 3" → target LDU id). See §5.3. |
+
+- **Optional / legacy**
+  - `text` — May alias or derive from `content` for compatibility.
+  - `raw_payload: dict[str, Any]` — Optional structured payload (e.g. table matrix); not required for Phase 3.
 
 - **Invariants**
-  - A table LDU must include complete header + associated rows; must not represent a “half table”.
-  - A figure LDU must preserve its caption inside `text` or `raw_payload`.
-  - Each LDU must have at least one `page_ref` and one `bounding_box`.
+  - `page_refs` non-empty; `bounding_boxes` non-empty and length consistent with `page_refs` (one per page or single bbox for single-page).
+  - Table LDU: must include complete header + associated rows (no "half table"); see spec 04 Rule 1.
+  - Figure LDU: caption must be in the same LDU (spec 04 Rule 2).
+  - List LDU: no mid-item split (spec 04 Rule 3).
+  - `content_hash` must be computed per spec 04 §7 (canonicalization rules).
+
+---
+
+### 5.3 `Relationship` (LDU cross-reference)
+
+- **Fields**
+  - `target_ldu_id: str | None`
+    - ID of the referenced LDU; null if unresolved.
+  - `relation_type: str`
+    - e.g. `references_table`, `references_figure`, `references_section`, `references_clause`, `other`.
+  - `anchor_text: str | None`
+    - The referring text (e.g. "Table 3", "Section 4.2").
+
+---
+
+### 5.4 Chunk validation (ChunkValidator)
+
+The Chunking Engine must run a **ChunkValidator** before emitting LDUs. The validator enforces the five chunking rules as hard constraints (spec 04 §5, §6). Validation result and error types are part of the model surface for tests and pipeline integration.
+
+- **ValidationResult** (conceptual)
+  - `valid: bool` — True iff all checks passed.
+  - `errors: list[ChunkValidationError]` — Non-empty when `valid` is False.
+
+- **ChunkValidationError**
+  - `code: str` — One of: `TABLE_HEADER_CELLS_SPLIT`, `FIGURE_CAPTION_NOT_UNIFIED`, `LIST_MID_ITEM_SPLIT`, `PARENT_SECTION_MISSING`, `PAGE_REFS_EMPTY`, `BOUNDING_BOXES_INVALID`, `CONTENT_HASH_MISSING`.
+  - `ldu_ids: list[str] | None` — IDs of offending LDUs, when applicable.
+  - `message: str | None` — Human-readable description.
+
+- **Invariants**
+  - If the validator returns `valid=False`, the pipeline must not pass the candidate list of LDUs to Stage 4.
+  - Same input list must produce the same validation result (deterministic).
 
 ---
 
 ## 6. `PageIndex` & `PageIndexSection`
 
-The PageIndex is a tree of sections enabling hierarchical navigation.
+The PageIndex is a tree of sections enabling hierarchical navigation. Per [05 – PageIndex Builder](05-pageindex-builder-spec.md), each section node must support: **title**, **page_start** / **page_end**, **child_sections**, **key_entities**, **summary** (LLM-generated 2–3 sentences when used), **data_types_present**, and **ldu_ids**. The PageIndex is persisted to **`.refinery/pageindex/{document_id}.json`**.
 
 ### 6.1 `PageIndexSection`
 
-- **Fields**
-  - `id: str`
-  - `document_id: str`
-  - `title: str`
-  - `level: int`
-    - e.g., 1 for top-level, 2 for sub-section, etc.
-  - `page_span: PageSpan`
-  - `child_sections: list[PageIndexSection]`
-  - `key_entities: list[str]`
-    - e.g., organization names, financial metrics, topics.
-  - `summary: str`
-    - 2–3 sentence LLM-generated summary of the section.
-  - `data_types_present: list[str]`
-    - Allowed values: `"tables"`, `"figures"`, `"equations"`, `"lists"`, `"paragraphs"`.
-  - `linked_ldu_ids: list[str]`
-    - IDs of LDUs primarily associated with this section.
+Section tree node; aligns with spec 05 §3.2.
+
+- **Fields (Phase 3 required set)**
+
+  | Field | Type | Required | Description |
+  |-------|------|----------|-------------|
+  | `id` | `str` | Yes | Unique within the document (e.g. `sec_001`, path `1.2.3`). |
+  | `document_id` | `str` | Yes | Same as PageIndex. |
+  | `title` | `str` | Yes | Section title (e.g. "3.2 Financial Performance"; root may be "Document"). |
+  | `page_start` | `int` | Yes | 1-based page where the section begins. |
+  | `page_end` | `int` | Yes | 1-based page where the section ends. Invariant: `page_end >= page_start`. |
+  | `child_sections` | `list[PageIndexSection]` | Yes | Child sections; empty for leaves. In document order by `page_start`. |
+  | `key_entities` | `list[str]` | No | Named entities in this section (organizations, dates, metrics). For topic scoring. |
+  | `summary` | `str \| None` | No | LLM-generated 2–3 sentence summary. Null when summarization disabled or failed. |
+  | `data_types_present` | `list[str]` | No | Content types: `"tables"`, `"figures"`, `"equations"`, `"lists"`, `"paragraphs"`. |
+  | `ldu_ids` | `list[str]` | No | IDs of LDUs in this section. Required for retrieval narrowing after pageindex_query. |
+
+- **Optional**
+  - `level: int` — Nesting level (0 = root, 1 = top-level). May be derived from tree position.
+  - `page_span: PageSpan` — May be used in place of or derived from `page_start`/`page_end`; spec 05 uses page_start/page_end.
 
 - **Invariants**
-  - `level` must be consistent with parent-child relationships (child level = parent level + 1).
-  - `page_span.document_id` must match `document_id`.
+  - For every section, `page_start <= page_end`; both in `[1, page_count]` of the document.
+  - Child section `[page_start, page_end]` must be within parent's range.
+  - Sibling sections ordered by `page_start`; ranges do not overlap (or only at boundaries).
+  - `document_id` must match `PageIndex.document_id`.
 
 ---
 
 ### 6.2 `PageIndex`
 
+Top-level container; one per document. Persisted to `.refinery/pageindex/{document_id}.json` per spec 05 §8.
+
 - **Fields**
-  - `document_id: str`
-  - `root_sections: list[PageIndexSection]`
-  - `created_at: datetime`
-  - `metadata: dict[str, Any]` (optional)
+
+  | Field | Type | Required | Description |
+  |-------|------|----------|-------------|
+  | `document_id` | `str` | Yes | Document identifier; matches LDU document_id and file path. |
+  | `page_count` | `int` | Yes | Total pages in the document. |
+  | `root` | `PageIndexSection` | Yes | Single root section (tree root). Spans `page_start=1`, `page_end=page_count`. |
+  | `built_at` | `datetime \| str` | No | When the index was built (ISO 8601 or datetime). |
+  | `metadata` | `dict[str, Any]` | No | Optional extra fields. |
+
+- **Alternative shape:** Implementations may use `root_sections: list[PageIndexSection]` (top-level sections under an implicit root); persisted JSON must still satisfy spec 05 §8 (document_id, page_count, root or equivalent, round-trip).
 
 - **Invariants**
-  - All `PageIndexSection.document_id` must equal `PageIndex.document_id`.
-  - Tree must be acyclic and connected (no orphan sections).
+  - Tree is acyclic and connected; no orphan sections.
+  - All `PageIndexSection.document_id` equal `PageIndex.document_id`.
+  - Serialization: must be persistable to `.refinery/pageindex/{document_id}.json` as JSON; load and re-serialize yields equivalent structure.
 
 ---
 
 ## 7. Provenance Models
 
-Every answer must be backed by provenance that can be audited.
+Every answer from the Query Interface Agent must be backed by a **ProvenanceChain** that can be audited. Per [06 – Query Agent & Provenance](06-query-agent-and-provenance-spec.md), each citation (ProvenanceItem) must include **document_name**, **page_number**, **bbox**, and **content_hash** (for LDU-backed sources). Audit mode requires that claim verification yields either citations or an explicit **unverifiable** flag—never fake verification.
 
-### 7.1 `ProvenanceItem`
+### 7.1 `ProvenanceItem` (Citation)
 
-- **Fields**
-  - `document_id: str`
-  - `document_name: str`
-  - `page_number: int`
-  - `bbox: BoundingBox`
-  - `content_hash: str`
-  - `snippet: str`
-    - Short text excerpt to show the human.
-  - `ldu_id: str | None`
-    - If the answer is derived from a specific LDU.
-  - `table_id: str | None`
-  - `figure_id: str | None`
+Single source citation; aligns with spec 06 §4.2.
+
+- **Fields (required for every answer)**
+
+  | Field | Type | Required | Description |
+  |-------|------|----------|-------------|
+  | `document_id` | `str` | Yes | Stable document identifier. |
+  | `document_name` | `str` | Yes | Human-readable name (e.g. filename, report title). |
+  | `page_number` | `int` | Yes | 1-based page where the cited content appears. |
+  | `bbox` | `BoundingBox \| None` | Yes for LDU | Spatial coordinates. Required for LDU-backed citations; may be null for FactTable-only when not stored. |
+  | `content_hash` | `str` | Yes for LDU | Stable hash of source content. Required for LDU-backed; optional for FactTable when not resolvable. |
+  | `snippet` | `str \| None` | No | Short excerpt for display. |
+  | `ldu_id` | `str \| None` | No | LDU identifier when from LDU. |
+  | `table_id` | `str \| None` | No | Optional table reference. |
+  | `figure_id` | `str \| None` | No | Optional figure reference. |
+
+- **Invariants**
+  - For LDU-backed citations: `document_name`, `document_id`, `page_number`, `bbox`, `content_hash` must be present and non-empty (where applicable).
+  - No citation may be emitted with missing required fields for its source type.
 
 ---
 
 ### 7.2 `ProvenanceChain`
 
-Represents the full provenance for a given answer.
+Represents the full provenance for a given answer. Every answer must include a ProvenanceChain.
 
 - **Fields**
-  - `answer_id: str`
-  - `items: list[ProvenanceItem]`
+
+  | Field | Type | Required | Description |
+  |-------|------|----------|-------------|
+  | `answer_id` | `str` | Yes | Identifier for the answer (e.g. query id or run id). |
+  | `items` | `list[ProvenanceItem]` | Yes | Citations; one per distinct source. Empty when audit result is unverifiable. |
+  | `verification_status` | `str \| None` | No | For audit mode: `verified` \| `partial` \| `unverifiable`. See below. |
+
+- **Verification flags (audit mode)**
+  - **verified** — At least one citation supports the claim. `items` is non-empty. Use only when a real source was found.
+  - **unverifiable** — No supporting source found. `items` must be **empty**. No invented citations. The system must never mark as verified without citations.
+  - **partial** — Optional; only part of a compound claim is supported; remainder unverifiable.
 
 - **Invariants**
-  - `items` must be non-empty for claim-marked-as-verified.
-  - If no items are found, the system must explicitly label the claim as `"unverifiable"` at the application layer.
+  - For claim-marked-as-**verified**: `items` must be non-empty; every item has required fields (document_name, page_number, bbox for LDU, content_hash for LDU).
+  - For claim-marked-as-**unverifiable**: `items` must be empty; `verification_status` = `unverifiable`. The application layer must never return a citation when the claim could not be verified (no fake verification).
+  - Every answer carries a ProvenanceChain; when no sources exist (e.g. no retrieval results), the chain may have empty items and optionally verification_status or a clear "no sources" signal.
+
+---
+
+### 7.3 `QAExample` / Query–Answer pair (conceptual)
+
+For logging, evaluation, or acceptance artifacts, a **query–answer pair** can be represented as a small structure that combines the answer text with its provenance and (in audit mode) verification outcome. This is not required for the runtime API but supports Phase 4 acceptance (e.g. "example Q&A with ProvenanceChain").
+
+- **Conceptual fields**
+  - `query: str` — The user question or claim (for audit).
+  - `answer: str` — The agent’s answer text.
+  - `provenance: ProvenanceChain` — Citations (document_name, page_number, bbox, content_hash) and optional `verification_status`.
+  - `verification_status` — When in audit mode: `verified` (with citations) or `unverifiable` (no citations). Never fake verification.
+
+Implementations may use a Pydantic model or a simple dict; the spec only requires that every answer includes a ProvenanceChain and that audit mode uses verification flags as above.
 
 ---
 

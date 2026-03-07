@@ -364,7 +364,7 @@ class VisionExtractor:
                 confidence_score=0.0,
                 cost_estimate_usd=0.0,
                 strategy_name="vision",
-                notes="vision provider=google requires google-generativeai",
+                notes="vision provider=google requires: uv add google-generativeai and REFINERY_VISION_API_KEY (or GEMINI_API_KEY) in .env",
             )
         if provider != "google" and OpenAI is None:
             return ExtractionResult(
@@ -372,7 +372,7 @@ class VisionExtractor:
                 confidence_score=0.0,
                 cost_estimate_usd=0.0,
                 strategy_name="vision",
-                notes="vision provider=openai requires openai",
+                notes="vision provider=openai requires: uv add openai and REFINERY_VISION_API_KEY (or REFINERY_VISION_API_KEY_ENV) in .env",
             )
 
         try:

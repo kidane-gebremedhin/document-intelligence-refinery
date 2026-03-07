@@ -83,7 +83,7 @@ The PageIndex is a **tree**. The root represents the whole document; each child 
 
 ### 3.2 Section node (conceptual structure)
 
-Each node in the tree is a **Section** with the following fields:
+Each node in the tree is a **Section**. For Phase 3, every section node **must** support the following fields (required set for topic traversal and retrieval narrowing):
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
@@ -93,10 +93,12 @@ Each node in the tree is a **Section** with the following fields:
 | **page_end** | integer | Yes | 1-based page number where the section ends. Invariant: `page_end >= page_start`. |
 | **child_sections** | list of Section | Yes | Child sections (subsections). Empty list for leaf sections. |
 | **key_entities** | list of string | No | Extracted named entities (e.g., organization names, monetary values, dates) that appear in this section. Supports "which section discusses X?" queries. |
-| **summary** | string | No | LLM-generated summary, 2–3 sentences. Captures the section's main topic and findings. |
-| **data_types_present** | list of enum | No | Content types in this section: `tables`, `figures`, `equations`, `lists`, etc. Enables "which section has the revenue table?" queries. |
-| **ldu_ids** | list of string (optional) | No | IDs of LDUs that belong to this section. Enables direct mapping from section to chunks for retrieval. |
+| **summary** | string | No | LLM-generated summary, 2–3 sentences. Captures the section's main topic and findings. When summarization is disabled or fails, may be null. |
+| **data_types_present** | list of string | No | Content types in this section: `tables`, `figures`, `equations`, `lists`, `paragraphs`, etc. Enables "which section has the revenue table?" queries. |
+| **ldu_ids** | list of string | No | IDs of LDUs that belong to this section. Enables direct mapping from section to chunks for retrieval. Required for PageIndex-first narrowing. |
 | **depth** | integer (optional) | No | Nesting level (0 = root, 1 = top-level section, etc.). |
+
+**Phase 3 required set for each section node:** `title`, `page_start`, `page_end`, `child_sections`, `key_entities`, `summary` (2–3 sentences when LLM used), `data_types_present`, and `ldu_ids` (or equivalent). These are the minimum for `pageindex_query(topic)` and retrieval narrowing.
 
 ### 3.3 Invariants
 
@@ -140,6 +142,20 @@ When headings are weak or missing:
 - Numbering regex patterns (e.g., `^\d+\.`, `^\d+\.\d+\.`) and hierarchy mapping should be configurable.
 - Minimum section length (e.g., minimum LDUs or pages per section) to avoid over-fragmentation.
 - Behavior when no headings exist: flat structure (one section per page or per N pages) vs. single root-only section.
+
+---
+
+## 4.5 Index building algorithm expectations
+
+The PageIndex Builder constructs the tree in a well-defined order. Implementations must satisfy the following expectations:
+
+1. **Section identification (heuristics)** — Traverse LDUs in reading order; use heading/section_header LDUs and numbering patterns (§4.1–4.3) to derive section boundaries and hierarchy. Compute `page_start` and `page_end` for each section. When headings are weak or missing, apply fallbacks (§4.2, §9.1): e.g. flat structure or root-only.
+2. **Tree construction** — Build the Section tree: root spans `[1, page_count]`; child sections in document order; child `[page_start, page_end]` within parent range; no overlapping sibling ranges (or only at boundaries).
+3. **LDU assignment** — For each section, set `ldu_ids` to the list of LDU ids whose `parent_section` matches the section (or section id) or whose `page_refs` fall within the section's `[page_start, page_end]`.
+4. **Section metadata** — Populate `key_entities` (from NER, keywords, or LLM on section LDU content) and `data_types_present` (from `chunk_type` of section LDUs: tables, figures, lists, etc.). Scope: section's LDUs only (or configurable aggregation from descendants).
+5. **Optional LLM summarizer** — For each section node, optionally call a fast, cheap LLM with input: section title + concatenated LDU content (truncated). Set `summary` to 2–3 sentences, or leave null on failure or when summarization is disabled. Summarization must not block tree build; on API/timeout failure, leave `summary` null and log.
+
+The algorithm is **deterministic** for a given LDU list and config (except where LLM is used). Section structure must not depend on summarization success.
 
 ---
 
@@ -202,15 +218,23 @@ Each section node should have a **summary**: 2–3 sentences that capture the se
 
 ## 7. PageIndex Query Behavior
 
-Given a **topic string** (e.g., "capital expenditure projections for Q3"), the PageIndex supports a **traversal query** that returns the top-N most relevant sections **before** vector search. This is the core of PageIndex-first retrieval.
+The **pageindex_query(topic)** operation is the entry point for PageIndex-first retrieval. Given a **topic string**, it returns the top-N most relevant sections **before** vector search, so the retrieval layer can restrict (or boost) chunk search to those sections.
 
-### 7.1 Query input
+### 7.1 pageindex_query(topic) — Contract
 
-- **topic** — Natural language string describing what the user is looking for.
-- **top_n** — Number of sections to return (e.g., 3). Configurable.
+- **Name / concept:** `pageindex_query(topic)` (or equivalent: e.g. `query_pageindex(topic)`, PageIndex query).
+- **Input:** `topic` — Natural language string (e.g., "capital expenditure projections for Q3", "risk factors"). Optional: `document_id`, `top_n` (default **3**).
+- **Output:** List of **top-3** (default) section nodes most relevant to the topic. Each section includes at least: `id`, `title`, `page_start`, `page_end`, `summary` (if present), `ldu_ids`. Order: by relevance score descending.
+- **Behavior:** Traverse the PageIndex tree; score each section by relevance to the topic using title, summary (if present), key_entities, data_types_present; rank and return the **top-3 sections**. This result is used **before** vector search to narrow the candidate LDU set (see §7.3).
+- **Default top_n:** **3**. Configurable; Refinery Guide and Phase 3 acceptance use top-3 as the standard.
+
+### 7.2 Query input (parameters)
+
+- **topic** — Required. Natural language string describing what the user is looking for.
+- **top_n** — Number of sections to return. **Default: 3.** Configurable.
 - **document_id** — Which document's PageIndex to query (when the system has multiple documents).
 
-### 7.2 Traversal and scoring
+### 7.3 Traversal and scoring
 
 1. **Traverse the tree** — Visit each section node (root, then children recursively). Optionally prune: skip sections whose `page_start`/`page_end` or `summary` suggest irrelevance (implementation-defined).
 2. **Score each section** — Relevance of the section to the topic. Signals:
@@ -218,15 +242,15 @@ Given a **topic string** (e.g., "capital expenditure projections for Q3"), the P
    - **Summary** — Semantic similarity between topic and summary. Use embeddings or keyword overlap.
    - **key_entities** — Overlap between topic and entities (e.g., "Q3" in topic, "Q3 2024" in entities).
    - **data_types_present** — If topic implies "table" (e.g., "revenue table"), boost sections with `tables`.
-3. **Rank and return** — Return the top-N sections by score. Each returned section includes: `id`, `title`, `page_start`, `page_end`, `summary`, `ldu_ids` (or equivalent) so the retrieval layer can fetch only LDUs within those sections.
+3. **Rank and return** — Return the top-N sections (default 3) by score. Each returned section includes: `id`, `title`, `page_start`, `page_end`, `summary`, `ldu_ids` so the retrieval layer can fetch only LDUs within those sections.
 
-### 7.3 Integration with vector search
+### 7.4 Integration with vector search
 
-- **PageIndex-first flow:** Query PageIndex → get top-N sections → restrict vector search to LDUs whose `parent_section` or `page_refs` fall within those sections → return ranked chunks.
+- **PageIndex-first flow:** Call `pageindex_query(topic)` → get top-3 (or top-N) sections → restrict vector search to LDUs whose `ldu_id` is in those sections' `ldu_ids` (or whose `parent_section` / `page_refs` fall within those sections) → return ranked chunks.
 - **Fallback:** If PageIndex returns no relevant sections (e.g., topic is too generic), fall back to full-document vector search.
 - **Hybrid:** Combine PageIndex scores with vector search scores (e.g., boost chunks from PageIndex-selected sections). Exact combination is implementation-defined.
 
-### 7.4 Success criteria
+### 7.5 Success criteria
 
 - The Refinery Guide specifies: "Implement the PageIndex query: given a topic string, traverse the tree to return the top-3 most relevant sections before doing vector search. Measure retrieval precision with and without PageIndex traversal."
 - PageIndex traversal should **outperform** naive vector search on section-specific queries (e.g., "What are the risk factors?" when the answer is in "Section 4: Risk Factors").
@@ -235,26 +259,39 @@ Given a **topic string** (e.g., "capital expenditure projections for Q3"), the P
 
 ## 8. Storage & Serialization
 
-### 8.1 Location
+### 8.1 Serialization requirements (mandatory)
 
-- **Path pattern:** `.refinery/pageindex/{document_id}.json` (or equivalent). One PageIndex file per document.
-- **Format:** JSON. The structure must be serializable and deserializable without loss. Implementations may use a schema (e.g., JSON Schema) for validation.
+- **Path:** PageIndex **must** be persisted to **`.refinery/pageindex/{document_id}.json`**. The path may be overridden by configuration (e.g. a base directory), but the canonical location for the Refinery pipeline is `.refinery/pageindex/{document_id}.json`. One file per document.
+- **Format:** JSON. The full PageIndex (top-level + root Section tree) must be serializable to JSON and deserializable without loss. All section node fields required for query and retrieval (title, page_start, page_end, child_sections, key_entities, summary, data_types_present, ldu_ids) must be included in the persisted representation.
+- **Round-trip:** Loading the file and re-serializing must produce an equivalent structure (same document_id, root, section hierarchy, and section fields). No runtime-only fields that cannot be persisted.
+- **Encoding:** UTF-8. JSON keys and string values must be valid for JSON interchange.
 
-### 8.2 Invariants (persisted representation)
+### 8.2 Top-level persisted structure
+
+The JSON file must contain at least:
+
+- **document_id** — string; matches the document the PageIndex was built for.
+- **page_count** — integer; total pages.
+- **root** — object; the root Section (single tree root). Recursive structure: each section has title, page_start, page_end, child_sections (array of Section), key_entities, summary, data_types_present, ldu_ids.
+- **built_at** (optional) — string; ISO 8601 timestamp when built.
+
+Implementations may use `root_sections` (array of top-level sections) if the model uses an implicit root; the persisted file must still allow reconstruction of the tree and must satisfy the invariants below.
+
+### 8.3 Invariants (persisted representation)
 
 | Invariant | Requirement |
 |-----------|-------------|
 | **document_id** | Must match the document the PageIndex was built for. |
-| **Root exists** | The tree has exactly one root Section. |
+| **Root exists** | The tree has exactly one root Section (or equivalent top-level structure). |
 | **Valid page range** | For every section, `page_start <= page_end`, and both are in `[1, page_count]`. |
 | **Hierarchy consistency** | Child `page_start`/`page_end` within parent; siblings ordered by `page_start`. |
-| **Idempotent load** | Loading the JSON and re-serializing should produce equivalent structure. No runtime-only fields that cannot be persisted. |
+| **Idempotent load** | Loading the JSON and re-serializing must produce equivalent structure. |
 
-### 8.3 Versioning and rebuild
+### 8.4 Versioning and rebuild
 
 - **built_at** (optional) — Timestamp enables "when was this built?" and stale detection.
 - **Schema version** (optional) — If the Section schema evolves, a version field allows migration.
-- **Rebuild trigger** — PageIndex should be rebuilt when LDUs change (e.g., re-chunking, re-extraction). The pipeline design should ensure PageIndex is built after chunking and before query-time use.
+- **Rebuild trigger** — PageIndex should be rebuilt when LDUs change (e.g., re-chunking, re-extraction). The pipeline design must ensure PageIndex is built after chunking and before query-time use.
 
 ---
 
