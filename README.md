@@ -12,18 +12,12 @@ Use **uv** only (no pip). Sync dependencies:
 uv sync
 ```
 
-Optional extras (e.g. dev deps for tests):
-
-```bash
-uv sync --extra dev
-```
-
 ## Configuration
 
 - **Vision (Strategy C):** Provider and API key are configurable via **`.env`**. Copy `.env.example` to `.env` and set:
-  - `REFINERY_VISION_PROVIDER` — `openai` or `google`
+  - `REFINERY_VISION_PROVIDER` — `openai`, `google`, or `openrouter`
   - `REFINERY_VISION_API_KEY` — key value, or
-  - `REFINERY_VISION_API_KEY_ENV` — name of the env var that holds the key (e.g. `GEMINI_API_KEY`)
+  - `REFINERY_VISION_API_KEY_ENV` — name of the env var that holds the key (e.g. `GEMINI_API_KEY`, `OPENROUTER_API_KEY`)
 - A `.env` file in the project root or cwd is loaded automatically. See [spec 03 §6.4](specs/03-multi-strategy-extraction-engine.md#64-model-selection-and-api-configuration).
 - **RAG-like semantic search:** The vector store uses deterministic (hash) embeddings by default. For real semantic retrieval (query and audit), set `REFINERY_EMBEDDING_MODEL` in `.env` (e.g. `all-MiniLM-L6-v2`), install sentence-transformers (`uv sync --extra semantic`), then re-run the pipeline so LDUs are re-ingested with the new embeddings. Query and audit then use embedding similarity instead of word matching.
 - **PageIndex LLM summarization:** When `REFINERY_VISION_PROVIDER` and API key are set (openai or google), section summaries are generated and stored in `.refinery/pageindex/{document_id}.json`. Improves PageIndex topic scoring for query accuracy.

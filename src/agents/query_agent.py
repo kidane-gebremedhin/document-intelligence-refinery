@@ -2,13 +2,23 @@
 
 from __future__ import annotations
 
+import logging
+import os
 from pathlib import Path
 from typing import Any, Callable
 
 from pydantic import BaseModel, Field
 
 from src.models import ProvenanceChain, ProvenanceItem
-from src.agents.indexer import load_pageindex, pageindex_query, DEFAULT_PAGEINDEX_DIR
+from src.agents.indexer import (
+    load_pageindex,
+    pageindex_query,
+    DEFAULT_PAGEINDEX_DIR,
+    _load_dotenv,
+    _PROVIDER_DEFAULT_KEY_ENVS,
+    _PROVIDER_BASE_URLS,
+    _PROVIDER_DEFAULT_MODELS,
+)
 from src.data.vector_store import search as vector_store_search, DEFAULT_VECTOR_STORE_PATH
 from src.data.fact_table import query_facts, DEFAULT_FACT_TABLE_PATH
 from src.agents.audit import (
@@ -16,7 +26,90 @@ from src.agents.audit import (
     vector_hit_to_provenance_item,
 )
 
+logger = logging.getLogger(__name__)
+
 DocumentNameResolver = Callable[[str], str]
+
+
+# -----------------------------------------------------------------------------
+# LLM synthesis helper — uses same provider config as LLMSummarizer
+# -----------------------------------------------------------------------------
+
+_RAG_SYSTEM_PROMPT = (
+    "You are a document intelligence assistant. "
+    "Answer the question using ONLY the context provided below. "
+    "Be concise and specific. "
+    "If the context does not contain enough information to answer, say so clearly. "
+    "Do not make up or infer information beyond what is in the context."
+)
+
+
+def _resolve_llm_config() -> tuple[str, str, str] | None:
+    """Return (provider, api_key, model) from env, or None if not configured."""
+    _load_dotenv()
+    provider = (os.environ.get("REFINERY_VISION_PROVIDER") or "").strip().lower()
+    if not provider:
+        return None
+    default_key_env = _PROVIDER_DEFAULT_KEY_ENVS.get(provider, "OPENAI_API_KEY")
+    key_env = os.environ.get("REFINERY_VISION_API_KEY_ENV", default_key_env)
+    api_key = (os.environ.get("REFINERY_VISION_API_KEY") or os.environ.get(key_env, "")).strip()
+    if not api_key:
+        return None
+    model = (
+        os.environ.get("REFINERY_LLM_MODEL")
+        or _PROVIDER_DEFAULT_MODELS.get(provider, "gpt-4o-mini")
+    )
+    return provider, api_key, model
+
+
+def _call_llm_for_answer(question: str, context: str) -> str | None:
+    """Call the configured LLM provider to synthesize an answer from retrieved context."""
+    cfg = _resolve_llm_config()
+    if cfg is None:
+        return None
+    provider, api_key, model = cfg
+
+    prompt = f"Context:\n{context}\n\nQuestion: {question}"
+
+    if provider == "google":
+        try:
+            import google.generativeai as genai
+        except ImportError:
+            logger.warning("query_agent: google-generativeai not installed")
+            return None
+        genai.configure(api_key=api_key)
+        llm = genai.GenerativeModel(model)
+        try:
+            resp = llm.generate_content(
+                f"{_RAG_SYSTEM_PROMPT}\n\n{prompt}",
+                generation_config=genai.types.GenerationConfig(max_output_tokens=1024),
+            )
+            return (getattr(resp, "text", None) or "").strip() or None
+        except Exception as e:
+            logger.warning("query_agent: google LLM call failed: %s", e)
+            return None
+    else:
+        try:
+            from openai import OpenAI
+        except ImportError:
+            logger.warning("query_agent: openai not installed")
+            return None
+        base_url = _PROVIDER_BASE_URLS.get(provider)
+        client = OpenAI(api_key=api_key, base_url=base_url) if base_url else OpenAI(api_key=api_key)
+        try:
+            resp = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": _RAG_SYSTEM_PROMPT},
+                    {"role": "user", "content": prompt},
+                ],
+                max_tokens=1024,
+                temperature=0.2,
+            )
+            return (resp.choices[0].message.content or "").strip() or None
+        except Exception as e:
+            logger.warning("query_agent: LLM call failed: %s", e)
+            return None
 
 
 # -----------------------------------------------------------------------------
@@ -231,13 +324,36 @@ def _retrieve_node(
     }
 
 
+def _build_context_for_llm(hits: list[dict[str, Any]], rows: list[dict[str, Any]]) -> str:
+    """Build a context string from retrieved hits and fact rows for LLM synthesis."""
+    parts: list[str] = []
+    for i, h in enumerate(hits[:8], 1):
+        content = (h.get("content") or "").strip()
+        if content:
+            parts.append(f"[Source {i}]\n{content[:800]}")
+    for r in rows[:5]:
+        entity = (r.get("entity") or "").strip()
+        metric = (r.get("metric") or "").strip()
+        value = (r.get("value") or "").strip()
+        unit = (r.get("unit") or "").strip()
+        period = (r.get("period") or "").strip()
+        if entity or metric or value:
+            line = f"{entity} — {metric}: {value}"
+            if unit:
+                line += f" {unit}"
+            if period:
+                line += f" ({period})"
+            parts.append(f"[Fact] {line.strip()}")
+    return "\n\n".join(parts)
+
+
 def _synthesize_node(
     state: dict[str, Any],
     *,
     document_name_resolver: DocumentNameResolver | None,
     answer_id: str,
 ) -> dict[str, Any]:
-    """Build answer text and ProvenanceChain from tool results."""
+    """Synthesize an answer via LLM from retrieved context, with provenance chain."""
     query = state.get("query") or ""
     items, verified = _build_provenance_from_state(
         state, document_name_resolver or (lambda doc_id: doc_id)
@@ -246,21 +362,18 @@ def _synthesize_node(
 
     hits = (state.get("search_result") or {}).get("hits", [])
     rows = (state.get("structured_result") or {}).get("rows", [])
+
     if not hits and not rows:
         answer = "No relevant content was found in the corpus for this query."
     else:
-        parts = []
-        for h in hits[:5]:
-            content = (h.get("content") or "").strip()
-            if content:
-                parts.append(content[:500] + ("..." if len(content) > 500 else ""))
-        for r in rows[:5]:
-            entity = (r.get("entity") or "").strip()
-            metric = (r.get("metric") or "").strip()
-            value = (r.get("value") or "").strip()
-            if entity or metric or value:
-                parts.append(f"{entity} {metric}: {value}".strip())
-        answer = "Based on the retrieved sources:\n\n" + "\n\n".join(parts[:6]) if parts else "No relevant content was found."
+        context = _build_context_for_llm(hits, rows)
+        llm_answer = _call_llm_for_answer(query, context)
+        if llm_answer:
+            answer = llm_answer
+        else:
+            # LLM not configured — fall back to showing retrieved context directly
+            logger.debug("query_agent: LLM not configured, returning raw retrieved context")
+            answer = "Retrieved context (set REFINERY_VISION_PROVIDER + API key for LLM synthesis):\n\n" + context
 
     return {
         **state,

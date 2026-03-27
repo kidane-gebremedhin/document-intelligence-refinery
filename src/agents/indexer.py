@@ -64,49 +64,73 @@ def _load_dotenv() -> None:
         break
 
 
+_PROVIDER_DEFAULT_KEY_ENVS: dict[str, str] = {
+    "google": "GEMINI_API_KEY",
+    "openrouter": "OPENROUTER_API_KEY",
+    "deepseek": "DEEPSEEK_API_KEY",
+}
+
+_PROVIDER_BASE_URLS: dict[str, str] = {
+    "openrouter": "https://openrouter.ai/api/v1",
+    "deepseek": "https://api.deepseek.com",
+}
+
+_PROVIDER_DEFAULT_MODELS: dict[str, str] = {
+    "openai": "gpt-4o-mini",
+    "deepseek": "deepseek-chat",
+    "openrouter": "gpt-4o-mini",
+    "google": "gemini-1.5-flash",
+}
+
+
 class LLMSummarizer:
-    """Generate 2-3 sentence section summaries via LLM. Uses REFINERY_VISION_PROVIDER (openai or google)."""
+    """Generate 2-3 sentence section summaries via LLM. Uses REFINERY_VISION_PROVIDER (openai, deepseek, openrouter, google)."""
 
     def summarize(self, title: str, content: str, section_id: str, document_id: str) -> str | None:
         if not (content or "").strip():
             return None
         _load_dotenv()
         provider = (os.environ.get("REFINERY_VISION_PROVIDER", "") or "openai").strip().lower()
-        api_key_env = os.environ.get("REFINERY_VISION_API_KEY_ENV", "OPENAI_API_KEY" if provider == "openai" else "GEMINI_API_KEY")
-        api_key = (os.environ.get("REFINERY_VISION_API_KEY") or os.environ.get(api_key_env, "") or (api_key_env if api_key_env.startswith("sk-") or len(api_key_env) > 50 else "")).strip()
+        default_api_key_env = _PROVIDER_DEFAULT_KEY_ENVS.get(provider, "OPENAI_API_KEY")
+        api_key_env = os.environ.get("REFINERY_VISION_API_KEY_ENV", default_api_key_env)
+        api_key = (os.environ.get("REFINERY_VISION_API_KEY") or os.environ.get(api_key_env, "")).strip()
         if not api_key:
-            print('nooooooooooooooooooooooooooooooo')
+            logger.debug("LLMSummarizer: no API key configured for provider=%s", provider)
             return None
         prompt = (
             "Summarize this document section in 2-3 concise sentences. "
             "Capture the main topic and key points. Title: %s\n\nContent: %s"
         ) % (title[:200], (content or "")[:3000])
-        print('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh')
         try:
             if provider == "google":
                 return self._summarize_google(prompt, api_key, section_id)
-            return self._summarize_openai(prompt, api_key, section_id)
+            else:
+                # openai, deepseek, openrouter — all use the OpenAI-compatible client.
+                # Unknown providers also fall here; _PROVIDER_BASE_URLS controls routing.
+                return self._summarize_openai(prompt, api_key, section_id, provider=provider)
         except Exception as e:
             logger.warning("LLMSummarizer failed for %s: %s", section_id, e)
             return None
 
-    def _summarize_openai(self, prompt: str, api_key: str, section_id: str) -> str | None:
+    def _summarize_openai(self, prompt: str, api_key: str, section_id: str, provider: str = "openai") -> str | None:
         try:
             from openai import OpenAI
         except ImportError:
             logger.warning("LLMSummarizer: openai not installed (uv add openai)")
             return None
-        client = OpenAI(api_key=api_key)
+        base_url = _PROVIDER_BASE_URLS.get(provider)
+        client = OpenAI(api_key=api_key, base_url=base_url) if base_url else OpenAI(api_key=api_key)
+        model = (
+            os.environ.get("REFINERY_LLM_MODEL")
+            or _PROVIDER_DEFAULT_MODELS.get(provider, "gpt-4o-mini")
+        )
         resp = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=model,
             messages=[{"role": "user", "content": prompt}],
             max_tokens=150,
             temperature=0.3,
         )
         text = (resp.choices[0].message.content or "").strip()
-        print(f'summaryyyyyyyyyyyyyyyyyyyyyyyyyy {text}')
-        print(prompt);
-
         return text if text else None
 
     def _summarize_google(self, prompt: str, api_key: str, section_id: str) -> str | None:
@@ -116,19 +140,20 @@ class LLMSummarizer:
             logger.warning("LLMSummarizer: google-generativeai not installed (uv add google-generativeai)")
             return None
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model_name = os.environ.get("REFINERY_LLM_MODEL") or _PROVIDER_DEFAULT_MODELS["google"]
+        model = genai.GenerativeModel(model_name)
         resp = model.generate_content(prompt, generation_config=genai.types.GenerationConfig(max_output_tokens=150))
         text = getattr(resp, "text", None) or ""
         return text.strip() if text else None
 
 
 def get_default_summarizer() -> SectionSummarizer:
-    """Return LLM summarizer when REFINERY_VISION_PROVIDER is configured, else StubSummarizer."""
+    """Return LLM summarizer when REFINERY_VISION_PROVIDER and an API key are configured, else StubSummarizer."""
     _load_dotenv()
     provider = (os.environ.get("REFINERY_VISION_PROVIDER", "") or "").strip().lower()
-    api_key_env = "OPENAI_API_KEY" if provider == "openai" else "GEMINI_API_KEY"
-    api_key_env_name = os.environ.get("REFINERY_VISION_API_KEY_ENV", api_key_env)
-    api_key = (os.environ.get("REFINERY_VISION_API_KEY") or os.environ.get(api_key_env_name, "") or (api_key_env_name if (api_key_env_name.startswith("sk-") or len(api_key_env_name) > 50) else "")).strip()
+    default_api_key_env = _PROVIDER_DEFAULT_KEY_ENVS.get(provider, "OPENAI_API_KEY")
+    api_key_env_name = os.environ.get("REFINERY_VISION_API_KEY_ENV", default_api_key_env)
+    api_key = (os.environ.get("REFINERY_VISION_API_KEY") or os.environ.get(api_key_env_name, "")).strip()
     if provider and api_key:
         return LLMSummarizer()
     return StubSummarizer()

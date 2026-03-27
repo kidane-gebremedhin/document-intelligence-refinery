@@ -204,9 +204,9 @@ Strategy C is the fallback when text layer is absent or layout/text extraction f
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `REFINERY_VISION_PROVIDER` | Vision provider: `openai` or `google`. Overrides `vision.provider` in config. | `REFINERY_VISION_PROVIDER=google` |
+| `REFINERY_VISION_PROVIDER` | Vision provider: `openai`, `google`, or `openrouter`. Overrides `vision.provider` in config. | `REFINERY_VISION_PROVIDER=openrouter` |
 | `REFINERY_VISION_API_KEY` | API key value directly. When set, this is used and no other env var is read for the key. | `REFINERY_VISION_API_KEY=your-key` |
-| `REFINERY_VISION_API_KEY_ENV` | Name of the environment variable that holds the API key. Overrides `vision.api_key_env` in config. | `REFINERY_VISION_API_KEY_ENV=GEMINI_API_KEY` |
+| `REFINERY_VISION_API_KEY_ENV` | Name of the environment variable that holds the API key. Overrides `vision.api_key_env` in config. | `REFINERY_VISION_API_KEY_ENV=OPENROUTER_API_KEY` |
 
 **Resolution order:**
 

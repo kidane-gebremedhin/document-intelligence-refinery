@@ -1,0 +1,7962 @@
+{
+  "document_id": "796e5dd1acddfade2970c34faebaa51b",
+  "page_count": 92,
+  "root": {
+    "id": "root",
+    "document_id": "796e5dd1acddfade2970c34faebaa51b",
+    "title": "Document",
+    "level": 0,
+    "page_start": 1,
+    "page_end": 92,
+    "child_sections": [
+      {
+        "id": "sec_0",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE",
+        "level": 1,
+        "page_start": 1,
+        "page_end": 1,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0001"
+        ]
+      },
+      {
+        "id": "sec_1",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ANNUAL REPORT",
+        "level": 1,
+        "page_start": 1,
+        "page_end": 1,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0002"
+        ]
+      },
+      {
+        "id": "sec_2",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "A",
+        "level": 1,
+        "page_start": 1,
+        "page_end": 1,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0003",
+          "ldu_0004"
+        ]
+      },
+      {
+        "id": "sec_3",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "RISING",
+        "level": 1,
+        "page_start": 1,
+        "page_end": 1,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0005"
+        ]
+      },
+      {
+        "id": "sec_4",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "WITH",
+        "level": 1,
+        "page_start": 1,
+        "page_end": 1,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0006"
+        ]
+      },
+      {
+        "id": "sec_5",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "AFRICA!",
+        "level": 1,
+        "page_start": 1,
+        "page_end": 1,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0007"
+        ]
+      },
+      {
+        "id": "sec_6",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "RE",
+        "level": 1,
+        "page_start": 1,
+        "page_end": 1,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0008",
+          "ldu_0009",
+          "ldu_0010"
+        ]
+      },
+      {
+        "id": "sec_7",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE",
+        "level": 1,
+        "page_start": 2,
+        "page_end": 2,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0011"
+        ]
+      },
+      {
+        "id": "sec_8",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ANNUAL REPORT",
+        "level": 1,
+        "page_start": 2,
+        "page_end": 2,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0012"
+        ]
+      },
+      {
+        "id": "sec_9",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "B",
+        "level": 1,
+        "page_start": 2,
+        "page_end": 2,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0013"
+        ]
+      },
+      {
+        "id": "sec_10",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "C",
+        "level": 1,
+        "page_start": 3,
+        "page_end": 3,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0014",
+          "ldu_0015"
+        ]
+      },
+      {
+        "id": "sec_11",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE",
+        "level": 1,
+        "page_start": 3,
+        "page_end": 3,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0016"
+        ]
+      },
+      {
+        "id": "sec_12",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ANNUAL REPORT",
+        "level": 1,
+        "page_start": 3,
+        "page_end": 3,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0017"
+        ]
+      },
+      {
+        "id": "sec_13",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0018"
+        ]
+      },
+      {
+        "id": "sec_14",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "I",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0019",
+          "ldu_0020",
+          "ldu_0021",
+          "ldu_0022",
+          "ldu_0023",
+          "ldu_0024",
+          "ldu_0025",
+          "ldu_0026"
+        ]
+      },
+      {
+        "id": "sec_15",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0027",
+          "ldu_0028",
+          "ldu_0029",
+          "ldu_0030",
+          "ldu_0031",
+          "ldu_0032",
+          "ldu_0033",
+          "ldu_0034",
+          "ldu_0035",
+          "ldu_0036"
+        ]
+      },
+      {
+        "id": "sec_16",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0037",
+          "ldu_0038"
+        ]
+      },
+      {
+        "id": "sec_17",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0039",
+          "ldu_0040",
+          "ldu_0041",
+          "ldu_0042",
+          "ldu_0043",
+          "ldu_0044",
+          "ldu_0045"
+        ]
+      },
+      {
+        "id": "sec_18",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0046",
+          "ldu_0047",
+          "ldu_0048",
+          "ldu_0049",
+          "ldu_0050"
+        ]
+      },
+      {
+        "id": "sec_19",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0051",
+          "ldu_0052",
+          "ldu_0053",
+          "ldu_0054",
+          "ldu_0055",
+          "ldu_0056",
+          "ldu_0057",
+          "ldu_0058"
+        ]
+      },
+      {
+        "id": "sec_20",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0059",
+          "ldu_0060",
+          "ldu_0061",
+          "ldu_0062",
+          "ldu_0063",
+          "ldu_0064",
+          "ldu_0065",
+          "ldu_0066",
+          "ldu_0067",
+          "ldu_0068",
+          "ldu_0069"
+        ]
+      },
+      {
+        "id": "sec_21",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0070",
+          "ldu_0071"
+        ]
+      },
+      {
+        "id": "sec_22",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0072",
+          "ldu_0073",
+          "ldu_0074",
+          "ldu_0075",
+          "ldu_0076",
+          "ldu_0077",
+          "ldu_0078"
+        ]
+      },
+      {
+        "id": "sec_23",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0079",
+          "ldu_0080",
+          "ldu_0081",
+          "ldu_0082",
+          "ldu_0083",
+          "ldu_0084",
+          "ldu_0085",
+          "ldu_0086"
+        ]
+      },
+      {
+        "id": "sec_24",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0087",
+          "ldu_0088",
+          "ldu_0089",
+          "ldu_0090",
+          "ldu_0091",
+          "ldu_0092",
+          "ldu_0093",
+          "ldu_0094",
+          "ldu_0095",
+          "ldu_0096",
+          "ldu_0097"
+        ]
+      },
+      {
+        "id": "sec_25",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0098",
+          "ldu_0099"
+        ]
+      },
+      {
+        "id": "sec_26",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0100",
+          "ldu_0101",
+          "ldu_0102",
+          "ldu_0103",
+          "ldu_0104"
+        ]
+      },
+      {
+        "id": "sec_27",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0105",
+          "ldu_0106",
+          "ldu_0107",
+          "ldu_0108",
+          "ldu_0109",
+          "ldu_0110",
+          "ldu_0111",
+          "ldu_0112",
+          "ldu_0113",
+          "ldu_0114",
+          "ldu_0115",
+          "ldu_0116",
+          "ldu_0117"
+        ]
+      },
+      {
+        "id": "sec_28",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0118",
+          "ldu_0119"
+        ]
+      },
+      {
+        "id": "sec_29",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0120",
+          "ldu_0121",
+          "ldu_0122",
+          "ldu_0123",
+          "ldu_0124",
+          "ldu_0125"
+        ]
+      },
+      {
+        "id": "sec_30",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0126",
+          "ldu_0127",
+          "ldu_0128",
+          "ldu_0129"
+        ]
+      },
+      {
+        "id": "sec_31",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0130",
+          "ldu_0131",
+          "ldu_0132",
+          "ldu_0133",
+          "ldu_0134",
+          "ldu_0135",
+          "ldu_0136",
+          "ldu_0137",
+          "ldu_0138",
+          "ldu_0139",
+          "ldu_0140"
+        ]
+      },
+      {
+        "id": "sec_32",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0141",
+          "ldu_0142"
+        ]
+      },
+      {
+        "id": "sec_33",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0143",
+          "ldu_0144",
+          "ldu_0145",
+          "ldu_0146",
+          "ldu_0147",
+          "ldu_0148"
+        ]
+      },
+      {
+        "id": "sec_34",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0149",
+          "ldu_0150",
+          "ldu_0151",
+          "ldu_0152"
+        ]
+      },
+      {
+        "id": "sec_35",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0153",
+          "ldu_0154",
+          "ldu_0155",
+          "ldu_0156",
+          "ldu_0157",
+          "ldu_0158",
+          "ldu_0159",
+          "ldu_0160",
+          "ldu_0161",
+          "ldu_0162",
+          "ldu_0163",
+          "ldu_0164"
+        ]
+      },
+      {
+        "id": "sec_36",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0165",
+          "ldu_0166"
+        ]
+      },
+      {
+        "id": "sec_37",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0167",
+          "ldu_0168",
+          "ldu_0169",
+          "ldu_0170",
+          "ldu_0171",
+          "ldu_0172"
+        ]
+      },
+      {
+        "id": "sec_38",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 4,
+        "page_end": 4,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0173",
+          "ldu_0174",
+          "ldu_0175"
+        ]
+      },
+      {
+        "id": "sec_39",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "II",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0176",
+          "ldu_0177",
+          "ldu_0178",
+          "ldu_0179",
+          "ldu_0180",
+          "ldu_0181"
+        ]
+      },
+      {
+        "id": "sec_40",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "NET CLAIMS RATIO",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0182",
+          "ldu_0183"
+        ]
+      },
+      {
+        "id": "sec_41",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0184",
+          "ldu_0185",
+          "ldu_0186"
+        ]
+      },
+      {
+        "id": "sec_42",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0187",
+          "ldu_0188",
+          "ldu_0189",
+          "ldu_0190"
+        ]
+      },
+      {
+        "id": "sec_43",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "NET COMMISSION RATIO",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0191",
+          "ldu_0192",
+          "ldu_0193",
+          "ldu_0194"
+        ]
+      },
+      {
+        "id": "sec_44",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0195",
+          "ldu_0196"
+        ]
+      },
+      {
+        "id": "sec_45",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "OPERATING AND OTHER EXPENSES RATIO",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0197",
+          "ldu_0198",
+          "ldu_0199",
+          "ldu_0200",
+          "ldu_0201",
+          "ldu_0202",
+          "ldu_0203",
+          "ldu_0204",
+          "ldu_0205",
+          "ldu_0206",
+          "ldu_0207",
+          "ldu_0208",
+          "ldu_0209",
+          "ldu_0210",
+          "ldu_0211",
+          "ldu_0212"
+        ]
+      },
+      {
+        "id": "sec_46",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0213",
+          "ldu_0214"
+        ]
+      },
+      {
+        "id": "sec_47",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0215",
+          "ldu_0216",
+          "ldu_0217",
+          "ldu_0218",
+          "ldu_0219",
+          "ldu_0220",
+          "ldu_0221",
+          "ldu_0222",
+          "ldu_0223"
+        ]
+      },
+      {
+        "id": "sec_48",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0224",
+          "ldu_0225",
+          "ldu_0226",
+          "ldu_0227"
+        ]
+      },
+      {
+        "id": "sec_49",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0228",
+          "ldu_0229",
+          "ldu_0230"
+        ]
+      },
+      {
+        "id": "sec_50",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0231",
+          "ldu_0232",
+          "ldu_0233",
+          "ldu_0234",
+          "ldu_0235"
+        ]
+      },
+      {
+        "id": "sec_51",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0236",
+          "ldu_0237",
+          "ldu_0238",
+          "ldu_0239",
+          "ldu_0240"
+        ]
+      },
+      {
+        "id": "sec_52",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "COMBINED RATIO",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0241",
+          "ldu_0242",
+          "ldu_0243",
+          "ldu_0244",
+          "ldu_0245",
+          "ldu_0246",
+          "ldu_0247",
+          "ldu_0248",
+          "ldu_0249",
+          "ldu_0250",
+          "ldu_0251"
+        ]
+      },
+      {
+        "id": "sec_53",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0252",
+          "ldu_0253",
+          "ldu_0254",
+          "ldu_0255",
+          "ldu_0256"
+        ]
+      },
+      {
+        "id": "sec_54",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0257",
+          "ldu_0258",
+          "ldu_0259",
+          "ldu_0260",
+          "ldu_0261"
+        ]
+      },
+      {
+        "id": "sec_55",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0262"
+        ]
+      },
+      {
+        "id": "sec_56",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0263",
+          "ldu_0264"
+        ]
+      },
+      {
+        "id": "sec_57",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0265"
+        ]
+      },
+      {
+        "id": "sec_58",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0266",
+          "ldu_0267",
+          "ldu_0268",
+          "ldu_0269"
+        ]
+      },
+      {
+        "id": "sec_59",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0270",
+          "ldu_0271",
+          "ldu_0272",
+          "ldu_0273"
+        ]
+      },
+      {
+        "id": "sec_60",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0274",
+          "ldu_0275"
+        ]
+      },
+      {
+        "id": "sec_61",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0276",
+          "ldu_0277",
+          "ldu_0278",
+          "ldu_0279",
+          "ldu_0280",
+          "ldu_0281",
+          "ldu_0282",
+          "ldu_0283",
+          "ldu_0284",
+          "ldu_0285",
+          "ldu_0286",
+          "ldu_0287",
+          "ldu_0288",
+          "ldu_0289",
+          "ldu_0290"
+        ]
+      },
+      {
+        "id": "sec_62",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0291",
+          "ldu_0292"
+        ]
+      },
+      {
+        "id": "sec_63",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0293",
+          "ldu_0294",
+          "ldu_0295",
+          "ldu_0296",
+          "ldu_0297",
+          "ldu_0298",
+          "ldu_0299",
+          "ldu_0300",
+          "ldu_0301",
+          "ldu_0302",
+          "ldu_0303",
+          "ldu_0304",
+          "ldu_0305",
+          "ldu_0306",
+          "ldu_0307",
+          "ldu_0308",
+          "ldu_0309",
+          "ldu_0310",
+          "ldu_0311",
+          "ldu_0312"
+        ]
+      },
+      {
+        "id": "sec_64",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0313",
+          "ldu_0314",
+          "ldu_0315",
+          "ldu_0316"
+        ]
+      },
+      {
+        "id": "sec_65",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0317",
+          "ldu_0318",
+          "ldu_0319",
+          "ldu_0320"
+        ]
+      },
+      {
+        "id": "sec_66",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0321",
+          "ldu_0322",
+          "ldu_0323",
+          "ldu_0324",
+          "ldu_0325",
+          "ldu_0326",
+          "ldu_0327",
+          "ldu_0328",
+          "ldu_0329",
+          "ldu_0330",
+          "ldu_0331",
+          "ldu_0332",
+          "ldu_0333",
+          "ldu_0334",
+          "ldu_0335",
+          "ldu_0336",
+          "ldu_0337",
+          "ldu_0338",
+          "ldu_0339",
+          "ldu_0340"
+        ]
+      },
+      {
+        "id": "sec_67",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0341"
+        ]
+      },
+      {
+        "id": "sec_68",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ANNUAL REPORT",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0342"
+        ]
+      },
+      {
+        "id": "sec_69",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "NET COMMISSION RATIO",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0343"
+        ]
+      },
+      {
+        "id": "sec_70",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "NET CLAIMS RATIO",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0344",
+          "ldu_0345",
+          "ldu_0346"
+        ]
+      },
+      {
+        "id": "sec_71",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0347",
+          "ldu_0348"
+        ]
+      },
+      {
+        "id": "sec_72",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0349",
+          "ldu_0350",
+          "ldu_0351"
+        ]
+      },
+      {
+        "id": "sec_73",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0352",
+          "ldu_0353"
+        ]
+      },
+      {
+        "id": "sec_74",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0354",
+          "ldu_0355",
+          "ldu_0356",
+          "ldu_0357",
+          "ldu_0358",
+          "ldu_0359",
+          "ldu_0360"
+        ]
+      },
+      {
+        "id": "sec_75",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0361"
+        ]
+      },
+      {
+        "id": "sec_76",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0362"
+        ]
+      },
+      {
+        "id": "sec_77",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "OPERATING AND OTHER EXPENSES RATIO 2017 2018",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0363"
+        ]
+      },
+      {
+        "id": "sec_78",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0364",
+          "ldu_0365"
+        ]
+      },
+      {
+        "id": "sec_79",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0366",
+          "ldu_0367",
+          "ldu_0368"
+        ]
+      },
+      {
+        "id": "sec_80",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4  %",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0369",
+          "ldu_0370",
+          "ldu_0371"
+        ]
+      },
+      {
+        "id": "sec_81",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0372",
+          "ldu_0373",
+          "ldu_0374"
+        ]
+      },
+      {
+        "id": "sec_82",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0375"
+        ]
+      },
+      {
+        "id": "sec_83",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "COMBINED RATIO",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0376"
+        ]
+      },
+      {
+        "id": "sec_84",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0377",
+          "ldu_0378",
+          "ldu_0379"
+        ]
+      },
+      {
+        "id": "sec_85",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0380",
+          "ldu_0381",
+          "ldu_0382",
+          "ldu_0383",
+          "ldu_0384",
+          "ldu_0385",
+          "ldu_0386",
+          "ldu_0387",
+          "ldu_0388",
+          "ldu_0389",
+          "ldu_0390"
+        ]
+      },
+      {
+        "id": "sec_86",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0391",
+          "ldu_0392"
+        ]
+      },
+      {
+        "id": "sec_87",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "30 June",
+        "level": 1,
+        "page_start": 5,
+        "page_end": 5,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0393",
+          "ldu_0394",
+          "ldu_0395"
+        ]
+      },
+      {
+        "id": "sec_88",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0396"
+        ]
+      },
+      {
+        "id": "sec_89",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "III",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0397",
+          "ldu_0398"
+        ]
+      },
+      {
+        "id": "sec_90",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "MISSION, VISION AND CORE VALUES",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0399",
+          "ldu_0400",
+          "ldu_0401",
+          "ldu_0402",
+          "ldu_0403",
+          "ldu_0404",
+          "ldu_0405"
+        ]
+      },
+      {
+        "id": "sec_91",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "OPERATIONAL EXCELLENCE",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0406"
+        ]
+      },
+      {
+        "id": "sec_92",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "CONTINUOUS LEARNING AND INNOVATION",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0407"
+        ]
+      },
+      {
+        "id": "sec_93",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "BUILDING STRONG PARTNERSHIP WITH CUSTOMERS",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0408"
+        ]
+      },
+      {
+        "id": "sec_94",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "TECHNOLOGY SAVVY STAFF AND BUSINESS PROCESS",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0409"
+        ]
+      },
+      {
+        "id": "sec_95",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "OPENNESS AND TRANSPARENCY",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0410"
+        ]
+      },
+      {
+        "id": "sec_96",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "HONESTY AND INTEGRITY",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0411"
+        ]
+      },
+      {
+        "id": "sec_97",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "HIGH PROFESSSIONALISM",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0412"
+        ]
+      },
+      {
+        "id": "sec_98",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "NATIONAL ICON",
+        "level": 1,
+        "page_start": 6,
+        "page_end": 6,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0413"
+        ]
+      },
+      {
+        "id": "sec_99",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "IV",
+        "level": 1,
+        "page_start": 7,
+        "page_end": 7,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0414"
+        ]
+      },
+      {
+        "id": "sec_100",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 7,
+        "page_end": 7,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0415",
+          "ldu_0416",
+          "ldu_0417",
+          "ldu_0418"
+        ]
+      },
+      {
+        "id": "sec_101",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 8,
+        "page_end": 8,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0419"
+        ]
+      },
+      {
+        "id": "sec_102",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "V",
+        "level": 1,
+        "page_start": 8,
+        "page_end": 8,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0420",
+          "ldu_0421",
+          "ldu_0422",
+          "ldu_0423",
+          "ldu_0424",
+          "ldu_0425"
+        ]
+      },
+      {
+        "id": "sec_103",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "VI",
+        "level": 1,
+        "page_start": 9,
+        "page_end": 9,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0426"
+        ]
+      },
+      {
+        "id": "sec_104",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 9,
+        "page_end": 9,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0427",
+          "ldu_0428",
+          "ldu_0429",
+          "ldu_0430",
+          "ldu_0431",
+          "ldu_0432",
+          "ldu_0433",
+          "ldu_0434"
+        ]
+      },
+      {
+        "id": "sec_105",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 10,
+        "page_end": 10,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0435"
+        ]
+      },
+      {
+        "id": "sec_106",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "VII",
+        "level": 1,
+        "page_start": 10,
+        "page_end": 10,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0436",
+          "ldu_0437",
+          "ldu_0438",
+          "ldu_0439",
+          "ldu_0440",
+          "ldu_0441"
+        ]
+      },
+      {
+        "id": "sec_107",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "VIII",
+        "level": 1,
+        "page_start": 11,
+        "page_end": 11,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0442"
+        ]
+      },
+      {
+        "id": "sec_108",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 11,
+        "page_end": 11,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0443",
+          "ldu_0444",
+          "ldu_0445",
+          "ldu_0446",
+          "ldu_0447"
+        ]
+      },
+      {
+        "id": "sec_109",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 12,
+        "page_end": 12,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0448"
+        ]
+      },
+      {
+        "id": "sec_110",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "IX",
+        "level": 1,
+        "page_start": 12,
+        "page_end": 12,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0449",
+          "ldu_0450"
+        ]
+      },
+      {
+        "id": "sec_111",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "MEMBERS OF THE BOARD OF DIRECTORS:",
+        "level": 1,
+        "page_start": 12,
+        "page_end": 12,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0451",
+          "ldu_0452",
+          "ldu_0453",
+          "ldu_0454",
+          "ldu_0455",
+          "ldu_0456",
+          "ldu_0457",
+          "ldu_0458",
+          "ldu_0459",
+          "ldu_0460",
+          "ldu_0461"
+        ]
+      },
+      {
+        "id": "sec_112",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "X",
+        "level": 1,
+        "page_start": 13,
+        "page_end": 13,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0462"
+        ]
+      },
+      {
+        "id": "sec_113",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 13,
+        "page_end": 13,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0463",
+          "ldu_0464",
+          "ldu_0465",
+          "ldu_0466",
+          "ldu_0467",
+          "ldu_0468",
+          "ldu_0469",
+          "ldu_0470"
+        ]
+      },
+      {
+        "id": "sec_114",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 14,
+        "page_end": 14,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0471"
+        ]
+      },
+      {
+        "id": "sec_115",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XI",
+        "level": 1,
+        "page_start": 14,
+        "page_end": 14,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0472",
+          "ldu_0473",
+          "ldu_0474",
+          "ldu_0475"
+        ]
+      },
+      {
+        "id": "sec_116",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "BACKGROUND INFORMATION",
+        "level": 1,
+        "page_start": 14,
+        "page_end": 14,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0476",
+          "ldu_0477",
+          "ldu_0478",
+          "ldu_0479",
+          "ldu_0480",
+          "ldu_0481",
+          "ldu_0482",
+          "ldu_0483",
+          "ldu_0484"
+        ]
+      },
+      {
+        "id": "sec_117",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XII",
+        "level": 1,
+        "page_start": 15,
+        "page_end": 15,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0485"
+        ]
+      },
+      {
+        "id": "sec_118",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 15,
+        "page_end": 15,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0486",
+          "ldu_0487"
+        ]
+      },
+      {
+        "id": "sec_119",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "BOARD OF DIRECTORS",
+        "level": 1,
+        "page_start": 15,
+        "page_end": 15,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0488",
+          "ldu_0489",
+          "ldu_0490",
+          "ldu_0491"
+        ]
+      },
+      {
+        "id": "sec_120",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "TRADING ENVIRONMENT",
+        "level": 1,
+        "page_start": 15,
+        "page_end": 15,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0492",
+          "ldu_0493",
+          "ldu_0494"
+        ]
+      },
+      {
+        "id": "sec_121",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.1 THE GLOBAL REINSURANCE SECTOR",
+        "level": 1,
+        "page_start": 15,
+        "page_end": 15,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0493",
+          "ldu_0494"
+        ]
+      },
+      {
+        "id": "sec_122",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 16,
+        "page_end": 16,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0495"
+        ]
+      },
+      {
+        "id": "sec_123",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XIII",
+        "level": 1,
+        "page_start": 16,
+        "page_end": 16,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0496",
+          "ldu_0497",
+          "ldu_0498",
+          "ldu_0499",
+          "ldu_0500",
+          "ldu_0501",
+          "ldu_0502"
+        ]
+      },
+      {
+        "id": "sec_124",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.2 Ethiopian\tEconomic\tProfile\tand\tthe\tinsurance\tindustry",
+        "level": 1,
+        "page_start": 16,
+        "page_end": 16,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0499",
+          "ldu_0500",
+          "ldu_0501",
+          "ldu_0502"
+        ]
+      },
+      {
+        "id": "sec_125",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XIV",
+        "level": 1,
+        "page_start": 17,
+        "page_end": 17,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0503"
+        ]
+      },
+      {
+        "id": "sec_126",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 17,
+        "page_end": 17,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0504",
+          "ldu_0505",
+          "ldu_0506",
+          "ldu_0507",
+          "ldu_0508",
+          "ldu_0509",
+          "ldu_0510",
+          "ldu_0511"
+        ]
+      },
+      {
+        "id": "sec_127",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.3 COMPULSORY POLICY CESSIONS (CPC): THE CASE FOR AND AGAINST.",
+        "level": 1,
+        "page_start": 17,
+        "page_end": 17,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0508",
+          "ldu_0509",
+          "ldu_0510",
+          "ldu_0511"
+        ]
+      },
+      {
+        "id": "sec_128",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 18,
+        "page_end": 18,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0512"
+        ]
+      },
+      {
+        "id": "sec_129",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XV",
+        "level": 1,
+        "page_start": 18,
+        "page_end": 18,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0513",
+          "ldu_0514",
+          "ldu_0515",
+          "ldu_0516",
+          "ldu_0517",
+          "ldu_0518",
+          "ldu_0519",
+          "ldu_0520",
+          "ldu_0521"
+        ]
+      },
+      {
+        "id": "sec_130",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.4 MANNER OF ACCEPTING AND CEDING FACULTATIVE BUSINESS:",
+        "level": 1,
+        "page_start": 18,
+        "page_end": 18,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0517",
+          "ldu_0518",
+          "ldu_0519",
+          "ldu_0520",
+          "ldu_0521"
+        ]
+      },
+      {
+        "id": "sec_131",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XVI",
+        "level": 1,
+        "page_start": 19,
+        "page_end": 19,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0522"
+        ]
+      },
+      {
+        "id": "sec_132",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 19,
+        "page_end": 19,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0523",
+          "ldu_0524",
+          "ldu_0525",
+          "ldu_0526",
+          "ldu_0527",
+          "ldu_0528"
+        ]
+      },
+      {
+        "id": "sec_133",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.5 TIMELY FILING OF QUARTERLY REPORTS AND SETTLMENT OF BALANCES:",
+        "level": 1,
+        "page_start": 19,
+        "page_end": 19,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0524",
+          "ldu_0525",
+          "ldu_0526",
+          "ldu_0527",
+          "ldu_0528"
+        ]
+      },
+      {
+        "id": "sec_134",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 20,
+        "page_end": 20,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0529"
+        ]
+      },
+      {
+        "id": "sec_135",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XVII",
+        "level": 1,
+        "page_start": 20,
+        "page_end": 20,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0530",
+          "ldu_0531",
+          "ldu_0532",
+          "ldu_0533",
+          "ldu_0534",
+          "ldu_0535",
+          "ldu_0536",
+          "ldu_0537"
+        ]
+      },
+      {
+        "id": "sec_136",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.6 Collection of Premiums:",
+        "level": 1,
+        "page_start": 20,
+        "page_end": 20,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0531",
+          "ldu_0532",
+          "ldu_0533"
+        ]
+      },
+      {
+        "id": "sec_137",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.7 Getting\tvoluntary\tcessions\tfrom\tthe\tlocal\tmarket:",
+        "level": 1,
+        "page_start": 20,
+        "page_end": 20,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0534",
+          "ldu_0535"
+        ]
+      },
+      {
+        "id": "sec_138",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.8 Inward Foreign Business",
+        "level": 1,
+        "page_start": 20,
+        "page_end": 20,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0536",
+          "ldu_0537"
+        ]
+      },
+      {
+        "id": "sec_139",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XVIII",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0538"
+        ]
+      },
+      {
+        "id": "sec_140",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0539",
+          "ldu_0540"
+        ]
+      },
+      {
+        "id": "sec_141",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "FINANCIAL PERFORMANCE",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0541"
+        ]
+      },
+      {
+        "id": "sec_142",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "GROSS WRITTEN PREMIUM",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0542",
+          "ldu_0543",
+          "ldu_0544",
+          "ldu_0545"
+        ]
+      },
+      {
+        "id": "sec_143",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "CLAIMS PAID",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0546",
+          "ldu_0547"
+        ]
+      },
+      {
+        "id": "sec_144",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "NET CLAIMS INCURRED",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0548",
+          "ldu_0549"
+        ]
+      },
+      {
+        "id": "sec_145",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ACQUISITION COST",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0550",
+          "ldu_0551"
+        ]
+      },
+      {
+        "id": "sec_146",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "COMMISSION INCOME",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0552",
+          "ldu_0553"
+        ]
+      },
+      {
+        "id": "sec_147",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "OPERATING AND OTHER EXPENSES",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0554",
+          "ldu_0555"
+        ]
+      },
+      {
+        "id": "sec_148",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "NET INVESTMENT INCOME",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0556",
+          "ldu_0557"
+        ]
+      },
+      {
+        "id": "sec_149",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "PORTFOLIO MIX",
+        "level": 1,
+        "page_start": 21,
+        "page_end": 21,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0558",
+          "ldu_0559",
+          "ldu_0560",
+          "ldu_0561",
+          "ldu_0562",
+          "ldu_0563",
+          "ldu_0564"
+        ]
+      },
+      {
+        "id": "sec_150",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 22,
+        "page_end": 22,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0565"
+        ]
+      },
+      {
+        "id": "sec_151",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XIX",
+        "level": 1,
+        "page_start": 22,
+        "page_end": 22,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0566"
+        ]
+      },
+      {
+        "id": "sec_152",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "PROFIT",
+        "level": 1,
+        "page_start": 22,
+        "page_end": 22,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0567",
+          "ldu_0568"
+        ]
+      },
+      {
+        "id": "sec_153",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "NON-FINANCIAL PERFORMANCE",
+        "level": 1,
+        "page_start": 22,
+        "page_end": 22,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0569"
+        ]
+      },
+      {
+        "id": "sec_154",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "IT PROJECT",
+        "level": 1,
+        "page_start": 22,
+        "page_end": 22,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0570",
+          "ldu_0571",
+          "ldu_0572"
+        ]
+      },
+      {
+        "id": "sec_155",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "HUMAN RESOURCE STRATEGY AND PROFILE",
+        "level": 1,
+        "page_start": 22,
+        "page_end": 22,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0573",
+          "ldu_0574",
+          "ldu_0575",
+          "ldu_0576"
+        ]
+      },
+      {
+        "id": "sec_156",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XX",
+        "level": 1,
+        "page_start": 23,
+        "page_end": 23,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0577"
+        ]
+      },
+      {
+        "id": "sec_157",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 23,
+        "page_end": 23,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0578"
+        ]
+      },
+      {
+        "id": "sec_158",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ADOPTION OF INTERNATIONAL REPORTING STANDARDS (IFRS)",
+        "level": 1,
+        "page_start": 23,
+        "page_end": 23,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0579",
+          "ldu_0580",
+          "ldu_0581",
+          "ldu_0582"
+        ]
+      },
+      {
+        "id": "sec_159",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "RETRO- PROGRAM ARRANGEMENT",
+        "level": 1,
+        "page_start": 23,
+        "page_end": 23,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0583",
+          "ldu_0584"
+        ]
+      },
+      {
+        "id": "sec_160",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "BUSINESS DEVELOPMENT, PROMOTION AND COMMUNICATION",
+        "level": 1,
+        "page_start": 23,
+        "page_end": 23,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0585",
+          "ldu_0586",
+          "ldu_0587",
+          "ldu_0588",
+          "ldu_0589",
+          "ldu_0590",
+          "ldu_0591",
+          "ldu_0592"
+        ]
+      },
+      {
+        "id": "sec_161",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 24,
+        "page_end": 24,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0593"
+        ]
+      },
+      {
+        "id": "sec_162",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XXI",
+        "level": 1,
+        "page_start": 24,
+        "page_end": 24,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0594",
+          "ldu_0595",
+          "ldu_0596",
+          "ldu_0597",
+          "ldu_0598",
+          "ldu_0599",
+          "ldu_0600",
+          "ldu_0601",
+          "ldu_0602",
+          "ldu_0603"
+        ]
+      },
+      {
+        "id": "sec_163",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "APPOINTMENT OF ACTUARY AND CONTACTING RATING AGENCIES",
+        "level": 1,
+        "page_start": 24,
+        "page_end": 24,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0604",
+          "ldu_0605",
+          "ldu_0606",
+          "ldu_0607",
+          "ldu_0608"
+        ]
+      },
+      {
+        "id": "sec_164",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XXII",
+        "level": 1,
+        "page_start": 25,
+        "page_end": 25,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0609"
+        ]
+      },
+      {
+        "id": "sec_165",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 25,
+        "page_end": 25,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0610",
+          "ldu_0611",
+          "ldu_0612",
+          "ldu_0613",
+          "ldu_0614",
+          "ldu_0615",
+          "ldu_0616",
+          "ldu_0617",
+          "ldu_0618",
+          "ldu_0619"
+        ]
+      },
+      {
+        "id": "sec_166",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 26,
+        "page_end": 26,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0620"
+        ]
+      },
+      {
+        "id": "sec_167",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XXIII",
+        "level": 1,
+        "page_start": 26,
+        "page_end": 26,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0621",
+          "ldu_0622",
+          "ldu_0623",
+          "ldu_0624",
+          "ldu_0625",
+          "ldu_0626",
+          "ldu_0627",
+          "ldu_0628",
+          "ldu_0629"
+        ]
+      },
+      {
+        "id": "sec_168",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "XXIV",
+        "level": 1,
+        "page_start": 27,
+        "page_end": 27,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0630"
+        ]
+      },
+      {
+        "id": "sec_169",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE",
+        "level": 1,
+        "page_start": 27,
+        "page_end": 27,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0631"
+        ]
+      },
+      {
+        "id": "sec_170",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ANNUAL REPORT",
+        "level": 1,
+        "page_start": 27,
+        "page_end": 27,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0632",
+          "ldu_0633"
+        ]
+      },
+      {
+        "id": "sec_171",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 28,
+        "page_end": 28,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0634",
+          "ldu_0635",
+          "ldu_0636",
+          "ldu_0637",
+          "ldu_0638",
+          "ldu_0639",
+          "ldu_0640",
+          "ldu_0641",
+          "ldu_0642",
+          "ldu_0643",
+          "ldu_0644",
+          "ldu_0645",
+          "ldu_0646",
+          "ldu_0647",
+          "ldu_0648",
+          "ldu_0649",
+          "ldu_0650"
+        ]
+      },
+      {
+        "id": "sec_172",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 29,
+        "page_end": 29,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0652",
+          "ldu_0653",
+          "ldu_0654",
+          "ldu_0655",
+          "ldu_0656",
+          "ldu_0657",
+          "ldu_0658",
+          "ldu_0659",
+          "ldu_0660",
+          "ldu_0661",
+          "ldu_0662",
+          "ldu_0663",
+          "ldu_0664"
+        ]
+      },
+      {
+        "id": "sec_173",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 30,
+        "page_end": 30,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0665",
+          "ldu_0666",
+          "ldu_0667",
+          "ldu_0668",
+          "ldu_0669",
+          "ldu_0670",
+          "ldu_0671",
+          "ldu_0672",
+          "ldu_0673",
+          "ldu_0674",
+          "ldu_0675"
+        ]
+      },
+      {
+        "id": "sec_174",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 31,
+        "page_end": 31,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0677",
+          "ldu_0678",
+          "ldu_0679",
+          "ldu_0680",
+          "ldu_0681",
+          "ldu_0682",
+          "ldu_0683",
+          "ldu_0684",
+          "ldu_0685",
+          "ldu_0686",
+          "ldu_0687",
+          "ldu_0688",
+          "ldu_0689",
+          "ldu_0690",
+          "ldu_0691"
+        ]
+      },
+      {
+        "id": "sec_175",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 32,
+        "page_end": 32,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0692",
+          "ldu_0693",
+          "ldu_0694",
+          "ldu_0695",
+          "ldu_0696",
+          "ldu_0697",
+          "ldu_0698",
+          "ldu_0699",
+          "ldu_0700",
+          "ldu_0701"
+        ]
+      },
+      {
+        "id": "sec_176",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 33,
+        "page_end": 33,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0703",
+          "ldu_0704",
+          "ldu_0705",
+          "ldu_0706"
+        ]
+      },
+      {
+        "id": "sec_177",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 34,
+        "page_end": 34,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0707",
+          "ldu_0708",
+          "ldu_0709",
+          "ldu_0710",
+          "ldu_0711"
+        ]
+      },
+      {
+        "id": "sec_178",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 35,
+        "page_end": 35,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0713",
+          "ldu_0714",
+          "ldu_0715",
+          "ldu_0716"
+        ]
+      },
+      {
+        "id": "sec_179",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 36,
+        "page_end": 36,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0717",
+          "ldu_0718",
+          "ldu_0719"
+        ]
+      },
+      {
+        "id": "sec_180",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "1. Reporting entity",
+        "level": 1,
+        "page_start": 36,
+        "page_end": 36,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0720",
+          "ldu_0721",
+          "ldu_0722"
+        ]
+      },
+      {
+        "id": "sec_181",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "2. Basis of accounting",
+        "level": 1,
+        "page_start": 36,
+        "page_end": 36,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0723",
+          "ldu_0724",
+          "ldu_0725",
+          "ldu_0726",
+          "ldu_0727"
+        ]
+      },
+      {
+        "id": "sec_182",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 37,
+        "page_end": 37,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0729",
+          "ldu_0730",
+          "ldu_0731",
+          "ldu_0732",
+          "ldu_0733",
+          "ldu_0734",
+          "ldu_0735",
+          "ldu_0736",
+          "ldu_0737",
+          "ldu_0738",
+          "ldu_0739",
+          "ldu_0740",
+          "ldu_0741",
+          "ldu_0742",
+          "ldu_0743",
+          "ldu_0744",
+          "ldu_0745",
+          "ldu_0746",
+          "ldu_0747"
+        ]
+      },
+      {
+        "id": "sec_183",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 38,
+        "page_end": 38,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0748",
+          "ldu_0749",
+          "ldu_0750"
+        ]
+      },
+      {
+        "id": "sec_184",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3. Significant accounting policies",
+        "level": 1,
+        "page_start": 38,
+        "page_end": 38,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0751",
+          "ldu_0752",
+          "ldu_0753",
+          "ldu_0754",
+          "ldu_0755",
+          "ldu_0756",
+          "ldu_0757",
+          "ldu_0758",
+          "ldu_0759",
+          "ldu_0760",
+          "ldu_0761",
+          "ldu_0762"
+        ]
+      },
+      {
+        "id": "sec_185",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 39,
+        "page_end": 39,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0764",
+          "ldu_0765"
+        ]
+      },
+      {
+        "id": "sec_186",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3. Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 39,
+        "page_end": 39,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0766",
+          "ldu_0767",
+          "ldu_0768",
+          "ldu_0769",
+          "ldu_0770",
+          "ldu_0771",
+          "ldu_0772",
+          "ldu_0773",
+          "ldu_0774",
+          "ldu_0775",
+          "ldu_0776",
+          "ldu_0777"
+        ]
+      },
+      {
+        "id": "sec_187",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 40,
+        "page_end": 40,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0778",
+          "ldu_0779",
+          "ldu_0780"
+        ]
+      },
+      {
+        "id": "sec_188",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 40,
+        "page_end": 40,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0781",
+          "ldu_0782",
+          "ldu_0783",
+          "ldu_0784",
+          "ldu_0785",
+          "ldu_0786",
+          "ldu_0787",
+          "ldu_0788",
+          "ldu_0789",
+          "ldu_0790",
+          "ldu_0791",
+          "ldu_0792"
+        ]
+      },
+      {
+        "id": "sec_189",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 41,
+        "page_end": 41,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0794",
+          "ldu_0795"
+        ]
+      },
+      {
+        "id": "sec_190",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 41,
+        "page_end": 41,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0796",
+          "ldu_0797",
+          "ldu_0798",
+          "ldu_0799",
+          "ldu_0800",
+          "ldu_0801",
+          "ldu_0802",
+          "ldu_0803",
+          "ldu_0804",
+          "ldu_0805",
+          "ldu_0806",
+          "ldu_0807",
+          "ldu_0808",
+          "ldu_0809",
+          "ldu_0810",
+          "ldu_0811",
+          "ldu_0812",
+          "ldu_0813",
+          "ldu_0814",
+          "ldu_0815"
+        ]
+      },
+      {
+        "id": "sec_191",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 42,
+        "page_end": 42,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0816",
+          "ldu_0817",
+          "ldu_0818"
+        ]
+      },
+      {
+        "id": "sec_192",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 42,
+        "page_end": 42,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0819",
+          "ldu_0820",
+          "ldu_0821",
+          "ldu_0822",
+          "ldu_0823",
+          "ldu_0824",
+          "ldu_0825",
+          "ldu_0826",
+          "ldu_0827",
+          "ldu_0828",
+          "ldu_0829",
+          "ldu_0830",
+          "ldu_0831"
+        ]
+      },
+      {
+        "id": "sec_193",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 43,
+        "page_end": 43,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0833",
+          "ldu_0834"
+        ]
+      },
+      {
+        "id": "sec_194",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 43,
+        "page_end": 43,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0835",
+          "ldu_0836",
+          "ldu_0837",
+          "ldu_0838",
+          "ldu_0839",
+          "ldu_0840",
+          "ldu_0841",
+          "ldu_0842",
+          "ldu_0843",
+          "ldu_0844",
+          "ldu_0845",
+          "ldu_0846",
+          "ldu_0847"
+        ]
+      },
+      {
+        "id": "sec_195",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 44,
+        "page_end": 44,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0848",
+          "ldu_0849",
+          "ldu_0850"
+        ]
+      },
+      {
+        "id": "sec_196",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 44,
+        "page_end": 44,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0851",
+          "ldu_0852",
+          "ldu_0853",
+          "ldu_0854",
+          "ldu_0855",
+          "ldu_0856",
+          "ldu_0857",
+          "ldu_0858",
+          "ldu_0859",
+          "ldu_0860",
+          "ldu_0861",
+          "ldu_0862",
+          "ldu_0863"
+        ]
+      },
+      {
+        "id": "sec_197",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 45,
+        "page_end": 45,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0865",
+          "ldu_0866"
+        ]
+      },
+      {
+        "id": "sec_198",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 45,
+        "page_end": 45,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0867",
+          "ldu_0868",
+          "ldu_0869",
+          "ldu_0870",
+          "ldu_0871",
+          "ldu_0872",
+          "ldu_0873",
+          "ldu_0874",
+          "ldu_0875",
+          "ldu_0876",
+          "ldu_0877",
+          "ldu_0878",
+          "ldu_0879",
+          "ldu_0880",
+          "ldu_0881",
+          "ldu_0882"
+        ]
+      },
+      {
+        "id": "sec_199",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 46,
+        "page_end": 46,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0883",
+          "ldu_0884",
+          "ldu_0885"
+        ]
+      },
+      {
+        "id": "sec_200",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 46,
+        "page_end": 46,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0886",
+          "ldu_0887",
+          "ldu_0888",
+          "ldu_0889",
+          "ldu_0890",
+          "ldu_0891",
+          "ldu_0892",
+          "ldu_0893",
+          "ldu_0894",
+          "ldu_0895",
+          "ldu_0896",
+          "ldu_0897",
+          "ldu_0898",
+          "ldu_0899",
+          "ldu_0900",
+          "ldu_0901",
+          "ldu_0902",
+          "ldu_0903"
+        ]
+      },
+      {
+        "id": "sec_201",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 47,
+        "page_end": 47,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0905",
+          "ldu_0906"
+        ]
+      },
+      {
+        "id": "sec_202",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 47,
+        "page_end": 47,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0907",
+          "ldu_0908",
+          "ldu_0909",
+          "ldu_0910",
+          "ldu_0911",
+          "ldu_0912",
+          "ldu_0913",
+          "ldu_0914",
+          "ldu_0915",
+          "ldu_0916",
+          "ldu_0917"
+        ]
+      },
+      {
+        "id": "sec_203",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 48,
+        "page_end": 48,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0918",
+          "ldu_0919",
+          "ldu_0920"
+        ]
+      },
+      {
+        "id": "sec_204",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 48,
+        "page_end": 48,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0921",
+          "ldu_0922",
+          "ldu_0923",
+          "ldu_0924",
+          "ldu_0925",
+          "ldu_0926",
+          "ldu_0927",
+          "ldu_0928",
+          "ldu_0929",
+          "ldu_0930",
+          "ldu_0931",
+          "ldu_0932"
+        ]
+      },
+      {
+        "id": "sec_205",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 49,
+        "page_end": 49,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0934",
+          "ldu_0935"
+        ]
+      },
+      {
+        "id": "sec_206",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 49,
+        "page_end": 49,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0936",
+          "ldu_0937",
+          "ldu_0938",
+          "ldu_0939",
+          "ldu_0940",
+          "ldu_0941",
+          "ldu_0942",
+          "ldu_0943",
+          "ldu_0944",
+          "ldu_0945",
+          "ldu_0946"
+        ]
+      },
+      {
+        "id": "sec_207",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 50,
+        "page_end": 50,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0947",
+          "ldu_0948",
+          "ldu_0949"
+        ]
+      },
+      {
+        "id": "sec_208",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 50,
+        "page_end": 50,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0950",
+          "ldu_0951",
+          "ldu_0952",
+          "ldu_0953",
+          "ldu_0954",
+          "ldu_0955",
+          "ldu_0956",
+          "ldu_0957",
+          "ldu_0958",
+          "ldu_0959",
+          "ldu_0960"
+        ]
+      },
+      {
+        "id": "sec_209",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 51,
+        "page_end": 51,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0962",
+          "ldu_0963"
+        ]
+      },
+      {
+        "id": "sec_210",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 51,
+        "page_end": 51,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0964",
+          "ldu_0965",
+          "ldu_0966",
+          "ldu_0967",
+          "ldu_0968",
+          "ldu_0969",
+          "ldu_0970",
+          "ldu_0971",
+          "ldu_0972",
+          "ldu_0973",
+          "ldu_0974",
+          "ldu_0975",
+          "ldu_0976"
+        ]
+      },
+      {
+        "id": "sec_211",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 52,
+        "page_end": 52,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0977",
+          "ldu_0978",
+          "ldu_0979"
+        ]
+      },
+      {
+        "id": "sec_212",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 52,
+        "page_end": 52,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0980",
+          "ldu_0981",
+          "ldu_0982",
+          "ldu_0983",
+          "ldu_0984",
+          "ldu_0985",
+          "ldu_0986",
+          "ldu_0987",
+          "ldu_0988",
+          "ldu_0989",
+          "ldu_0990"
+        ]
+      },
+      {
+        "id": "sec_213",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 53,
+        "page_end": 53,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0992",
+          "ldu_0993"
+        ]
+      },
+      {
+        "id": "sec_214",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 53,
+        "page_end": 53,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_0994",
+          "ldu_0995",
+          "ldu_0996",
+          "ldu_0997",
+          "ldu_0998",
+          "ldu_0999",
+          "ldu_1000",
+          "ldu_1001",
+          "ldu_1002",
+          "ldu_1003",
+          "ldu_1004",
+          "ldu_1005",
+          "ldu_1006"
+        ]
+      },
+      {
+        "id": "sec_215",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 54,
+        "page_end": 54,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1007",
+          "ldu_1008",
+          "ldu_1009"
+        ]
+      },
+      {
+        "id": "sec_216",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 54,
+        "page_end": 54,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1010",
+          "ldu_1011",
+          "ldu_1012",
+          "ldu_1013",
+          "ldu_1014",
+          "ldu_1015",
+          "ldu_1016",
+          "ldu_1017",
+          "ldu_1018",
+          "ldu_1019",
+          "ldu_1020",
+          "ldu_1021",
+          "ldu_1022",
+          "ldu_1023"
+        ]
+      },
+      {
+        "id": "sec_217",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 55,
+        "page_end": 55,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1025",
+          "ldu_1026"
+        ]
+      },
+      {
+        "id": "sec_218",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 55,
+        "page_end": 55,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1027",
+          "ldu_1028",
+          "ldu_1029",
+          "ldu_1030",
+          "ldu_1031",
+          "ldu_1032",
+          "ldu_1033",
+          "ldu_1034",
+          "ldu_1035"
+        ]
+      },
+      {
+        "id": "sec_219",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 56,
+        "page_end": 56,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1036",
+          "ldu_1037",
+          "ldu_1038"
+        ]
+      },
+      {
+        "id": "sec_220",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 56,
+        "page_end": 56,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1039",
+          "ldu_1040",
+          "ldu_1041",
+          "ldu_1042",
+          "ldu_1043",
+          "ldu_1044",
+          "ldu_1045",
+          "ldu_1046",
+          "ldu_1047"
+        ]
+      },
+      {
+        "id": "sec_221",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 57,
+        "page_end": 57,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1049",
+          "ldu_1050",
+          "ldu_1051",
+          "ldu_1052",
+          "ldu_1053"
+        ]
+      },
+      {
+        "id": "sec_222",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 58,
+        "page_end": 58,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1054",
+          "ldu_1055",
+          "ldu_1056"
+        ]
+      },
+      {
+        "id": "sec_223",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 58,
+        "page_end": 58,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1057",
+          "ldu_1058",
+          "ldu_1059",
+          "ldu_1060",
+          "ldu_1061",
+          "ldu_1062",
+          "ldu_1063",
+          "ldu_1064",
+          "ldu_1065",
+          "ldu_1066",
+          "ldu_1067",
+          "ldu_1068"
+        ]
+      },
+      {
+        "id": "sec_224",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 59,
+        "page_end": 59,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1070",
+          "ldu_1071"
+        ]
+      },
+      {
+        "id": "sec_225",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 59,
+        "page_end": 59,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1072",
+          "ldu_1073",
+          "ldu_1074",
+          "ldu_1075",
+          "ldu_1076",
+          "ldu_1077",
+          "ldu_1078",
+          "ldu_1079",
+          "ldu_1080",
+          "ldu_1081",
+          "ldu_1082",
+          "ldu_1083",
+          "ldu_1084",
+          "ldu_1085"
+        ]
+      },
+      {
+        "id": "sec_226",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 60,
+        "page_end": 60,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1086",
+          "ldu_1087",
+          "ldu_1088"
+        ]
+      },
+      {
+        "id": "sec_227",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "3.  Significant accounting policies (Continued)",
+        "level": 1,
+        "page_start": 60,
+        "page_end": 60,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1089",
+          "ldu_1090",
+          "ldu_1091",
+          "ldu_1092",
+          "ldu_1093"
+        ]
+      },
+      {
+        "id": "sec_228",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review",
+        "level": 1,
+        "page_start": 60,
+        "page_end": 60,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1094",
+          "ldu_1095",
+          "ldu_1096",
+          "ldu_1097",
+          "ldu_1098",
+          "ldu_1099",
+          "ldu_1100",
+          "ldu_1101"
+        ]
+      },
+      {
+        "id": "sec_229",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 61,
+        "page_end": 61,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1103",
+          "ldu_1104"
+        ]
+      },
+      {
+        "id": "sec_230",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 61,
+        "page_end": 61,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1105",
+          "ldu_1106",
+          "ldu_1107",
+          "ldu_1108",
+          "ldu_1109",
+          "ldu_1110",
+          "ldu_1111",
+          "ldu_1112",
+          "ldu_1113",
+          "ldu_1114",
+          "ldu_1115",
+          "ldu_1116",
+          "ldu_1117",
+          "ldu_1118",
+          "ldu_1119",
+          "ldu_1120",
+          "ldu_1121",
+          "ldu_1122",
+          "ldu_1123"
+        ]
+      },
+      {
+        "id": "sec_231",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 62,
+        "page_end": 62,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1124",
+          "ldu_1125",
+          "ldu_1126"
+        ]
+      },
+      {
+        "id": "sec_232",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4     Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 62,
+        "page_end": 62,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1127",
+          "ldu_1128",
+          "ldu_1129",
+          "ldu_1130",
+          "ldu_1131",
+          "ldu_1132",
+          "ldu_1133",
+          "ldu_1134"
+        ]
+      },
+      {
+        "id": "sec_233",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 63,
+        "page_end": 63,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1136",
+          "ldu_1137"
+        ]
+      },
+      {
+        "id": "sec_234",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 63,
+        "page_end": 63,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1138",
+          "ldu_1139",
+          "ldu_1140",
+          "ldu_1141",
+          "ldu_1142",
+          "ldu_1143",
+          "ldu_1144",
+          "ldu_1145",
+          "ldu_1146",
+          "ldu_1147"
+        ]
+      },
+      {
+        "id": "sec_235",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 64,
+        "page_end": 64,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1148",
+          "ldu_1149",
+          "ldu_1150"
+        ]
+      },
+      {
+        "id": "sec_236",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 64,
+        "page_end": 64,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1151",
+          "ldu_1152",
+          "ldu_1153",
+          "ldu_1154",
+          "ldu_1155",
+          "ldu_1156",
+          "ldu_1157",
+          "ldu_1158",
+          "ldu_1159"
+        ]
+      },
+      {
+        "id": "sec_237",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 65,
+        "page_end": 65,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1161",
+          "ldu_1162"
+        ]
+      },
+      {
+        "id": "sec_238",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 65,
+        "page_end": 65,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1163",
+          "ldu_1164",
+          "ldu_1165",
+          "ldu_1166",
+          "ldu_1167",
+          "ldu_1168"
+        ]
+      },
+      {
+        "id": "sec_239",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "USD 1",
+        "level": 1,
+        "page_start": 65,
+        "page_end": 65,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1169",
+          "ldu_1170",
+          "ldu_1171",
+          "ldu_1172",
+          "ldu_1173"
+        ]
+      },
+      {
+        "id": "sec_240",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 66,
+        "page_end": 66,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1174",
+          "ldu_1175",
+          "ldu_1176"
+        ]
+      },
+      {
+        "id": "sec_241",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 66,
+        "page_end": 66,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1177",
+          "ldu_1178",
+          "ldu_1179",
+          "ldu_1180",
+          "ldu_1181",
+          "ldu_1182",
+          "ldu_1183",
+          "ldu_1184",
+          "ldu_1185"
+        ]
+      },
+      {
+        "id": "sec_242",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 67,
+        "page_end": 67,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1187",
+          "ldu_1188"
+        ]
+      },
+      {
+        "id": "sec_243",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 67,
+        "page_end": 67,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1189",
+          "ldu_1190",
+          "ldu_1191",
+          "ldu_1192",
+          "ldu_1193",
+          "ldu_1194",
+          "ldu_1195",
+          "ldu_1196"
+        ]
+      },
+      {
+        "id": "sec_244",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 68,
+        "page_end": 68,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1197",
+          "ldu_1198",
+          "ldu_1199"
+        ]
+      },
+      {
+        "id": "sec_245",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 68,
+        "page_end": 68,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1200",
+          "ldu_1201",
+          "ldu_1202",
+          "ldu_1203",
+          "ldu_1204",
+          "ldu_1205",
+          "ldu_1206",
+          "ldu_1207",
+          "ldu_1208",
+          "ldu_1209",
+          "ldu_1210",
+          "ldu_1211",
+          "ldu_1212"
+        ]
+      },
+      {
+        "id": "sec_246",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 69,
+        "page_end": 69,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1214",
+          "ldu_1215"
+        ]
+      },
+      {
+        "id": "sec_247",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 69,
+        "page_end": 69,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1216",
+          "ldu_1217",
+          "ldu_1218",
+          "ldu_1219",
+          "ldu_1220",
+          "ldu_1221"
+        ]
+      },
+      {
+        "id": "sec_248",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 70,
+        "page_end": 70,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1222",
+          "ldu_1223",
+          "ldu_1224"
+        ]
+      },
+      {
+        "id": "sec_249",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4. Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 70,
+        "page_end": 70,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1225",
+          "ldu_1226",
+          "ldu_1227",
+          "ldu_1228",
+          "ldu_1229",
+          "ldu_1230",
+          "ldu_1231",
+          "ldu_1232",
+          "ldu_1233",
+          "ldu_1234",
+          "ldu_1235",
+          "ldu_1236",
+          "ldu_1237",
+          "ldu_1238",
+          "ldu_1239",
+          "ldu_1240",
+          "ldu_1241",
+          "ldu_1242",
+          "ldu_1243"
+        ]
+      },
+      {
+        "id": "sec_250",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 71,
+        "page_end": 71,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1245",
+          "ldu_1246"
+        ]
+      },
+      {
+        "id": "sec_251",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "4.  Financial risk review (Continued)",
+        "level": 1,
+        "page_start": 71,
+        "page_end": 71,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1247",
+          "ldu_1248",
+          "ldu_1249",
+          "ldu_1250",
+          "ldu_1251",
+          "ldu_1252",
+          "ldu_1253"
+        ]
+      },
+      {
+        "id": "sec_252",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "5. Cash and cash equivalents",
+        "level": 1,
+        "page_start": 71,
+        "page_end": 71,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1254",
+          "ldu_1255"
+        ]
+      },
+      {
+        "id": "sec_253",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 72,
+        "page_end": 72,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1256",
+          "ldu_1257",
+          "ldu_1258"
+        ]
+      },
+      {
+        "id": "sec_254",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "6. Other receivables",
+        "level": 1,
+        "page_start": 72,
+        "page_end": 72,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1259"
+        ]
+      },
+      {
+        "id": "sec_255",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "7. Due from Retrocessionaires",
+        "level": 1,
+        "page_start": 72,
+        "page_end": 72,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1260"
+        ]
+      },
+      {
+        "id": "sec_256",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "8. Due from ceding companies",
+        "level": 1,
+        "page_start": 72,
+        "page_end": 72,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1261",
+          "ldu_1262"
+        ]
+      },
+      {
+        "id": "sec_257",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 73,
+        "page_end": 73,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1264",
+          "ldu_1265"
+        ]
+      },
+      {
+        "id": "sec_258",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "9. Deferred acquisition costs",
+        "level": 1,
+        "page_start": 73,
+        "page_end": 73,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1266",
+          "ldu_1267"
+        ]
+      },
+      {
+        "id": "sec_259",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "10. Time deposits",
+        "level": 1,
+        "page_start": 73,
+        "page_end": 73,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1268",
+          "ldu_1269"
+        ]
+      },
+      {
+        "id": "sec_260",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 74,
+        "page_end": 74,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1270",
+          "ldu_1271",
+          "ldu_1272"
+        ]
+      },
+      {
+        "id": "sec_261",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "10.  Time deposits (Continued)",
+        "level": 1,
+        "page_start": 74,
+        "page_end": 74,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1273",
+          "ldu_1274"
+        ]
+      },
+      {
+        "id": "sec_262",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "11. Grand Renaissance Dam Bonds",
+        "level": 1,
+        "page_start": 74,
+        "page_end": 74,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1275",
+          "ldu_1276",
+          "ldu_1277",
+          "ldu_1278",
+          "ldu_1279"
+        ]
+      },
+      {
+        "id": "sec_263",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 75,
+        "page_end": 75,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1281",
+          "ldu_1282"
+        ]
+      },
+      {
+        "id": "sec_264",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "12. Leases",
+        "level": 1,
+        "page_start": 75,
+        "page_end": 75,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1283",
+          "ldu_1284",
+          "ldu_1285",
+          "ldu_1286",
+          "ldu_1287"
+        ]
+      },
+      {
+        "id": "sec_265",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANUAL REPOR T",
+        "level": 1,
+        "page_start": 76,
+        "page_end": 76,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1288",
+          "ldu_1289",
+          "ldu_1290"
+        ]
+      },
+      {
+        "id": "sec_266",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "13. Property, plant and equipment",
+        "level": 1,
+        "page_start": 76,
+        "page_end": 76,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1291"
+        ]
+      },
+      {
+        "id": "sec_267",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "14. Unearned premium",
+        "level": 1,
+        "page_start": 76,
+        "page_end": 76,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1292",
+          "ldu_1293",
+          "ldu_1294"
+        ]
+      },
+      {
+        "id": "sec_268",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 77,
+        "page_end": 77,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1296",
+          "ldu_1297"
+        ]
+      },
+      {
+        "id": "sec_269",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "15. Other payables",
+        "level": 1,
+        "page_start": 77,
+        "page_end": 77,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1298"
+        ]
+      },
+      {
+        "id": "sec_270",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "16. Due to Ceding Companies",
+        "level": 1,
+        "page_start": 77,
+        "page_end": 77,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1299",
+          "ldu_1300"
+        ]
+      },
+      {
+        "id": "sec_271",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 78,
+        "page_end": 78,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1301",
+          "ldu_1302",
+          "ldu_1303"
+        ]
+      },
+      {
+        "id": "sec_272",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "17. Employee benefits",
+        "level": 1,
+        "page_start": 78,
+        "page_end": 78,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1304",
+          "ldu_1305",
+          "ldu_1306",
+          "ldu_1307",
+          "ldu_1308",
+          "ldu_1309",
+          "ldu_1310",
+          "ldu_1311",
+          "ldu_1312",
+          "ldu_1313",
+          "ldu_1314"
+        ]
+      },
+      {
+        "id": "sec_273",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "17.1 Defined benefit plans",
+        "level": 1,
+        "page_start": 78,
+        "page_end": 78,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1305",
+          "ldu_1306",
+          "ldu_1307",
+          "ldu_1308",
+          "ldu_1309",
+          "ldu_1310",
+          "ldu_1311",
+          "ldu_1312",
+          "ldu_1313",
+          "ldu_1314"
+        ]
+      },
+      {
+        "id": "sec_274",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 79,
+        "page_end": 79,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1316",
+          "ldu_1317"
+        ]
+      },
+      {
+        "id": "sec_275",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "17. Employee benefits (Continued)",
+        "level": 1,
+        "page_start": 79,
+        "page_end": 79,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1318",
+          "ldu_1319",
+          "ldu_1320",
+          "ldu_1321",
+          "ldu_1322",
+          "ldu_1323",
+          "ldu_1324",
+          "ldu_1325"
+        ]
+      },
+      {
+        "id": "sec_276",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "17.2  Defined contribution plan",
+        "level": 1,
+        "page_start": 79,
+        "page_end": 79,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1323",
+          "ldu_1324",
+          "ldu_1325"
+        ]
+      },
+      {
+        "id": "sec_277",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 80,
+        "page_end": 80,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1326",
+          "ldu_1327",
+          "ldu_1328"
+        ]
+      },
+      {
+        "id": "sec_278",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "18. Outstanding Claims Reserve",
+        "level": 1,
+        "page_start": 80,
+        "page_end": 80,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1329",
+          "ldu_1330"
+        ]
+      },
+      {
+        "id": "sec_279",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "19. Capital",
+        "level": 1,
+        "page_start": 80,
+        "page_end": 80,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1331",
+          "ldu_1332",
+          "ldu_1333",
+          "ldu_1334",
+          "ldu_1335",
+          "ldu_1336",
+          "ldu_1337"
+        ]
+      },
+      {
+        "id": "sec_280",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 81,
+        "page_end": 81,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1339",
+          "ldu_1340"
+        ]
+      },
+      {
+        "id": "sec_281",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "20. Gross premium",
+        "level": 1,
+        "page_start": 81,
+        "page_end": 81,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1341",
+          "ldu_1342",
+          "ldu_1343",
+          "ldu_1344",
+          "ldu_1345"
+        ]
+      },
+      {
+        "id": "sec_282",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 82,
+        "page_end": 82,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1346",
+          "ldu_1347",
+          "ldu_1348"
+        ]
+      },
+      {
+        "id": "sec_283",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "21. Claims incurred",
+        "level": 1,
+        "page_start": 82,
+        "page_end": 82,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1349",
+          "ldu_1350",
+          "ldu_1351"
+        ]
+      },
+      {
+        "id": "sec_284",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 83,
+        "page_end": 83,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1353",
+          "ldu_1354"
+        ]
+      },
+      {
+        "id": "sec_285",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "22.  Cedant acquisition costs",
+        "level": 1,
+        "page_start": 83,
+        "page_end": 83,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1355"
+        ]
+      },
+      {
+        "id": "sec_286",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "22.  Net Finance Costs",
+        "level": 1,
+        "page_start": 83,
+        "page_end": 83,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1356",
+          "ldu_1357"
+        ]
+      },
+      {
+        "id": "sec_287",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 84,
+        "page_end": 84,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1358",
+          "ldu_1359",
+          "ldu_1360"
+        ]
+      },
+      {
+        "id": "sec_288",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "24. Operating and other expenses",
+        "level": 1,
+        "page_start": 84,
+        "page_end": 84,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1361"
+        ]
+      },
+      {
+        "id": "sec_289",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "25. Income taxes",
+        "level": 1,
+        "page_start": 84,
+        "page_end": 84,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1362",
+          "ldu_1363",
+          "ldu_1364",
+          "ldu_1365"
+        ]
+      },
+      {
+        "id": "sec_290",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 85,
+        "page_end": 85,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1367",
+          "ldu_1368"
+        ]
+      },
+      {
+        "id": "sec_291",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "26. Earnings per Share (EPS)",
+        "level": 1,
+        "page_start": 85,
+        "page_end": 85,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1369",
+          "ldu_1370",
+          "ldu_1371"
+        ]
+      },
+      {
+        "id": "sec_292",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "27. Related parties",
+        "level": 1,
+        "page_start": 85,
+        "page_end": 85,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1372",
+          "ldu_1373",
+          "ldu_1374",
+          "ldu_1375",
+          "ldu_1376",
+          "ldu_1377",
+          "ldu_1378",
+          "ldu_1379"
+        ]
+      },
+      {
+        "id": "sec_293",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 86,
+        "page_end": 86,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1380",
+          "ldu_1381",
+          "ldu_1382",
+          "ldu_1383",
+          "ldu_1384"
+        ]
+      },
+      {
+        "id": "sec_294",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 87,
+        "page_end": 87,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1386",
+          "ldu_1387"
+        ]
+      },
+      {
+        "id": "sec_295",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "27. Related parties (Continued)",
+        "level": 1,
+        "page_start": 87,
+        "page_end": 87,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1388",
+          "ldu_1389",
+          "ldu_1390",
+          "ldu_1391",
+          "ldu_1392",
+          "ldu_1393",
+          "ldu_1394",
+          "ldu_1395"
+        ]
+      },
+      {
+        "id": "sec_296",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 88,
+        "page_end": 88,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1396",
+          "ldu_1397",
+          "ldu_1398"
+        ]
+      },
+      {
+        "id": "sec_297",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "27. Related parties (Continued)",
+        "level": 1,
+        "page_start": 88,
+        "page_end": 88,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "lists",
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1399",
+          "ldu_1400",
+          "ldu_1401",
+          "ldu_1402"
+        ]
+      },
+      {
+        "id": "sec_298",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETB",
+        "level": 1,
+        "page_start": 88,
+        "page_end": 88,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1403",
+          "ldu_1404",
+          "ldu_1405",
+          "ldu_1406",
+          "ldu_1407",
+          "ldu_1408"
+        ]
+      },
+      {
+        "id": "sec_299",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 89,
+        "page_end": 89,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1410",
+          "ldu_1411"
+        ]
+      },
+      {
+        "id": "sec_300",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "28. Contingent liability",
+        "level": 1,
+        "page_start": 89,
+        "page_end": 89,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1412",
+          "ldu_1413",
+          "ldu_1414"
+        ]
+      },
+      {
+        "id": "sec_301",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 90,
+        "page_end": 90,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1415",
+          "ldu_1416",
+          "ldu_1417",
+          "ldu_1418",
+          "ldu_1419",
+          "ldu_1420",
+          "ldu_1421",
+          "ldu_1422"
+        ]
+      },
+      {
+        "id": "sec_302",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "INSPIREDTO",
+        "level": 1,
+        "page_start": 90,
+        "page_end": 90,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1423"
+        ]
+      },
+      {
+        "id": "sec_303",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "INNOVATE",
+        "level": 1,
+        "page_start": 90,
+        "page_end": 90,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1424",
+          "ldu_1425",
+          "ldu_1426",
+          "ldu_1427",
+          "ldu_1428",
+          "ldu_1429"
+        ]
+      },
+      {
+        "id": "sec_304",
+        "document_id": "796e5dd1acddfade2970c34faebaa51b",
+        "title": "ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "level": 1,
+        "page_start": 91,
+        "page_end": 92,
+        "child_sections": [],
+        "key_entities": [],
+        "summary": null,
+        "data_types_present": [
+          "paragraphs"
+        ],
+        "ldu_ids": [
+          "ldu_1431",
+          "ldu_1432",
+          "ldu_1433",
+          "ldu_1434",
+          "ldu_1435",
+          "ldu_1436",
+          "ldu_1437",
+          "ldu_1438",
+          "ldu_1439",
+          "ldu_1440",
+          "ldu_1441",
+          "ldu_1442",
+          "ldu_1443",
+          "ldu_1444",
+          "ldu_1445",
+          "ldu_1446",
+          "ldu_1447",
+          "ldu_1448",
+          "ldu_1449"
+        ]
+      }
+    ],
+    "key_entities": [],
+    "summary": null,
+    "data_types_present": [
+      "lists",
+      "other",
+      "paragraphs",
+      "tables"
+    ],
+    "ldu_ids": [
+      "ldu_0001",
+      "ldu_0002",
+      "ldu_0003",
+      "ldu_0004",
+      "ldu_0005",
+      "ldu_0006",
+      "ldu_0007",
+      "ldu_0008",
+      "ldu_0009",
+      "ldu_0010",
+      "ldu_0011",
+      "ldu_0012",
+      "ldu_0013",
+      "ldu_0014",
+      "ldu_0015",
+      "ldu_0016",
+      "ldu_0017",
+      "ldu_0018",
+      "ldu_0019",
+      "ldu_0020",
+      "ldu_0021",
+      "ldu_0022",
+      "ldu_0023",
+      "ldu_0024",
+      "ldu_0025",
+      "ldu_0026",
+      "ldu_0027",
+      "ldu_0028",
+      "ldu_0029",
+      "ldu_0030",
+      "ldu_0031",
+      "ldu_0032",
+      "ldu_0033",
+      "ldu_0034",
+      "ldu_0035",
+      "ldu_0036",
+      "ldu_0037",
+      "ldu_0038",
+      "ldu_0039",
+      "ldu_0040",
+      "ldu_0041",
+      "ldu_0042",
+      "ldu_0043",
+      "ldu_0044",
+      "ldu_0045",
+      "ldu_0046",
+      "ldu_0047",
+      "ldu_0048",
+      "ldu_0049",
+      "ldu_0050",
+      "ldu_0051",
+      "ldu_0052",
+      "ldu_0053",
+      "ldu_0054",
+      "ldu_0055",
+      "ldu_0056",
+      "ldu_0057",
+      "ldu_0058",
+      "ldu_0059",
+      "ldu_0060",
+      "ldu_0061",
+      "ldu_0062",
+      "ldu_0063",
+      "ldu_0064",
+      "ldu_0065",
+      "ldu_0066",
+      "ldu_0067",
+      "ldu_0068",
+      "ldu_0069",
+      "ldu_0070",
+      "ldu_0071",
+      "ldu_0072",
+      "ldu_0073",
+      "ldu_0074",
+      "ldu_0075",
+      "ldu_0076",
+      "ldu_0077",
+      "ldu_0078",
+      "ldu_0079",
+      "ldu_0080",
+      "ldu_0081",
+      "ldu_0082",
+      "ldu_0083",
+      "ldu_0084",
+      "ldu_0085",
+      "ldu_0086",
+      "ldu_0087",
+      "ldu_0088",
+      "ldu_0089",
+      "ldu_0090",
+      "ldu_0091",
+      "ldu_0092",
+      "ldu_0093",
+      "ldu_0094",
+      "ldu_0095",
+      "ldu_0096",
+      "ldu_0097",
+      "ldu_0098",
+      "ldu_0099",
+      "ldu_0100",
+      "ldu_0101",
+      "ldu_0102",
+      "ldu_0103",
+      "ldu_0104",
+      "ldu_0105",
+      "ldu_0106",
+      "ldu_0107",
+      "ldu_0108",
+      "ldu_0109",
+      "ldu_0110",
+      "ldu_0111",
+      "ldu_0112",
+      "ldu_0113",
+      "ldu_0114",
+      "ldu_0115",
+      "ldu_0116",
+      "ldu_0117",
+      "ldu_0118",
+      "ldu_0119",
+      "ldu_0120",
+      "ldu_0121",
+      "ldu_0122",
+      "ldu_0123",
+      "ldu_0124",
+      "ldu_0125",
+      "ldu_0126",
+      "ldu_0127",
+      "ldu_0128",
+      "ldu_0129",
+      "ldu_0130",
+      "ldu_0131",
+      "ldu_0132",
+      "ldu_0133",
+      "ldu_0134",
+      "ldu_0135",
+      "ldu_0136",
+      "ldu_0137",
+      "ldu_0138",
+      "ldu_0139",
+      "ldu_0140",
+      "ldu_0141",
+      "ldu_0142",
+      "ldu_0143",
+      "ldu_0144",
+      "ldu_0145",
+      "ldu_0146",
+      "ldu_0147",
+      "ldu_0148",
+      "ldu_0149",
+      "ldu_0150",
+      "ldu_0151",
+      "ldu_0152",
+      "ldu_0153",
+      "ldu_0154",
+      "ldu_0155",
+      "ldu_0156",
+      "ldu_0157",
+      "ldu_0158",
+      "ldu_0159",
+      "ldu_0160",
+      "ldu_0161",
+      "ldu_0162",
+      "ldu_0163",
+      "ldu_0164",
+      "ldu_0165",
+      "ldu_0166",
+      "ldu_0167",
+      "ldu_0168",
+      "ldu_0169",
+      "ldu_0170",
+      "ldu_0171",
+      "ldu_0172",
+      "ldu_0173",
+      "ldu_0174",
+      "ldu_0175",
+      "ldu_0176",
+      "ldu_0177",
+      "ldu_0178",
+      "ldu_0179",
+      "ldu_0180",
+      "ldu_0181",
+      "ldu_0182",
+      "ldu_0183",
+      "ldu_0184",
+      "ldu_0185",
+      "ldu_0186",
+      "ldu_0187",
+      "ldu_0188",
+      "ldu_0189",
+      "ldu_0190",
+      "ldu_0191",
+      "ldu_0192",
+      "ldu_0193",
+      "ldu_0194",
+      "ldu_0195",
+      "ldu_0196",
+      "ldu_0197",
+      "ldu_0198",
+      "ldu_0199",
+      "ldu_0200",
+      "ldu_0201",
+      "ldu_0202",
+      "ldu_0203",
+      "ldu_0204",
+      "ldu_0205",
+      "ldu_0206",
+      "ldu_0207",
+      "ldu_0208",
+      "ldu_0209",
+      "ldu_0210",
+      "ldu_0211",
+      "ldu_0212",
+      "ldu_0213",
+      "ldu_0214",
+      "ldu_0215",
+      "ldu_0216",
+      "ldu_0217",
+      "ldu_0218",
+      "ldu_0219",
+      "ldu_0220",
+      "ldu_0221",
+      "ldu_0222",
+      "ldu_0223",
+      "ldu_0224",
+      "ldu_0225",
+      "ldu_0226",
+      "ldu_0227",
+      "ldu_0228",
+      "ldu_0229",
+      "ldu_0230",
+      "ldu_0231",
+      "ldu_0232",
+      "ldu_0233",
+      "ldu_0234",
+      "ldu_0235",
+      "ldu_0236",
+      "ldu_0237",
+      "ldu_0238",
+      "ldu_0239",
+      "ldu_0240",
+      "ldu_0241",
+      "ldu_0242",
+      "ldu_0243",
+      "ldu_0244",
+      "ldu_0245",
+      "ldu_0246",
+      "ldu_0247",
+      "ldu_0248",
+      "ldu_0249",
+      "ldu_0250",
+      "ldu_0251",
+      "ldu_0252",
+      "ldu_0253",
+      "ldu_0254",
+      "ldu_0255",
+      "ldu_0256",
+      "ldu_0257",
+      "ldu_0258",
+      "ldu_0259",
+      "ldu_0260",
+      "ldu_0261",
+      "ldu_0262",
+      "ldu_0263",
+      "ldu_0264",
+      "ldu_0265",
+      "ldu_0266",
+      "ldu_0267",
+      "ldu_0268",
+      "ldu_0269",
+      "ldu_0270",
+      "ldu_0271",
+      "ldu_0272",
+      "ldu_0273",
+      "ldu_0274",
+      "ldu_0275",
+      "ldu_0276",
+      "ldu_0277",
+      "ldu_0278",
+      "ldu_0279",
+      "ldu_0280",
+      "ldu_0281",
+      "ldu_0282",
+      "ldu_0283",
+      "ldu_0284",
+      "ldu_0285",
+      "ldu_0286",
+      "ldu_0287",
+      "ldu_0288",
+      "ldu_0289",
+      "ldu_0290",
+      "ldu_0291",
+      "ldu_0292",
+      "ldu_0293",
+      "ldu_0294",
+      "ldu_0295",
+      "ldu_0296",
+      "ldu_0297",
+      "ldu_0298",
+      "ldu_0299",
+      "ldu_0300",
+      "ldu_0301",
+      "ldu_0302",
+      "ldu_0303",
+      "ldu_0304",
+      "ldu_0305",
+      "ldu_0306",
+      "ldu_0307",
+      "ldu_0308",
+      "ldu_0309",
+      "ldu_0310",
+      "ldu_0311",
+      "ldu_0312",
+      "ldu_0313",
+      "ldu_0314",
+      "ldu_0315",
+      "ldu_0316",
+      "ldu_0317",
+      "ldu_0318",
+      "ldu_0319",
+      "ldu_0320",
+      "ldu_0321",
+      "ldu_0322",
+      "ldu_0323",
+      "ldu_0324",
+      "ldu_0325",
+      "ldu_0326",
+      "ldu_0327",
+      "ldu_0328",
+      "ldu_0329",
+      "ldu_0330",
+      "ldu_0331",
+      "ldu_0332",
+      "ldu_0333",
+      "ldu_0334",
+      "ldu_0335",
+      "ldu_0336",
+      "ldu_0337",
+      "ldu_0338",
+      "ldu_0339",
+      "ldu_0340",
+      "ldu_0341",
+      "ldu_0342",
+      "ldu_0343",
+      "ldu_0344",
+      "ldu_0345",
+      "ldu_0346",
+      "ldu_0347",
+      "ldu_0348",
+      "ldu_0349",
+      "ldu_0350",
+      "ldu_0351",
+      "ldu_0352",
+      "ldu_0353",
+      "ldu_0354",
+      "ldu_0355",
+      "ldu_0356",
+      "ldu_0357",
+      "ldu_0358",
+      "ldu_0359",
+      "ldu_0360",
+      "ldu_0361",
+      "ldu_0362",
+      "ldu_0363",
+      "ldu_0364",
+      "ldu_0365",
+      "ldu_0366",
+      "ldu_0367",
+      "ldu_0368",
+      "ldu_0369",
+      "ldu_0370",
+      "ldu_0371",
+      "ldu_0372",
+      "ldu_0373",
+      "ldu_0374",
+      "ldu_0375",
+      "ldu_0376",
+      "ldu_0377",
+      "ldu_0378",
+      "ldu_0379",
+      "ldu_0380",
+      "ldu_0381",
+      "ldu_0382",
+      "ldu_0383",
+      "ldu_0384",
+      "ldu_0385",
+      "ldu_0386",
+      "ldu_0387",
+      "ldu_0388",
+      "ldu_0389",
+      "ldu_0390",
+      "ldu_0391",
+      "ldu_0392",
+      "ldu_0393",
+      "ldu_0394",
+      "ldu_0395",
+      "ldu_0396",
+      "ldu_0397",
+      "ldu_0398",
+      "ldu_0399",
+      "ldu_0400",
+      "ldu_0401",
+      "ldu_0402",
+      "ldu_0403",
+      "ldu_0404",
+      "ldu_0405",
+      "ldu_0406",
+      "ldu_0407",
+      "ldu_0408",
+      "ldu_0409",
+      "ldu_0410",
+      "ldu_0411",
+      "ldu_0412",
+      "ldu_0413",
+      "ldu_0414",
+      "ldu_0415",
+      "ldu_0416",
+      "ldu_0417",
+      "ldu_0418",
+      "ldu_0419",
+      "ldu_0420",
+      "ldu_0421",
+      "ldu_0422",
+      "ldu_0423",
+      "ldu_0424",
+      "ldu_0425",
+      "ldu_0426",
+      "ldu_0427",
+      "ldu_0428",
+      "ldu_0429",
+      "ldu_0430",
+      "ldu_0431",
+      "ldu_0432",
+      "ldu_0433",
+      "ldu_0434",
+      "ldu_0435",
+      "ldu_0436",
+      "ldu_0437",
+      "ldu_0438",
+      "ldu_0439",
+      "ldu_0440",
+      "ldu_0441",
+      "ldu_0442",
+      "ldu_0443",
+      "ldu_0444",
+      "ldu_0445",
+      "ldu_0446",
+      "ldu_0447",
+      "ldu_0448",
+      "ldu_0449",
+      "ldu_0450",
+      "ldu_0451",
+      "ldu_0452",
+      "ldu_0453",
+      "ldu_0454",
+      "ldu_0455",
+      "ldu_0456",
+      "ldu_0457",
+      "ldu_0458",
+      "ldu_0459",
+      "ldu_0460",
+      "ldu_0461",
+      "ldu_0462",
+      "ldu_0463",
+      "ldu_0464",
+      "ldu_0465",
+      "ldu_0466",
+      "ldu_0467",
+      "ldu_0468",
+      "ldu_0469",
+      "ldu_0470",
+      "ldu_0471",
+      "ldu_0472",
+      "ldu_0473",
+      "ldu_0474",
+      "ldu_0475",
+      "ldu_0476",
+      "ldu_0477",
+      "ldu_0478",
+      "ldu_0479",
+      "ldu_0480",
+      "ldu_0481",
+      "ldu_0482",
+      "ldu_0483",
+      "ldu_0484",
+      "ldu_0485",
+      "ldu_0486",
+      "ldu_0487",
+      "ldu_0488",
+      "ldu_0489",
+      "ldu_0490",
+      "ldu_0491",
+      "ldu_0492",
+      "ldu_0493",
+      "ldu_0494",
+      "ldu_0495",
+      "ldu_0496",
+      "ldu_0497",
+      "ldu_0498",
+      "ldu_0499",
+      "ldu_0500",
+      "ldu_0501",
+      "ldu_0502",
+      "ldu_0503",
+      "ldu_0504",
+      "ldu_0505",
+      "ldu_0506",
+      "ldu_0507",
+      "ldu_0508",
+      "ldu_0509",
+      "ldu_0510",
+      "ldu_0511",
+      "ldu_0512",
+      "ldu_0513",
+      "ldu_0514",
+      "ldu_0515",
+      "ldu_0516",
+      "ldu_0517",
+      "ldu_0518",
+      "ldu_0519",
+      "ldu_0520",
+      "ldu_0521",
+      "ldu_0522",
+      "ldu_0523",
+      "ldu_0524",
+      "ldu_0525",
+      "ldu_0526",
+      "ldu_0527",
+      "ldu_0528",
+      "ldu_0529",
+      "ldu_0530",
+      "ldu_0531",
+      "ldu_0532",
+      "ldu_0533",
+      "ldu_0534",
+      "ldu_0535",
+      "ldu_0536",
+      "ldu_0537",
+      "ldu_0538",
+      "ldu_0539",
+      "ldu_0540",
+      "ldu_0541",
+      "ldu_0542",
+      "ldu_0543",
+      "ldu_0544",
+      "ldu_0545",
+      "ldu_0546",
+      "ldu_0547",
+      "ldu_0548",
+      "ldu_0549",
+      "ldu_0550",
+      "ldu_0551",
+      "ldu_0552",
+      "ldu_0553",
+      "ldu_0554",
+      "ldu_0555",
+      "ldu_0556",
+      "ldu_0557",
+      "ldu_0558",
+      "ldu_0559",
+      "ldu_0560",
+      "ldu_0561",
+      "ldu_0562",
+      "ldu_0563",
+      "ldu_0564",
+      "ldu_0565",
+      "ldu_0566",
+      "ldu_0567",
+      "ldu_0568",
+      "ldu_0569",
+      "ldu_0570",
+      "ldu_0571",
+      "ldu_0572",
+      "ldu_0573",
+      "ldu_0574",
+      "ldu_0575",
+      "ldu_0576",
+      "ldu_0577",
+      "ldu_0578",
+      "ldu_0579",
+      "ldu_0580",
+      "ldu_0581",
+      "ldu_0582",
+      "ldu_0583",
+      "ldu_0584",
+      "ldu_0585",
+      "ldu_0586",
+      "ldu_0587",
+      "ldu_0588",
+      "ldu_0589",
+      "ldu_0590",
+      "ldu_0591",
+      "ldu_0592",
+      "ldu_0593",
+      "ldu_0594",
+      "ldu_0595",
+      "ldu_0596",
+      "ldu_0597",
+      "ldu_0598",
+      "ldu_0599",
+      "ldu_0600",
+      "ldu_0601",
+      "ldu_0602",
+      "ldu_0603",
+      "ldu_0604",
+      "ldu_0605",
+      "ldu_0606",
+      "ldu_0607",
+      "ldu_0608",
+      "ldu_0609",
+      "ldu_0610",
+      "ldu_0611",
+      "ldu_0612",
+      "ldu_0613",
+      "ldu_0614",
+      "ldu_0615",
+      "ldu_0616",
+      "ldu_0617",
+      "ldu_0618",
+      "ldu_0619",
+      "ldu_0620",
+      "ldu_0621",
+      "ldu_0622",
+      "ldu_0623",
+      "ldu_0624",
+      "ldu_0625",
+      "ldu_0626",
+      "ldu_0627",
+      "ldu_0628",
+      "ldu_0629",
+      "ldu_0630",
+      "ldu_0631",
+      "ldu_0632",
+      "ldu_0633",
+      "ldu_0634",
+      "ldu_0635",
+      "ldu_0636",
+      "ldu_0637",
+      "ldu_0638",
+      "ldu_0639",
+      "ldu_0640",
+      "ldu_0641",
+      "ldu_0642",
+      "ldu_0643",
+      "ldu_0644",
+      "ldu_0645",
+      "ldu_0646",
+      "ldu_0647",
+      "ldu_0648",
+      "ldu_0649",
+      "ldu_0650",
+      "ldu_0651",
+      "ldu_0652",
+      "ldu_0653",
+      "ldu_0654",
+      "ldu_0655",
+      "ldu_0656",
+      "ldu_0657",
+      "ldu_0658",
+      "ldu_0659",
+      "ldu_0660",
+      "ldu_0661",
+      "ldu_0662",
+      "ldu_0663",
+      "ldu_0664",
+      "ldu_0665",
+      "ldu_0666",
+      "ldu_0667",
+      "ldu_0668",
+      "ldu_0669",
+      "ldu_0670",
+      "ldu_0671",
+      "ldu_0672",
+      "ldu_0673",
+      "ldu_0674",
+      "ldu_0675",
+      "ldu_0676",
+      "ldu_0677",
+      "ldu_0678",
+      "ldu_0679",
+      "ldu_0680",
+      "ldu_0681",
+      "ldu_0682",
+      "ldu_0683",
+      "ldu_0684",
+      "ldu_0685",
+      "ldu_0686",
+      "ldu_0687",
+      "ldu_0688",
+      "ldu_0689",
+      "ldu_0690",
+      "ldu_0691",
+      "ldu_0692",
+      "ldu_0693",
+      "ldu_0694",
+      "ldu_0695",
+      "ldu_0696",
+      "ldu_0697",
+      "ldu_0698",
+      "ldu_0699",
+      "ldu_0700",
+      "ldu_0701",
+      "ldu_0702",
+      "ldu_0703",
+      "ldu_0704",
+      "ldu_0705",
+      "ldu_0706",
+      "ldu_0707",
+      "ldu_0708",
+      "ldu_0709",
+      "ldu_0710",
+      "ldu_0711",
+      "ldu_0712",
+      "ldu_0713",
+      "ldu_0714",
+      "ldu_0715",
+      "ldu_0716",
+      "ldu_0717",
+      "ldu_0718",
+      "ldu_0719",
+      "ldu_0720",
+      "ldu_0721",
+      "ldu_0722",
+      "ldu_0723",
+      "ldu_0724",
+      "ldu_0725",
+      "ldu_0726",
+      "ldu_0727",
+      "ldu_0728",
+      "ldu_0729",
+      "ldu_0730",
+      "ldu_0731",
+      "ldu_0732",
+      "ldu_0733",
+      "ldu_0734",
+      "ldu_0735",
+      "ldu_0736",
+      "ldu_0737",
+      "ldu_0738",
+      "ldu_0739",
+      "ldu_0740",
+      "ldu_0741",
+      "ldu_0742",
+      "ldu_0743",
+      "ldu_0744",
+      "ldu_0745",
+      "ldu_0746",
+      "ldu_0747",
+      "ldu_0748",
+      "ldu_0749",
+      "ldu_0750",
+      "ldu_0751",
+      "ldu_0752",
+      "ldu_0753",
+      "ldu_0754",
+      "ldu_0755",
+      "ldu_0756",
+      "ldu_0757",
+      "ldu_0758",
+      "ldu_0759",
+      "ldu_0760",
+      "ldu_0761",
+      "ldu_0762",
+      "ldu_0763",
+      "ldu_0764",
+      "ldu_0765",
+      "ldu_0766",
+      "ldu_0767",
+      "ldu_0768",
+      "ldu_0769",
+      "ldu_0770",
+      "ldu_0771",
+      "ldu_0772",
+      "ldu_0773",
+      "ldu_0774",
+      "ldu_0775",
+      "ldu_0776",
+      "ldu_0777",
+      "ldu_0778",
+      "ldu_0779",
+      "ldu_0780",
+      "ldu_0781",
+      "ldu_0782",
+      "ldu_0783",
+      "ldu_0784",
+      "ldu_0785",
+      "ldu_0786",
+      "ldu_0787",
+      "ldu_0788",
+      "ldu_0789",
+      "ldu_0790",
+      "ldu_0791",
+      "ldu_0792",
+      "ldu_0793",
+      "ldu_0794",
+      "ldu_0795",
+      "ldu_0796",
+      "ldu_0797",
+      "ldu_0798",
+      "ldu_0799",
+      "ldu_0800",
+      "ldu_0801",
+      "ldu_0802",
+      "ldu_0803",
+      "ldu_0804",
+      "ldu_0805",
+      "ldu_0806",
+      "ldu_0807",
+      "ldu_0808",
+      "ldu_0809",
+      "ldu_0810",
+      "ldu_0811",
+      "ldu_0812",
+      "ldu_0813",
+      "ldu_0814",
+      "ldu_0815",
+      "ldu_0816",
+      "ldu_0817",
+      "ldu_0818",
+      "ldu_0819",
+      "ldu_0820",
+      "ldu_0821",
+      "ldu_0822",
+      "ldu_0823",
+      "ldu_0824",
+      "ldu_0825",
+      "ldu_0826",
+      "ldu_0827",
+      "ldu_0828",
+      "ldu_0829",
+      "ldu_0830",
+      "ldu_0831",
+      "ldu_0832",
+      "ldu_0833",
+      "ldu_0834",
+      "ldu_0835",
+      "ldu_0836",
+      "ldu_0837",
+      "ldu_0838",
+      "ldu_0839",
+      "ldu_0840",
+      "ldu_0841",
+      "ldu_0842",
+      "ldu_0843",
+      "ldu_0844",
+      "ldu_0845",
+      "ldu_0846",
+      "ldu_0847",
+      "ldu_0848",
+      "ldu_0849",
+      "ldu_0850",
+      "ldu_0851",
+      "ldu_0852",
+      "ldu_0853",
+      "ldu_0854",
+      "ldu_0855",
+      "ldu_0856",
+      "ldu_0857",
+      "ldu_0858",
+      "ldu_0859",
+      "ldu_0860",
+      "ldu_0861",
+      "ldu_0862",
+      "ldu_0863",
+      "ldu_0864",
+      "ldu_0865",
+      "ldu_0866",
+      "ldu_0867",
+      "ldu_0868",
+      "ldu_0869",
+      "ldu_0870",
+      "ldu_0871",
+      "ldu_0872",
+      "ldu_0873",
+      "ldu_0874",
+      "ldu_0875",
+      "ldu_0876",
+      "ldu_0877",
+      "ldu_0878",
+      "ldu_0879",
+      "ldu_0880",
+      "ldu_0881",
+      "ldu_0882",
+      "ldu_0883",
+      "ldu_0884",
+      "ldu_0885",
+      "ldu_0886",
+      "ldu_0887",
+      "ldu_0888",
+      "ldu_0889",
+      "ldu_0890",
+      "ldu_0891",
+      "ldu_0892",
+      "ldu_0893",
+      "ldu_0894",
+      "ldu_0895",
+      "ldu_0896",
+      "ldu_0897",
+      "ldu_0898",
+      "ldu_0899",
+      "ldu_0900",
+      "ldu_0901",
+      "ldu_0902",
+      "ldu_0903",
+      "ldu_0904",
+      "ldu_0905",
+      "ldu_0906",
+      "ldu_0907",
+      "ldu_0908",
+      "ldu_0909",
+      "ldu_0910",
+      "ldu_0911",
+      "ldu_0912",
+      "ldu_0913",
+      "ldu_0914",
+      "ldu_0915",
+      "ldu_0916",
+      "ldu_0917",
+      "ldu_0918",
+      "ldu_0919",
+      "ldu_0920",
+      "ldu_0921",
+      "ldu_0922",
+      "ldu_0923",
+      "ldu_0924",
+      "ldu_0925",
+      "ldu_0926",
+      "ldu_0927",
+      "ldu_0928",
+      "ldu_0929",
+      "ldu_0930",
+      "ldu_0931",
+      "ldu_0932",
+      "ldu_0933",
+      "ldu_0934",
+      "ldu_0935",
+      "ldu_0936",
+      "ldu_0937",
+      "ldu_0938",
+      "ldu_0939",
+      "ldu_0940",
+      "ldu_0941",
+      "ldu_0942",
+      "ldu_0943",
+      "ldu_0944",
+      "ldu_0945",
+      "ldu_0946",
+      "ldu_0947",
+      "ldu_0948",
+      "ldu_0949",
+      "ldu_0950",
+      "ldu_0951",
+      "ldu_0952",
+      "ldu_0953",
+      "ldu_0954",
+      "ldu_0955",
+      "ldu_0956",
+      "ldu_0957",
+      "ldu_0958",
+      "ldu_0959",
+      "ldu_0960",
+      "ldu_0961",
+      "ldu_0962",
+      "ldu_0963",
+      "ldu_0964",
+      "ldu_0965",
+      "ldu_0966",
+      "ldu_0967",
+      "ldu_0968",
+      "ldu_0969",
+      "ldu_0970",
+      "ldu_0971",
+      "ldu_0972",
+      "ldu_0973",
+      "ldu_0974",
+      "ldu_0975",
+      "ldu_0976",
+      "ldu_0977",
+      "ldu_0978",
+      "ldu_0979",
+      "ldu_0980",
+      "ldu_0981",
+      "ldu_0982",
+      "ldu_0983",
+      "ldu_0984",
+      "ldu_0985",
+      "ldu_0986",
+      "ldu_0987",
+      "ldu_0988",
+      "ldu_0989",
+      "ldu_0990",
+      "ldu_0991",
+      "ldu_0992",
+      "ldu_0993",
+      "ldu_0994",
+      "ldu_0995",
+      "ldu_0996",
+      "ldu_0997",
+      "ldu_0998",
+      "ldu_0999",
+      "ldu_1000",
+      "ldu_1001",
+      "ldu_1002",
+      "ldu_1003",
+      "ldu_1004",
+      "ldu_1005",
+      "ldu_1006",
+      "ldu_1007",
+      "ldu_1008",
+      "ldu_1009",
+      "ldu_1010",
+      "ldu_1011",
+      "ldu_1012",
+      "ldu_1013",
+      "ldu_1014",
+      "ldu_1015",
+      "ldu_1016",
+      "ldu_1017",
+      "ldu_1018",
+      "ldu_1019",
+      "ldu_1020",
+      "ldu_1021",
+      "ldu_1022",
+      "ldu_1023",
+      "ldu_1024",
+      "ldu_1025",
+      "ldu_1026",
+      "ldu_1027",
+      "ldu_1028",
+      "ldu_1029",
+      "ldu_1030",
+      "ldu_1031",
+      "ldu_1032",
+      "ldu_1033",
+      "ldu_1034",
+      "ldu_1035",
+      "ldu_1036",
+      "ldu_1037",
+      "ldu_1038",
+      "ldu_1039",
+      "ldu_1040",
+      "ldu_1041",
+      "ldu_1042",
+      "ldu_1043",
+      "ldu_1044",
+      "ldu_1045",
+      "ldu_1046",
+      "ldu_1047",
+      "ldu_1048",
+      "ldu_1049",
+      "ldu_1050",
+      "ldu_1051",
+      "ldu_1052",
+      "ldu_1053",
+      "ldu_1054",
+      "ldu_1055",
+      "ldu_1056",
+      "ldu_1057",
+      "ldu_1058",
+      "ldu_1059",
+      "ldu_1060",
+      "ldu_1061",
+      "ldu_1062",
+      "ldu_1063",
+      "ldu_1064",
+      "ldu_1065",
+      "ldu_1066",
+      "ldu_1067",
+      "ldu_1068",
+      "ldu_1069",
+      "ldu_1070",
+      "ldu_1071",
+      "ldu_1072",
+      "ldu_1073",
+      "ldu_1074",
+      "ldu_1075",
+      "ldu_1076",
+      "ldu_1077",
+      "ldu_1078",
+      "ldu_1079",
+      "ldu_1080",
+      "ldu_1081",
+      "ldu_1082",
+      "ldu_1083",
+      "ldu_1084",
+      "ldu_1085",
+      "ldu_1086",
+      "ldu_1087",
+      "ldu_1088",
+      "ldu_1089",
+      "ldu_1090",
+      "ldu_1091",
+      "ldu_1092",
+      "ldu_1093",
+      "ldu_1094",
+      "ldu_1095",
+      "ldu_1096",
+      "ldu_1097",
+      "ldu_1098",
+      "ldu_1099",
+      "ldu_1100",
+      "ldu_1101",
+      "ldu_1102",
+      "ldu_1103",
+      "ldu_1104",
+      "ldu_1105",
+      "ldu_1106",
+      "ldu_1107",
+      "ldu_1108",
+      "ldu_1109",
+      "ldu_1110",
+      "ldu_1111",
+      "ldu_1112",
+      "ldu_1113",
+      "ldu_1114",
+      "ldu_1115",
+      "ldu_1116",
+      "ldu_1117",
+      "ldu_1118",
+      "ldu_1119",
+      "ldu_1120",
+      "ldu_1121",
+      "ldu_1122",
+      "ldu_1123",
+      "ldu_1124",
+      "ldu_1125",
+      "ldu_1126",
+      "ldu_1127",
+      "ldu_1128",
+      "ldu_1129",
+      "ldu_1130",
+      "ldu_1131",
+      "ldu_1132",
+      "ldu_1133",
+      "ldu_1134",
+      "ldu_1135",
+      "ldu_1136",
+      "ldu_1137",
+      "ldu_1138",
+      "ldu_1139",
+      "ldu_1140",
+      "ldu_1141",
+      "ldu_1142",
+      "ldu_1143",
+      "ldu_1144",
+      "ldu_1145",
+      "ldu_1146",
+      "ldu_1147",
+      "ldu_1148",
+      "ldu_1149",
+      "ldu_1150",
+      "ldu_1151",
+      "ldu_1152",
+      "ldu_1153",
+      "ldu_1154",
+      "ldu_1155",
+      "ldu_1156",
+      "ldu_1157",
+      "ldu_1158",
+      "ldu_1159",
+      "ldu_1160",
+      "ldu_1161",
+      "ldu_1162",
+      "ldu_1163",
+      "ldu_1164",
+      "ldu_1165",
+      "ldu_1166",
+      "ldu_1167",
+      "ldu_1168",
+      "ldu_1169",
+      "ldu_1170",
+      "ldu_1171",
+      "ldu_1172",
+      "ldu_1173",
+      "ldu_1174",
+      "ldu_1175",
+      "ldu_1176",
+      "ldu_1177",
+      "ldu_1178",
+      "ldu_1179",
+      "ldu_1180",
+      "ldu_1181",
+      "ldu_1182",
+      "ldu_1183",
+      "ldu_1184",
+      "ldu_1185",
+      "ldu_1186",
+      "ldu_1187",
+      "ldu_1188",
+      "ldu_1189",
+      "ldu_1190",
+      "ldu_1191",
+      "ldu_1192",
+      "ldu_1193",
+      "ldu_1194",
+      "ldu_1195",
+      "ldu_1196",
+      "ldu_1197",
+      "ldu_1198",
+      "ldu_1199",
+      "ldu_1200",
+      "ldu_1201",
+      "ldu_1202",
+      "ldu_1203",
+      "ldu_1204",
+      "ldu_1205",
+      "ldu_1206",
+      "ldu_1207",
+      "ldu_1208",
+      "ldu_1209",
+      "ldu_1210",
+      "ldu_1211",
+      "ldu_1212",
+      "ldu_1213",
+      "ldu_1214",
+      "ldu_1215",
+      "ldu_1216",
+      "ldu_1217",
+      "ldu_1218",
+      "ldu_1219",
+      "ldu_1220",
+      "ldu_1221",
+      "ldu_1222",
+      "ldu_1223",
+      "ldu_1224",
+      "ldu_1225",
+      "ldu_1226",
+      "ldu_1227",
+      "ldu_1228",
+      "ldu_1229",
+      "ldu_1230",
+      "ldu_1231",
+      "ldu_1232",
+      "ldu_1233",
+      "ldu_1234",
+      "ldu_1235",
+      "ldu_1236",
+      "ldu_1237",
+      "ldu_1238",
+      "ldu_1239",
+      "ldu_1240",
+      "ldu_1241",
+      "ldu_1242",
+      "ldu_1243",
+      "ldu_1244",
+      "ldu_1245",
+      "ldu_1246",
+      "ldu_1247",
+      "ldu_1248",
+      "ldu_1249",
+      "ldu_1250",
+      "ldu_1251",
+      "ldu_1252",
+      "ldu_1253",
+      "ldu_1254",
+      "ldu_1255",
+      "ldu_1256",
+      "ldu_1257",
+      "ldu_1258",
+      "ldu_1259",
+      "ldu_1260",
+      "ldu_1261",
+      "ldu_1262",
+      "ldu_1263",
+      "ldu_1264",
+      "ldu_1265",
+      "ldu_1266",
+      "ldu_1267",
+      "ldu_1268",
+      "ldu_1269",
+      "ldu_1270",
+      "ldu_1271",
+      "ldu_1272",
+      "ldu_1273",
+      "ldu_1274",
+      "ldu_1275",
+      "ldu_1276",
+      "ldu_1277",
+      "ldu_1278",
+      "ldu_1279",
+      "ldu_1280",
+      "ldu_1281",
+      "ldu_1282",
+      "ldu_1283",
+      "ldu_1284",
+      "ldu_1285",
+      "ldu_1286",
+      "ldu_1287",
+      "ldu_1288",
+      "ldu_1289",
+      "ldu_1290",
+      "ldu_1291",
+      "ldu_1292",
+      "ldu_1293",
+      "ldu_1294",
+      "ldu_1295",
+      "ldu_1296",
+      "ldu_1297",
+      "ldu_1298",
+      "ldu_1299",
+      "ldu_1300",
+      "ldu_1301",
+      "ldu_1302",
+      "ldu_1303",
+      "ldu_1304",
+      "ldu_1305",
+      "ldu_1306",
+      "ldu_1307",
+      "ldu_1308",
+      "ldu_1309",
+      "ldu_1310",
+      "ldu_1311",
+      "ldu_1312",
+      "ldu_1313",
+      "ldu_1314",
+      "ldu_1315",
+      "ldu_1316",
+      "ldu_1317",
+      "ldu_1318",
+      "ldu_1319",
+      "ldu_1320",
+      "ldu_1321",
+      "ldu_1322",
+      "ldu_1323",
+      "ldu_1324",
+      "ldu_1325",
+      "ldu_1326",
+      "ldu_1327",
+      "ldu_1328",
+      "ldu_1329",
+      "ldu_1330",
+      "ldu_1331",
+      "ldu_1332",
+      "ldu_1333",
+      "ldu_1334",
+      "ldu_1335",
+      "ldu_1336",
+      "ldu_1337",
+      "ldu_1338",
+      "ldu_1339",
+      "ldu_1340",
+      "ldu_1341",
+      "ldu_1342",
+      "ldu_1343",
+      "ldu_1344",
+      "ldu_1345",
+      "ldu_1346",
+      "ldu_1347",
+      "ldu_1348",
+      "ldu_1349",
+      "ldu_1350",
+      "ldu_1351",
+      "ldu_1352",
+      "ldu_1353",
+      "ldu_1354",
+      "ldu_1355",
+      "ldu_1356",
+      "ldu_1357",
+      "ldu_1358",
+      "ldu_1359",
+      "ldu_1360",
+      "ldu_1361",
+      "ldu_1362",
+      "ldu_1363",
+      "ldu_1364",
+      "ldu_1365",
+      "ldu_1366",
+      "ldu_1367",
+      "ldu_1368",
+      "ldu_1369",
+      "ldu_1370",
+      "ldu_1371",
+      "ldu_1372",
+      "ldu_1373",
+      "ldu_1374",
+      "ldu_1375",
+      "ldu_1376",
+      "ldu_1377",
+      "ldu_1378",
+      "ldu_1379",
+      "ldu_1380",
+      "ldu_1381",
+      "ldu_1382",
+      "ldu_1383",
+      "ldu_1384",
+      "ldu_1385",
+      "ldu_1386",
+      "ldu_1387",
+      "ldu_1388",
+      "ldu_1389",
+      "ldu_1390",
+      "ldu_1391",
+      "ldu_1392",
+      "ldu_1393",
+      "ldu_1394",
+      "ldu_1395",
+      "ldu_1396",
+      "ldu_1397",
+      "ldu_1398",
+      "ldu_1399",
+      "ldu_1400",
+      "ldu_1401",
+      "ldu_1402",
+      "ldu_1403",
+      "ldu_1404",
+      "ldu_1405",
+      "ldu_1406",
+      "ldu_1407",
+      "ldu_1408",
+      "ldu_1409",
+      "ldu_1410",
+      "ldu_1411",
+      "ldu_1412",
+      "ldu_1413",
+      "ldu_1414",
+      "ldu_1415",
+      "ldu_1416",
+      "ldu_1417",
+      "ldu_1418",
+      "ldu_1419",
+      "ldu_1420",
+      "ldu_1421",
+      "ldu_1422",
+      "ldu_1423",
+      "ldu_1424",
+      "ldu_1425",
+      "ldu_1426",
+      "ldu_1427",
+      "ldu_1428",
+      "ldu_1429",
+      "ldu_1430",
+      "ldu_1431",
+      "ldu_1432",
+      "ldu_1433",
+      "ldu_1434",
+      "ldu_1435",
+      "ldu_1436",
+      "ldu_1437",
+      "ldu_1438",
+      "ldu_1439",
+      "ldu_1440",
+      "ldu_1441",
+      "ldu_1442",
+      "ldu_1443",
+      "ldu_1444",
+      "ldu_1445",
+      "ldu_1446",
+      "ldu_1447",
+      "ldu_1448",
+      "ldu_1449",
+      "ldu_1450",
+      "ldu_1451",
+      "ldu_1452",
+      "ldu_1453",
+      "ldu_1454",
+      "ldu_1455",
+      "ldu_1456",
+      "ldu_1457",
+      "ldu_1458",
+      "ldu_1459",
+      "ldu_1460",
+      "ldu_1461",
+      "ldu_1462",
+      "ldu_1463",
+      "ldu_1464",
+      "ldu_1465",
+      "ldu_1466",
+      "ldu_1467",
+      "ldu_1468",
+      "ldu_1469",
+      "ldu_1470",
+      "ldu_1471",
+      "ldu_1472",
+      "ldu_1473",
+      "ldu_1474",
+      "ldu_1475",
+      "ldu_1476",
+      "ldu_1477",
+      "ldu_1478",
+      "ldu_1479",
+      "ldu_1480",
+      "ldu_1481",
+      "ldu_1482",
+      "ldu_1483",
+      "ldu_1484",
+      "ldu_1485",
+      "ldu_1486",
+      "ldu_1487",
+      "ldu_1488",
+      "ldu_1489",
+      "ldu_1490",
+      "ldu_1491",
+      "ldu_1492",
+      "ldu_1493",
+      "ldu_1494",
+      "ldu_1495",
+      "ldu_1496",
+      "ldu_1497",
+      "ldu_1498",
+      "ldu_1499",
+      "ldu_1500",
+      "ldu_1501",
+      "ldu_1502",
+      "ldu_1503",
+      "ldu_1504",
+      "ldu_1505",
+      "ldu_1506",
+      "ldu_1507",
+      "ldu_1508",
+      "ldu_1509",
+      "ldu_1510",
+      "ldu_1511",
+      "ldu_1512",
+      "ldu_1513",
+      "ldu_1514",
+      "ldu_1515",
+      "ldu_1516",
+      "ldu_1517",
+      "ldu_1518",
+      "ldu_1519",
+      "ldu_1520",
+      "ldu_1521",
+      "ldu_1522",
+      "ldu_1523",
+      "ldu_1524",
+      "ldu_1525",
+      "ldu_1526",
+      "ldu_1527",
+      "ldu_1528",
+      "ldu_1529",
+      "ldu_1530",
+      "ldu_1531",
+      "ldu_1532",
+      "ldu_1533",
+      "ldu_1534",
+      "ldu_1535",
+      "ldu_1536",
+      "ldu_1537",
+      "ldu_1538",
+      "ldu_1539",
+      "ldu_1540",
+      "ldu_1541",
+      "ldu_1542",
+      "ldu_1543",
+      "ldu_1544",
+      "ldu_1545",
+      "ldu_1546",
+      "ldu_1547",
+      "ldu_1548",
+      "ldu_1549",
+      "ldu_1550",
+      "ldu_1551",
+      "ldu_1552",
+      "ldu_1553",
+      "ldu_1554",
+      "ldu_1555",
+      "ldu_1556",
+      "ldu_1557"
+    ]
+  },
+  "built_at": "2026-03-27T15:10:17.149054+00:00"
+}

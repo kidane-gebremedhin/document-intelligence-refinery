@@ -147,7 +147,7 @@ def extract_pdf_signals(pdf_path: Path) -> dict[str, Any]:
                     buckets = [0] * 5
                     for c in page.chars:
                         x0 = c.get("x0") or 0
-                        idx = min(4, int((x0 / width) * 5))
+                        idx = max(0, min(4, int((x0 / width) * 5)))
                         buckets[idx] = 1
                     signals["columns_per_page"].append(sum(buckets))
                 else:

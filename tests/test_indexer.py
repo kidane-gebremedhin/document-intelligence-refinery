@@ -126,3 +126,22 @@ def test_pageindex_query_returns_top_n():
     assert any(s.title == "2. Risk Factors" for s in top)
     top2 = pageindex_query("introduction", page_index=pi, top_n=2)
     assert len(top2) <= 2
+
+
+def test_get_default_summarizer_openrouter(monkeypatch):
+    from src.agents.indexer import get_default_summarizer, LLMSummarizer
+
+    monkeypatch.setenv("REFINERY_VISION_PROVIDER", "openrouter")
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test-openrouter-key")
+    summarizer = get_default_summarizer()
+    assert isinstance(summarizer, LLMSummarizer)
+
+
+def test_get_default_summarizer_no_api_key(monkeypatch):
+    from src.agents.indexer import get_default_summarizer, StubSummarizer
+
+    monkeypatch.setenv("REFINERY_VISION_PROVIDER", "openrouter")
+    monkeypatch.delenv("OPENROUTER_API_KEY", raising=False)
+    monkeypatch.delenv("REFINERY_VISION_API_KEY", raising=False)
+    summarizer = get_default_summarizer()
+    assert isinstance(summarizer, StubSummarizer)

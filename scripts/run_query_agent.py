@@ -99,6 +99,7 @@ def main() -> int:
         document_name_resolver=resolver,
     )
 
+    print(f"Questiion: {question}")
     print("--- Answer ---")
     print(result["answer"])
     print("\n--- Provenance (verified: {}) ---".format(result["verified"]))

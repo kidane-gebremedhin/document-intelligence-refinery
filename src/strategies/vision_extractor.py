@@ -114,16 +114,33 @@ def _parse_vision_json(text: str) -> dict[str, Any] | None:
         return None
 
 
+_PROVIDER_BASE_URLS: dict[str, str] = {
+    "openrouter": "https://openrouter.ai/api/v1",
+    "deepseek": "https://api.deepseek.com",
+}
+
+_PROVIDER_DEFAULT_MODELS: dict[str, str] = {
+    "openai": "gpt-4o-mini",
+    "deepseek": "deepseek-chat",
+    "openrouter": "gpt-4o-mini",
+}
+
+
 def _call_vision_api_openai(
     images: list[tuple[int, bytes]],
     domain_hint: str,
     model: str,
     api_key: str,
+    provider: str = "openai",
 ) -> dict[str, Any] | None:
-    """Call OpenAI vision API. Returns parsed JSON or None."""
+    """Call OpenAI-compatible vision API (openai, deepseek, openrouter). Returns parsed JSON or None."""
     if OpenAI is None or not api_key:
         return None
-    client = OpenAI(api_key=api_key)
+    base_url = _PROVIDER_BASE_URLS.get(provider)
+    if base_url:
+        client = OpenAI(api_key=api_key, base_url=base_url)
+    else:
+        client = OpenAI(api_key=api_key)
     prompt = VISION_PROMPT + (domain_hint or "general")
     content: list[Any] = [{"type": "text", "text": prompt}]
     for page_num, png_bytes in images:
@@ -190,12 +207,12 @@ def _call_vision_api(
     api_key: str,
 ) -> dict[str, Any] | None:
     """
-    Call vision API by provider. provider is 'openai' or 'google'.
+    Call vision API by provider. provider is 'openai', 'deepseek', 'openrouter', or 'google'.
     Returns parsed JSON dict with text_blocks, tables, figures, or None on failure.
     """
     if provider and provider.lower() == "google":
         return _call_vision_api_gemini(images, domain_hint, model, api_key)
-    return _call_vision_api_openai(images, domain_hint, model, api_key)
+    return _call_vision_api_openai(images, domain_hint, model, api_key, provider=provider.lower())
 
 
 def _normalize_vision_response(
@@ -330,7 +347,6 @@ class VisionExtractor:
         doc_path = Path(doc_path)
         config = self._get_config()
         confidence = float(config.get("confidence_default", 0.8))
-        model = config.get("model", "gpt-4o-mini")
         max_pages = int(config.get("max_pages_per_document", 50))
 
         if fitz is None:
@@ -344,12 +360,23 @@ class VisionExtractor:
         _load_dotenv()
         # Provider and API key: .env overrides config (no code change needed). Spec 03 §6.4.
         provider = (os.environ.get(ENV_VISION_PROVIDER) or config.get("provider") or "openai").strip().lower()
+        _default_key_envs: dict[str, str] = {
+            "google": "GEMINI_API_KEY",
+            "openrouter": "OPENROUTER_API_KEY",
+            "deepseek": "DEEPSEEK_API_KEY",
+        }
+        default_api_key_env = _default_key_envs.get(provider, "OPENAI_API_KEY")
         api_key_env_name = (
             os.environ.get(ENV_VISION_API_KEY_ENV)
             or config.get("api_key_env")
-            or ("OPENAI_API_KEY" if provider == "openai" else "GOOGLE_API_KEY")
+            or default_api_key_env
         )
         api_key = (os.environ.get(ENV_VISION_API_KEY) or os.environ.get(api_key_env_name, "")).strip()
+        model = (
+            os.environ.get("REFINERY_VISION_MODEL")
+            or config.get("model")
+            or _PROVIDER_DEFAULT_MODELS.get(provider, "gpt-4o-mini")
+        )
         if not api_key:
             return ExtractionResult(
                 extracted_document=None,
